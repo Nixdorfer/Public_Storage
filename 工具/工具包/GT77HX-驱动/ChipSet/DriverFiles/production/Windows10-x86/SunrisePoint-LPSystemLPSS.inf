@@ -1,0 +1,115 @@
+; ************************************************************
+; ************************************************************
+; **  Filename: SunrisePoint-LPSystemLPSS.inf               **
+; **  Abstract: Assigns the null driver to devices          **
+; **            for yellow-bang removal and                 **
+; **            brands Intel(R) devices                     ** 
+; ************************************************************
+; ************************************************************
+
+[Version]
+Signature=$WINDOWS NT$
+Class=System
+ClassGUID={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%INTEL%
+CatalogFile=SunrisePoint-LP.cat
+DriverVer=07/18/1968, 10.1.5.3
+PnpLockDown=1
+
+[SourceDisksNames]
+
+[SourceDisksFiles]
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%INTEL%=INTEL,NTx86.6.1,NTamd64.6.1,NTx86.6.3.1,NTamd64.6.3.1
+
+[INTEL.NTx86.6.1]
+%ACPI\INT3446Desc%=Needs_NO_DRV,ACPI\INT3446
+%ACPI\INT3447Desc%=Needs_NO_DRV,ACPI\INT3447
+%ACPI\INT344BDesc%=Needs_NO_DRV,ACPI\INT344B
+%PCI\VEN_8086&DEV_9D27Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9D27
+%PCI\VEN_8086&DEV_9D28Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9D28
+%PCI\VEN_8086&DEV_9D29Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9D29
+%PCI\VEN_8086&DEV_9D2ADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9D2A
+%PCI\VEN_8086&DEV_9D60Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9D60
+%PCI\VEN_8086&DEV_9D61Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9D61
+%PCI\VEN_8086&DEV_9D62Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9D62
+%PCI\VEN_8086&DEV_9D63Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9D63
+%PCI\VEN_8086&DEV_9D64Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9D64
+%PCI\VEN_8086&DEV_9D65Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9D65
+%PCI\VEN_8086&DEV_9D66Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9D66
+
+[INTEL.NTx86.6.3.1]
+
+[INTEL.NTamd64.6.1]
+%ACPI\INT3446Desc%=Needs_NO_DRV,ACPI\INT3446
+%ACPI\INT3447Desc%=Needs_NO_DRV,ACPI\INT3447
+%ACPI\INT344BDesc%=Needs_NO_DRV,ACPI\INT344B
+%PCI\VEN_8086&DEV_9D27Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9D27
+%PCI\VEN_8086&DEV_9D28Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9D28
+%PCI\VEN_8086&DEV_9D29Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9D29
+%PCI\VEN_8086&DEV_9D2ADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9D2A
+%PCI\VEN_8086&DEV_9D60Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9D60
+%PCI\VEN_8086&DEV_9D61Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9D61
+%PCI\VEN_8086&DEV_9D62Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9D62
+%PCI\VEN_8086&DEV_9D63Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9D63
+%PCI\VEN_8086&DEV_9D64Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9D64
+%PCI\VEN_8086&DEV_9D65Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9D65
+%PCI\VEN_8086&DEV_9D66Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9D66
+
+[INTEL.NTamd64.6.3.1]
+
+[Needs_NO_DRV]
+Include=machine.inf
+Needs=NO_DRV
+
+[Needs_NO_DRV.Services]
+Include=machine.inf
+Needs=NO_DRV.Services
+
+[Strings]
+INTEL="INTEL"
+ACPI\INT3446Desc="Mobile Intel(R) Processor Family I/O Serial IO I2C Host Controller - 3446"
+ACPI\INT3447Desc="Mobile Intel(R) Processor Family I/O Serial IO I2C Host Controller - 3447"
+ACPI\INT344BDesc="Mobile Intel(R) Processor Family I/O Serial IO GPIO Host Controller - 344B"
+PCI\VEN_8086&DEV_9D27Desc="Mobile Intel(R) Processor Family I/O Serial IO UART Host Controller - 9D27"
+PCI\VEN_8086&DEV_9D28Desc="Mobile Intel(R) Processor Family I/O Serial IO UART Host Controller - 9D28"
+PCI\VEN_8086&DEV_9D29Desc="Mobile Intel(R) Processor Family I/O Serial IO SPI Host Controller - 9D29"
+PCI\VEN_8086&DEV_9D2ADesc="Mobile Intel(R) Processor Family I/O Serial IO SPI Host Controller - 9D2A"
+PCI\VEN_8086&DEV_9D60Desc="Mobile Intel(R) Processor Family I/O Serial IO I2C Host Controller - 9D60"
+PCI\VEN_8086&DEV_9D61Desc="Mobile Intel(R) Processor Family I/O Serial IO I2C Host Controller - 9D61"
+PCI\VEN_8086&DEV_9D62Desc="Mobile Intel(R) Processor Family I/O Serial IO I2C Host Controller - 9D62"
+PCI\VEN_8086&DEV_9D63Desc="Mobile Intel(R) Processor Family I/O Serial IO I2C Host Controller - 9D63"
+PCI\VEN_8086&DEV_9D64Desc="Mobile Intel(R) Processor Family I/O Serial IO I2C Host Controller - 9D64"
+PCI\VEN_8086&DEV_9D65Desc="Mobile Intel(R) Processor Family I/O Serial IO I2C Host Controller - 9D65"
+PCI\VEN_8086&DEV_9D66Desc="Mobile Intel(R) Processor Family I/O Serial IO UART Host Controller - 9D66"
+
+
+
+
+; Copyright (c) 2003-2019 Intel Corporation
+; 
+; ********************************************************************************
+; Intel is making no claims of usability, efficacy or warranty.
+; ********************************************************************************
+; Information in this document is provided in connection with Intel products. No
+; license, express or implied, by estoppel or otherwise, to any intellectual
+; property rights is granted by this document. Intel assumes no liability
+; whatsoever, and Intel disclaims any express or implied warranty, relating to
+; sale and/or use of Intel products including liability or warranties relating to
+; fitness for a particular purpose, merchantability, or infringement of any
+; patent, copyright or other intellectual property right. Intel products are not
+; intended for use in medical, life saving, or life sustaining applications.
+; ********************************************************************************
+; Intel Corporation disclaims all warranties and liabilities for the use of this
+; document and the information contained herein, and assumes no responsibility for
+; any errors which may appear in this document, nor does Intel make a commitment
+; to update the information contained herein. Intel reserves the right to make
+; changes to this document at any time, without notice.
+; ********************************************************************************
+; ********************************************************************************
+; 
+; * Third-party brands and names are the property of their respective owners.

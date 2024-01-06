@@ -1,0 +1,223 @@
+; ************************************************************
+; ************************************************************
+; **  Filename: IceLakePCH-NSystem.inf                      **
+; **  Abstract: Assigns the null driver to devices          **
+; **            for yellow-bang removal and                 **
+; **            brands Intel(R) devices                     ** 
+; ************************************************************
+; ************************************************************
+
+[Version]
+Signature=$WINDOWS NT$
+Class=System
+ClassGUID={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%INTEL%
+CatalogFile=IceLakePCH-N.cat
+DriverVer=07/18/1968, 10.1.22.3
+
+[SourceDisksNames]
+
+[SourceDisksFiles]
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%INTEL%=INTEL,NTx86,NTamd64
+
+[INTEL.NTx86]
+%PCI\VEN_8086&DEV_3880Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3880
+%PCI\VEN_8086&DEV_3881Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3881
+%PCI\VEN_8086&DEV_3882Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3882
+%PCI\VEN_8086&DEV_3883Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3883
+%PCI\VEN_8086&DEV_3884Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3884
+%PCI\VEN_8086&DEV_3885Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3885
+%PCI\VEN_8086&DEV_3886Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3886
+%PCI\VEN_8086&DEV_3887Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3887
+%PCI\VEN_8086&DEV_3888Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3888
+%PCI\VEN_8086&DEV_3889Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3889
+%PCI\VEN_8086&DEV_388ADesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_388A
+%PCI\VEN_8086&DEV_388BDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_388B
+%PCI\VEN_8086&DEV_388CDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_388C
+%PCI\VEN_8086&DEV_388DDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_388D
+%PCI\VEN_8086&DEV_388EDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_388E
+%PCI\VEN_8086&DEV_388FDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_388F
+%PCI\VEN_8086&DEV_3890Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3890
+%PCI\VEN_8086&DEV_3891Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3891
+%PCI\VEN_8086&DEV_3892Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3892
+%PCI\VEN_8086&DEV_3893Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3893
+%PCI\VEN_8086&DEV_3894Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3894
+%PCI\VEN_8086&DEV_3895Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3895
+%PCI\VEN_8086&DEV_3896Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3896
+%PCI\VEN_8086&DEV_3897Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3897
+%PCI\VEN_8086&DEV_3898Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3898
+%PCI\VEN_8086&DEV_3899Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3899
+%PCI\VEN_8086&DEV_389ADesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_389A
+%PCI\VEN_8086&DEV_389BDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_389B
+%PCI\VEN_8086&DEV_389CDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_389C
+%PCI\VEN_8086&DEV_389DDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_389D
+%PCI\VEN_8086&DEV_389EDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_389E
+%PCI\VEN_8086&DEV_389FDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_389F
+%PCI\VEN_8086&DEV_38A0Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_38A0
+%PCI\VEN_8086&DEV_38A1Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_38A1
+%PCI\VEN_8086&DEV_38A3Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_38A3
+%PCI\VEN_8086&DEV_38A4Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_38A4
+%PCI\VEN_8086&DEV_38A6Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_38A6
+%PCI\VEN_8086&DEV_38B8Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_38B8
+%PCI\VEN_8086&DEV_38B9Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_38B9
+%PCI\VEN_8086&DEV_38BADesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_38BA
+%PCI\VEN_8086&DEV_38BBDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_38BB
+%PCI\VEN_8086&DEV_38BCDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_38BC
+%PCI\VEN_8086&DEV_38BDDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_38BD
+%PCI\VEN_8086&DEV_38BEDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_38BE
+%PCI\VEN_8086&DEV_38BFDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_38BF
+
+[INTEL.NTamd64]
+%PCI\VEN_8086&DEV_3880Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3880
+%PCI\VEN_8086&DEV_3881Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3881
+%PCI\VEN_8086&DEV_3882Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3882
+%PCI\VEN_8086&DEV_3883Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3883
+%PCI\VEN_8086&DEV_3884Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3884
+%PCI\VEN_8086&DEV_3885Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3885
+%PCI\VEN_8086&DEV_3886Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3886
+%PCI\VEN_8086&DEV_3887Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3887
+%PCI\VEN_8086&DEV_3888Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3888
+%PCI\VEN_8086&DEV_3889Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3889
+%PCI\VEN_8086&DEV_388ADesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_388A
+%PCI\VEN_8086&DEV_388BDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_388B
+%PCI\VEN_8086&DEV_388CDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_388C
+%PCI\VEN_8086&DEV_388DDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_388D
+%PCI\VEN_8086&DEV_388EDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_388E
+%PCI\VEN_8086&DEV_388FDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_388F
+%PCI\VEN_8086&DEV_3890Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3890
+%PCI\VEN_8086&DEV_3891Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3891
+%PCI\VEN_8086&DEV_3892Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3892
+%PCI\VEN_8086&DEV_3893Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3893
+%PCI\VEN_8086&DEV_3894Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3894
+%PCI\VEN_8086&DEV_3895Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3895
+%PCI\VEN_8086&DEV_3896Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3896
+%PCI\VEN_8086&DEV_3897Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3897
+%PCI\VEN_8086&DEV_3898Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3898
+%PCI\VEN_8086&DEV_3899Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_3899
+%PCI\VEN_8086&DEV_389ADesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_389A
+%PCI\VEN_8086&DEV_389BDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_389B
+%PCI\VEN_8086&DEV_389CDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_389C
+%PCI\VEN_8086&DEV_389DDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_389D
+%PCI\VEN_8086&DEV_389EDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_389E
+%PCI\VEN_8086&DEV_389FDesc%=Needs_MSISADRV,PCI\VEN_8086&DEV_389F
+%PCI\VEN_8086&DEV_38A0Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_38A0
+%PCI\VEN_8086&DEV_38A1Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_38A1
+%PCI\VEN_8086&DEV_38A3Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_38A3
+%PCI\VEN_8086&DEV_38A4Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_38A4
+%PCI\VEN_8086&DEV_38A6Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_38A6
+%PCI\VEN_8086&DEV_38B8Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_38B8
+%PCI\VEN_8086&DEV_38B9Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_38B9
+%PCI\VEN_8086&DEV_38BADesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_38BA
+%PCI\VEN_8086&DEV_38BBDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_38BB
+%PCI\VEN_8086&DEV_38BCDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_38BC
+%PCI\VEN_8086&DEV_38BDDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_38BD
+%PCI\VEN_8086&DEV_38BEDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_38BE
+%PCI\VEN_8086&DEV_38BFDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_38BF
+
+[Needs_MSISADRV]
+Include=machine.inf
+Needs=MSISADRV
+
+[Needs_MSISADRV.Services]
+Include=machine.inf
+Needs=MSISADRV.Services
+
+[Needs_NO_DRV]
+Include=machine.inf
+Needs=NO_DRV
+
+[Needs_NO_DRV.Services]
+Include=machine.inf
+Needs=NO_DRV.Services
+
+[Needs_PCI_DRV]
+Include=machine.inf
+Needs=PCI_DRV
+
+[Needs_PCI_DRV.Services]
+Include=machine.inf
+Needs=PCI_DRV.Services
+
+[Needs_PCI_DRV.HW]
+Include=machine.inf
+Needs=PCI_DRV.HW
+
+[Strings]
+INTEL="INTEL"
+PCI\VEN_8086&DEV_3880Desc="Intel(R) LPC Controller - 3880"
+PCI\VEN_8086&DEV_3881Desc="Intel(R) LPC Controller - 3881"
+PCI\VEN_8086&DEV_3882Desc="Intel(R) LPC Controller - 3882"
+PCI\VEN_8086&DEV_3883Desc="Intel(R) LPC Controller - 3883"
+PCI\VEN_8086&DEV_3884Desc="Intel(R) LPC Controller - 3884"
+PCI\VEN_8086&DEV_3885Desc="Intel(R) LPC Controller - 3885"
+PCI\VEN_8086&DEV_3886Desc="Intel(R) LPC Controller - 3886"
+PCI\VEN_8086&DEV_3887Desc="Intel(R) LPC Controller - 3887"
+PCI\VEN_8086&DEV_3888Desc="Intel(R) LPC Controller - 3888"
+PCI\VEN_8086&DEV_3889Desc="Intel(R) LPC Controller - 3889"
+PCI\VEN_8086&DEV_388ADesc="Intel(R) LPC Controller - 388A"
+PCI\VEN_8086&DEV_388BDesc="Intel(R) LPC Controller - 388B"
+PCI\VEN_8086&DEV_388CDesc="Intel(R) LPC Controller - 388C"
+PCI\VEN_8086&DEV_388DDesc="Intel(R) LPC Controller - 388D"
+PCI\VEN_8086&DEV_388EDesc="Intel(R) LPC Controller - 388E"
+PCI\VEN_8086&DEV_388FDesc="Intel(R) LPC Controller - 388F"
+PCI\VEN_8086&DEV_3890Desc="Intel(R) LPC Controller - 3890"
+PCI\VEN_8086&DEV_3891Desc="Intel(R) LPC Controller - 3891"
+PCI\VEN_8086&DEV_3892Desc="Intel(R) LPC Controller - 3892"
+PCI\VEN_8086&DEV_3893Desc="Intel(R) LPC Controller - 3893"
+PCI\VEN_8086&DEV_3894Desc="Intel(R) LPC Controller - 3894"
+PCI\VEN_8086&DEV_3895Desc="Intel(R) LPC Controller - 3895"
+PCI\VEN_8086&DEV_3896Desc="Intel(R) LPC Controller - 3896"
+PCI\VEN_8086&DEV_3897Desc="Intel(R) LPC Controller - 3897"
+PCI\VEN_8086&DEV_3898Desc="Intel(R) LPC Controller - 3898"
+PCI\VEN_8086&DEV_3899Desc="Intel(R) LPC Controller - 3899"
+PCI\VEN_8086&DEV_389ADesc="Intel(R) LPC Controller - 389A"
+PCI\VEN_8086&DEV_389BDesc="Intel(R) LPC Controller - 389B"
+PCI\VEN_8086&DEV_389CDesc="Intel(R) LPC Controller - 389C"
+PCI\VEN_8086&DEV_389DDesc="Intel(R) LPC Controller - 389D"
+PCI\VEN_8086&DEV_389EDesc="Intel(R) LPC Controller - 389E"
+PCI\VEN_8086&DEV_389FDesc="Intel(R) LPC Controller - 389F"
+PCI\VEN_8086&DEV_38A0Desc="Intel(R) P2SB - 38A0"
+PCI\VEN_8086&DEV_38A1Desc="Intel(R) PMC - 38A1"
+PCI\VEN_8086&DEV_38A3Desc="Intel(R) SMBus - 38A3"
+PCI\VEN_8086&DEV_38A4Desc="Intel(R) SPI (flash) Controller - 38A4"
+PCI\VEN_8086&DEV_38A6Desc="Intel(R) North Peak - 38A6"
+PCI\VEN_8086&DEV_38B8Desc="Intel(R) PCI Express Root Port #1 - 38B8"
+PCI\VEN_8086&DEV_38B9Desc="Intel(R) PCI Express Root Port #2 - 38B9"
+PCI\VEN_8086&DEV_38BADesc="Intel(R) PCI Express Root Port #3 - 38BA"
+PCI\VEN_8086&DEV_38BBDesc="Intel(R) PCI Express Root Port #4 - 38BB"
+PCI\VEN_8086&DEV_38BCDesc="Intel(R) PCI Express Root Port #5 - 38BC"
+PCI\VEN_8086&DEV_38BDDesc="Intel(R) PCI Express Root Port #6 - 38BD"
+PCI\VEN_8086&DEV_38BEDesc="Intel(R) PCI Express Root Port #7 - 38BE"
+PCI\VEN_8086&DEV_38BFDesc="Intel(R) PCI Express Root Port #8 - 38BF"
+
+
+
+
+; Copyright (c) 2003-2019 Intel Corporation
+; 
+; ********************************************************************************
+; Intel is making no claims of usability, efficacy or warranty.
+; ********************************************************************************
+; Information in this document is provided in connection with Intel products. No
+; license, express or implied, by estoppel or otherwise, to any intellectual
+; property rights is granted by this document. Intel assumes no liability
+; whatsoever, and Intel disclaims any express or implied warranty, relating to
+; sale and/or use of Intel products including liability or warranties relating to
+; fitness for a particular purpose, merchantability, or infringement of any
+; patent, copyright or other intellectual property right. Intel products are not
+; intended for use in medical, life saving, or life sustaining applications.
+; ********************************************************************************
+; Intel Corporation disclaims all warranties and liabilities for the use of this
+; document and the information contained herein, and assumes no responsibility for
+; any errors which may appear in this document, nor does Intel make a commitment
+; to update the information contained herein. Intel reserves the right to make
+; changes to this document at any time, without notice.
+; ********************************************************************************
+; ********************************************************************************
+; 
+; * Third-party brands and names are the property of their respective owners.

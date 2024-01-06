@@ -1,0 +1,102 @@
+; ************************************************************
+; ************************************************************
+; **  Filename: SunrisePoint-HSystemLPSS.inf                **
+; **  Abstract: Assigns the null driver to devices          **
+; **            for yellow-bang removal and                 **
+; **            brands Intel(R) devices                     ** 
+; ************************************************************
+; ************************************************************
+
+[Version]
+Signature=$WINDOWS NT$
+Class=System
+ClassGUID={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%INTEL%
+CatalogFile=SunrisePoint-H.cat
+DriverVer=07/18/1968, 10.1.6.2
+
+[SourceDisksNames]
+
+[SourceDisksFiles]
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%INTEL%=INTEL,NTx86,NTamd64,NTx86.6.3.1,NTamd64.6.3.1
+
+[INTEL.NTx86]
+%ACPI\INT345DDesc%=Needs_NO_DRV,ACPI\INT345D
+%PCI\VEN_8086&DEV_A127Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_A127
+%PCI\VEN_8086&DEV_A128Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_A128
+%PCI\VEN_8086&DEV_A129Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_A129
+%PCI\VEN_8086&DEV_A12ADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_A12A
+%PCI\VEN_8086&DEV_A160Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_A160
+%PCI\VEN_8086&DEV_A161Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_A161
+%PCI\VEN_8086&DEV_A162Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_A162
+%PCI\VEN_8086&DEV_A163Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_A163
+%PCI\VEN_8086&DEV_A166Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_A166
+
+[INTEL.NTx86.6.3.1]
+
+[INTEL.NTamd64]
+%ACPI\INT345DDesc%=Needs_NO_DRV,ACPI\INT345D
+%PCI\VEN_8086&DEV_A127Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_A127
+%PCI\VEN_8086&DEV_A128Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_A128
+%PCI\VEN_8086&DEV_A129Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_A129
+%PCI\VEN_8086&DEV_A12ADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_A12A
+%PCI\VEN_8086&DEV_A160Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_A160
+%PCI\VEN_8086&DEV_A161Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_A161
+%PCI\VEN_8086&DEV_A162Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_A162
+%PCI\VEN_8086&DEV_A163Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_A163
+%PCI\VEN_8086&DEV_A166Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_A166
+
+[INTEL.NTamd64.6.3.1]
+
+[Needs_NO_DRV]
+Include=machine.inf
+Needs=NO_DRV
+
+[Needs_NO_DRV.Services]
+Include=machine.inf
+Needs=NO_DRV.Services
+
+[Strings]
+INTEL="INTEL"
+ACPI\INT345DDesc="Intel(R) 100 Series/C230 Series Chipset Family Serial IO GPIO Host Controller - 345D"
+PCI\VEN_8086&DEV_A127Desc="Intel(R) 100 Series/C230 Series Chipset Family Serial IO UART Host Controller - A127"
+PCI\VEN_8086&DEV_A128Desc="Intel(R) 100 Series/C230 Series Chipset Family Serial IO UART Host Controller - A128"
+PCI\VEN_8086&DEV_A129Desc="Intel(R) 100 Series/C230 Series Chipset Family Serial IO SPI Host Controller - A129"
+PCI\VEN_8086&DEV_A12ADesc="Intel(R) 100 Series/C230 Series Chipset Family Serial IO SPI Host Controller - A12A"
+PCI\VEN_8086&DEV_A160Desc="Intel(R) 100 Series/C230 Series Chipset Family Serial IO I2C Host Controller - A160"
+PCI\VEN_8086&DEV_A161Desc="Intel(R) 100 Series/C230 Series Chipset Family Serial IO I2C Host Controller - A161"
+PCI\VEN_8086&DEV_A162Desc="Intel(R) 100 Series/C230 Series Chipset Family Serial IO I2C Host Controller - A162"
+PCI\VEN_8086&DEV_A163Desc="Intel(R) 100 Series/C230 Series Chipset Family Serial IO I2C Host Controller - A163"
+PCI\VEN_8086&DEV_A166Desc="Intel(R) 100 Series/C230 Series Chipset Family Serial IO UART Host Controller - A166"
+
+
+
+
+; Copyright (c) 2003-2017 Intel Corporation
+; 
+; ********************************************************************************
+; Intel is making no claims of usability, efficacy or warranty.
+; ********************************************************************************
+; Information in this document is provided in connection with Intel products. No
+; license, express or implied, by estoppel or otherwise, to any intellectual
+; property rights is granted by this document. Intel assumes no liability
+; whatsoever, and Intel disclaims any express or implied warranty, relating to
+; sale and/or use of Intel products including liability or warranties relating to
+; fitness for a particular purpose, merchantability, or infringement of any
+; patent, copyright or other intellectual property right. Intel products are not
+; intended for use in medical, life saving, or life sustaining applications.
+; ********************************************************************************
+; Intel Corporation disclaims all warranties and liabilities for the use of this
+; document and the information contained herein, and assumes no responsibility for
+; any errors which may appear in this document, nor does Intel make a commitment
+; to update the information contained herein. Intel reserves the right to make
+; changes to this document at any time, without notice.
+; ********************************************************************************
+; ********************************************************************************
+; 
+; * Third-party brands and names are the property of their respective owners.

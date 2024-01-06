@@ -1,0 +1,143 @@
+; ************************************************************
+; ************************************************************
+; **  Filename: ElkhartLakeSystem.inf                       **
+; **  Abstract: Assigns the null driver to devices          **
+; **            for yellow-bang removal and                 **
+; **            brands Intel(R) devices                     ** 
+; ************************************************************
+; ************************************************************
+
+[Version]
+Signature=$WINDOWS NT$
+Class=System
+ClassGUID={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%INTEL%
+CatalogFile=ElkhartLake.cat
+DriverVer=07/18/1968, 10.1.25.6
+PnpLockDown=1
+
+[SourceDisksNames]
+
+[SourceDisksFiles]
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%INTEL%=INTEL,NTx86,NTamd64
+
+[INTEL.NTx86]
+%PCI\VEN_8086&DEV_4B00Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_4B00
+%PCI\VEN_8086&DEV_4B01Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_4B01
+%PCI\VEN_8086&DEV_4B20Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B20
+%PCI\VEN_8086&DEV_4B21Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B21
+%PCI\VEN_8086&DEV_4B23Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B23
+%PCI\VEN_8086&DEV_4B24Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B24
+%PCI\VEN_8086&DEV_4B38Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_4B38
+%PCI\VEN_8086&DEV_4B39Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_4B39
+%PCI\VEN_8086&DEV_4B3ADesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_4B3A
+%PCI\VEN_8086&DEV_4B3BDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_4B3B
+%PCI\VEN_8086&DEV_4B3CDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_4B3C
+%PCI\VEN_8086&DEV_4B3DDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_4B3D
+%PCI\VEN_8086&DEV_4B3EDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_4B3E
+%PCI\VEN_8086&DEV_4B4ADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B4A
+%PCI\VEN_8086&DEV_4B7FDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B7F
+%ACPI\INTC1021Desc%=Needs_NO_DRV,ACPI\INTC1021
+%ACPI\INTC1022Desc%=Needs_NO_DRV,ACPI\INTC1022
+%ACPI\INTC1032Desc%=Needs_NO_DRV,ACPI\INTC1032
+
+[INTEL.NTamd64]
+%PCI\VEN_8086&DEV_4B00Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_4B00
+%PCI\VEN_8086&DEV_4B01Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_4B01
+%PCI\VEN_8086&DEV_4B20Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B20
+%PCI\VEN_8086&DEV_4B21Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B21
+%PCI\VEN_8086&DEV_4B23Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B23
+%PCI\VEN_8086&DEV_4B24Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B24
+%PCI\VEN_8086&DEV_4B38Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_4B38
+%PCI\VEN_8086&DEV_4B39Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_4B39
+%PCI\VEN_8086&DEV_4B3ADesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_4B3A
+%PCI\VEN_8086&DEV_4B3BDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_4B3B
+%PCI\VEN_8086&DEV_4B3CDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_4B3C
+%PCI\VEN_8086&DEV_4B3DDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_4B3D
+%PCI\VEN_8086&DEV_4B3EDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_4B3E
+%PCI\VEN_8086&DEV_4B4ADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B4A
+%PCI\VEN_8086&DEV_4B7FDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B7F
+%ACPI\INTC1021Desc%=Needs_NO_DRV,ACPI\INTC1021
+%ACPI\INTC1022Desc%=Needs_NO_DRV,ACPI\INTC1022
+%ACPI\INTC1032Desc%=Needs_NO_DRV,ACPI\INTC1032
+
+[Needs_MSISADRV]
+Include=machine.inf
+Needs=MSISADRV
+
+[Needs_MSISADRV.Services]
+Include=machine.inf
+Needs=MSISADRV.Services
+
+[Needs_NO_DRV]
+Include=machine.inf
+Needs=NO_DRV
+
+[Needs_NO_DRV.Services]
+Include=machine.inf
+Needs=NO_DRV.Services
+
+[Needs_PCI_DRV]
+Include=machine.inf
+Needs=PCI_DRV
+
+[Needs_PCI_DRV.Services]
+Include=machine.inf
+Needs=PCI_DRV.Services
+
+[Needs_PCI_DRV.HW]
+Include=machine.inf
+Needs=PCI_DRV.HW
+
+[Strings]
+INTEL="INTEL"
+PCI\VEN_8086&DEV_4B00Desc="Intel(R) Enhanced Serial Peripheral Interface (eSPI) Controller - 4B00"
+PCI\VEN_8086&DEV_4B01Desc="Intel(R) Enhanced Serial Peripheral Interface (eSPI) Controller - 4B01"
+PCI\VEN_8086&DEV_4B20Desc="Intel(R) P2SB - 4B20"
+PCI\VEN_8086&DEV_4B21Desc="Intel(R) PMC - 4B21"
+PCI\VEN_8086&DEV_4B23Desc="Intel(R) SMBus Controller - 4B23"
+PCI\VEN_8086&DEV_4B24Desc="Intel(R) SPI (flash) Controller - 4B24"
+PCI\VEN_8086&DEV_4B38Desc="Intel(R) PCI Express Root Port #0 - 4B38"
+PCI\VEN_8086&DEV_4B39Desc="Intel(R) PCI Express Root Port #1 - 4B39"
+PCI\VEN_8086&DEV_4B3ADesc="Intel(R) PCI Express Root Port #2 - 4B3A"
+PCI\VEN_8086&DEV_4B3BDesc="Intel(R) PCI Express Root Port #3 - 4B3B"
+PCI\VEN_8086&DEV_4B3CDesc="Intel(R) PCI Express Root Port #4 - 4B3C"
+PCI\VEN_8086&DEV_4B3DDesc="Intel(R) PCI Express Root Port #5 - 4B3D"
+PCI\VEN_8086&DEV_4B3EDesc="Intel(R) PCI Express Root Port #6 - 4B3E"
+PCI\VEN_8086&DEV_4B4ADesc="Intel(R) Safety Island - 4B4A"
+PCI\VEN_8086&DEV_4B7FDesc="Intel(R) PMC SRAM - 4B7F"
+ACPI\INTC1021Desc="Intel(R) Timed GPIO Controller - 1021"
+ACPI\INTC1022Desc="Intel(R) Timed GPIO Controller - 1022"
+ACPI\INTC1032Desc="Intel(R) Platform TCC - 1032"
+
+
+
+
+; Copyright (c) 2003-2019 Intel Corporation
+; 
+; ********************************************************************************
+; Intel is making no claims of usability, efficacy or warranty.
+; ********************************************************************************
+; Information in this document is provided in connection with Intel products. No
+; license, express or implied, by estoppel or otherwise, to any intellectual
+; property rights is granted by this document. Intel assumes no liability
+; whatsoever, and Intel disclaims any express or implied warranty, relating to
+; sale and/or use of Intel products including liability or warranties relating to
+; fitness for a particular purpose, merchantability, or infringement of any
+; patent, copyright or other intellectual property right. Intel products are not
+; intended for use in medical, life saving, or life sustaining applications.
+; ********************************************************************************
+; Intel Corporation disclaims all warranties and liabilities for the use of this
+; document and the information contained herein, and assumes no responsibility for
+; any errors which may appear in this document, nor does Intel make a commitment
+; to update the information contained herein. Intel reserves the right to make
+; changes to this document at any time, without notice.
+; ********************************************************************************
+; ********************************************************************************
+; 
+; * Third-party brands and names are the property of their respective owners.

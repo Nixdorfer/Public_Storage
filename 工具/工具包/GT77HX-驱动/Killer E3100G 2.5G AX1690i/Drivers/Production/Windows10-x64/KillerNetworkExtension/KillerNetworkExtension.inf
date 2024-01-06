@@ -1,0 +1,194 @@
+;-------------------------------------------------
+[Version]
+Signature	= "$WINDOWS NT$"
+Provider = %IntelCorp%
+DriverVer = 11/28/2022,3.1422.1129.1
+Class = Extension
+ClassGuid = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
+ExtensionId = {5AFF9434-8CF0-4FBA-AA68-6669000CB34A}
+CatalogFile	= KillerNetworkExtension.cat
+
+[Manufacturer]
+%IntelCorp% = KillerNetworkExtension, NTAMD64
+
+[KillerNetworkExtension.NTAMD64]
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_1969&DEV_E091                     ;Killer E2200
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_1969&DEV_E0A1                     ;Killer E2400 
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_1969&DEV_E0B1                     ;Killer E2500
+
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_10EC&DEV_2502                     ;Killer E2500V2
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_10EC&DEV_2600                     ;Killer E2600
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_10EC&DEV_3000                     ;Killer E3000/E3100G
+%Killer_Network_Extension% = KillerNetwork_Install, USB\VID_1A56&PID_3100                     ;Killer E3100u
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_3100                     ;Killer E3100
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_3101                     ;Killer E3100X
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_3102                     ;Killer E3100X
+
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_168C&DEV_003E&SUBSYS_15251A56     ;Killer 1525
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_168C&DEV_003E&SUBSYS_14351A56     ;Killer 1435
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_168C&DEV_003E&SUBSYS_15351A56     ;Killer 1535
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_168C&DEV_003E&SUBSYS_143517AA     ;Killer 1435 - Lenovo
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_168C&DEV_003E&SUBSYS_15361A56     ;Killer 1535
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_168C&DEV_003E&SUBSYS_535A1A56     ;Killer 1535
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_168C&DEV_003E&SUBSYS_143A1A56     ;Killer 1435s
+
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_17CB&DEV_1101&SUBSYS_A5011A56&REV_00     ;Killer AX500
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_17CB&DEV_1101&SUBSYS_A5011A56&REV_01     ;Killer AX500
+
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_02F0&SUBSYS_15511A56     ;Killer 1550s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_02F0&SUBSYS_15521A56     ;Killer 1550i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_02F0&SUBSYS_16511A56     ;Killer 1650S
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_02F0&SUBSYS_16521A56     ;Killer 1650i
+
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_06F0&SUBSYS_15511A56     ;Killer 1550s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_06F0&SUBSYS_15521A56     ;Killer 1550i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_06F0&SUBSYS_16511A56     ;Killer 1650S
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_06F0&SUBSYS_16521A56     ;Killer 1650i
+
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_2526&SUBSYS_15501A56     ;Killer 1550
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_2526&SUBSYS_15511A56     ;Killer 1550s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_2526&SUBSYS_15521A56     ;Killer 1550i
+
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_2720&SUBSYS_15511A56     ;Killer 1550s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_2720&SUBSYS_15521A56     ;Killer 1550i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_2720&SUBSYS_16511A56     ;Killer 1650S
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_2720&SUBSYS_16521A56     ;Killer 1650i
+
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_2723&SUBSYS_16531A56     ;Killer 1650W
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_2723&SUBSYS_16541A56     ;Killer 1650X
+
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_2725&SUBSYS_16731A56     ;Killer 1675w
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_2725&SUBSYS_16741A56     ;Killer 1675x
+
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_2726&SUBSYS_15511A56     ;Killer 1550s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_2726&SUBSYS_15521A56     ;Killer 1550i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_2726&SUBSYS_16511A56     ;Killer 1650S
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_2726&SUBSYS_16521A56     ;Killer 1650i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_2726&SUBSYS_16731A56     ;Killer 1675w
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_2726&SUBSYS_16741A56     ;Killer 1675x
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_2726&SUBSYS_16911A56     ;Killer 1690s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_2726&SUBSYS_16921A56     ;Killer 1690i
+
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_272B&SUBSYS_16511A56     ;Killer 1650s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_272B&SUBSYS_16521A56     ;Killer 1650i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_272B&SUBSYS_16711A56     ;Killer 1675s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_272B&SUBSYS_16911A56     ;Killer 1690s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_272B&SUBSYS_16921A56     ;Killer 1690i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_272B&SUBSYS_17711A56     ;Killer 1775s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_272B&SUBSYS_17721A56     ;Killer 1775i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_272B&SUBSYS_17731A56     ;Killer 1775w
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_272B&SUBSYS_17741A56     ;Killer 1775x
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_272B&SUBSYS_17911A56     ;Killer 1790s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_272B&SUBSYS_17921A56     ;Killer 1790i
+
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_30DC&SUBSYS_15511A56     ;Killer 1550s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_30DC&SUBSYS_15521A56     ;Killer 1550i
+
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_31DC&SUBSYS_15511A56     ;Killer 1550s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_31DC&SUBSYS_15521A56     ;Killer 1550i
+
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_34F0&SUBSYS_15511A56     ;Killer 1550s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_34F0&SUBSYS_15521A56     ;Killer 1550i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_34F0&SUBSYS_16511A56     ;Killer 1650S
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_34F0&SUBSYS_16521A56     ;Killer 1650i
+
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_3DF0&SUBSYS_15511A56     ;Killer 1550s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_3DF0&SUBSYS_15521A56     ;Killer 1550i
+
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_43F0&SUBSYS_15511A56     ;Killer 1550s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_43F0&SUBSYS_15521A56     ;Killer 1550i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_43F0&SUBSYS_16511A56     ;Killer 1650S
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_43F0&SUBSYS_16521A56     ;Killer 1650i
+
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_51F0&SUBSYS_15511A56     ;Killer 1550s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_51F0&SUBSYS_15521A56     ;Killer 1550i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_51F0&SUBSYS_16511A56     ;Killer 1650s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_51F0&SUBSYS_16521A56     ;Killer 1650i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_51F0&SUBSYS_16711A56     ;Killer 1675s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_51F0&SUBSYS_16721A56     ;Killer 1675i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_51F0&SUBSYS_16911A56     ;Killer 1690s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_51F0&SUBSYS_16921A56     ;Killer 1690i
+
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_51F1&SUBSYS_15511A56     ;Killer 1550s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_51F1&SUBSYS_15521A56     ;Killer 1550i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_51F1&SUBSYS_16511A56     ;Killer 1650s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_51F1&SUBSYS_16521A56     ;Killer 1650i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_51F1&SUBSYS_16711A56     ;Killer 1675s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_51F1&SUBSYS_16721A56     ;Killer 1675i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_51F1&SUBSYS_16911A56     ;Killer 1690s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_51F1&SUBSYS_16921A56     ;Killer 1690i
+
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_54F0&SUBSYS_15511A56     ;Killer 1550s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_54F0&SUBSYS_15521A56     ;Killer 1550i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_54F0&SUBSYS_16511A56     ;Killer 1650s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_54F0&SUBSYS_16521A56     ;Killer 1650i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_54F0&SUBSYS_16711A56     ;Killer 1675s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_54F0&SUBSYS_16721A56     ;Killer 1675i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_54F0&SUBSYS_16911A56     ;Killer 1690s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_54F0&SUBSYS_16921A56     ;Killer 1690i
+
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_7A70&SUBSYS_15511A56     ;Killer 1550s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_7A70&SUBSYS_15521A56     ;Killer 1550i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_7A70&SUBSYS_16511A56     ;Killer 1650s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_7A70&SUBSYS_16521A56     ;Killer 1650i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_7A70&SUBSYS_16711A56     ;Killer 1675s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_7A70&SUBSYS_16721A56     ;Killer 1675i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_7A70&SUBSYS_16911A56     ;Killer 1690s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_7A70&SUBSYS_16921A56     ;Killer 1690i
+
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_7AF0&SUBSYS_15511A56     ;Killer 1550s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_7AF0&SUBSYS_15521A56     ;Killer 1550i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_7AF0&SUBSYS_16511A56     ;Killer 1650S
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_7AF0&SUBSYS_16521A56     ;Killer 1650i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_7AF0&SUBSYS_16711A56     ;Killer 1675s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_7AF0&SUBSYS_16721A56     ;Killer 1675i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_7AF0&SUBSYS_16911A56     ;Killer 1690s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_7AF0&SUBSYS_16921A56     ;Killer 1690i
+
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_7E40&SUBSYS_16511A56     ;Killer 1650S
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_7E40&SUBSYS_16521A56     ;Killer 1650i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_7E40&SUBSYS_16711A56     ;Killer 1675s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_7E40&SUBSYS_16721A56     ;Killer 1675i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_7E40&SUBSYS_16911A56     ;Killer 1690s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_7E40&SUBSYS_16921A56     ;Killer 1690i
+
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_7F70&SUBSYS_16511A56     ;Killer 1650s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_7F70&SUBSYS_16521A56     ;Killer 1650i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_7F70&SUBSYS_16711A56     ;Killer 1675s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_7F70&SUBSYS_16721A56     ;Killer 1675i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_7F70&SUBSYS_16911A56     ;Killer 1690s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_7F70&SUBSYS_16921A56     ;Killer 1690i
+
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_9DF0&SUBSYS_15511A56     ;Killer 1550s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_9DF0&SUBSYS_15521A56     ;Killer 1550i
+
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_A0F0&SUBSYS_15511A56     ;Killer 1550s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_A0F0&SUBSYS_15521A56     ;Killer 1550i
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_A0F0&SUBSYS_16511A56     ;Killer 1650S
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_A0F0&SUBSYS_16521A56     ;Killer 1650i
+
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_A370&SUBSYS_15511A56     ;Killer 1550s
+%Killer_Network_Extension% = KillerNetwork_Install, PCI\VEN_8086&DEV_A370&SUBSYS_15521A56     ;Killer 1550i
+
+[KillerNetwork_Install]
+
+[KillerNetwork_Install.Components]
+AddComponent = KillerSoftwareComponent,, KillerNetworkDevNode_Install
+
+[KillerNetworkDevNode_Install]
+ComponentIds = VID_1A56&PID_1000&SID_0004 ; Matches with SWC\VID_1A56&PID_1000&SID_0004, Configuration 4, MSI
+
+
+[SourceDisksNames]
+
+
+[SourceDisksFiles]
+
+
+[DestinationDirs]
+
+; User visible strings
+;-------------------------------------------------
+[Strings]
+Killer_Network_Extension = "Killer Networking Software"
+IntelCorp = "Intel Corporation"

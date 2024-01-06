@@ -1,0 +1,116 @@
+; ************************************************************
+; ************************************************************
+; **  Filename: GeminilakeSystemLPSS.inf                    **
+; **  Abstract: Assigns the null driver to devices          **
+; **            for yellow-bang removal and                 **
+; **            brands Intel(R) devices                     ** 
+; ************************************************************
+; ************************************************************
+
+[Version]
+Signature=$WINDOWS NT$
+Class=System
+ClassGUID={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%INTEL%
+CatalogFile=Geminilake.cat
+DriverVer=07/18/1968, 10.1.13.3
+
+[SourceDisksNames]
+
+[SourceDisksFiles]
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%INTEL%=INTEL,NTx86,NTamd64
+
+[INTEL.NTx86]
+%ACPI\INT3196Desc%=Needs_NO_DRV,ACPI\INT3196
+%PCI\VEN_8086&DEV_31ACDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31AC
+%PCI\VEN_8086&DEV_31AEDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31AE
+%PCI\VEN_8086&DEV_31B0Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31B0
+%PCI\VEN_8086&DEV_31B2Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31B2
+%PCI\VEN_8086&DEV_31B4Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31B4
+%PCI\VEN_8086&DEV_31B6Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31B6
+%PCI\VEN_8086&DEV_31B8Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31B8
+%PCI\VEN_8086&DEV_31BADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31BA
+%PCI\VEN_8086&DEV_31BCDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31BC
+%PCI\VEN_8086&DEV_31BEDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31BE
+%PCI\VEN_8086&DEV_31C0Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31C0
+%PCI\VEN_8086&DEV_31C2Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31C2
+%PCI\VEN_8086&DEV_31C4Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31C4
+%PCI\VEN_8086&DEV_31C6Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31C6
+%PCI\VEN_8086&DEV_31EEDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31EE
+
+[INTEL.NTamd64]
+%ACPI\INT3196Desc%=Needs_NO_DRV,ACPI\INT3196
+%PCI\VEN_8086&DEV_31ACDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31AC
+%PCI\VEN_8086&DEV_31AEDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31AE
+%PCI\VEN_8086&DEV_31B0Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31B0
+%PCI\VEN_8086&DEV_31B2Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31B2
+%PCI\VEN_8086&DEV_31B4Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31B4
+%PCI\VEN_8086&DEV_31B6Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31B6
+%PCI\VEN_8086&DEV_31B8Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31B8
+%PCI\VEN_8086&DEV_31BADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31BA
+%PCI\VEN_8086&DEV_31BCDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31BC
+%PCI\VEN_8086&DEV_31BEDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31BE
+%PCI\VEN_8086&DEV_31C0Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31C0
+%PCI\VEN_8086&DEV_31C2Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31C2
+%PCI\VEN_8086&DEV_31C4Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31C4
+%PCI\VEN_8086&DEV_31C6Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31C6
+%PCI\VEN_8086&DEV_31EEDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31EE
+
+[Needs_NO_DRV]
+Include=machine.inf
+Needs=NO_DRV
+
+[Needs_NO_DRV.Services]
+Include=machine.inf
+Needs=NO_DRV.Services
+
+[Strings]
+INTEL="INTEL"
+ACPI\INT3196Desc="Intel(R) Celeron(R)/Pentium(R) Silver Processor SPI - 3196"
+PCI\VEN_8086&DEV_31ACDesc="Intel(R) Celeron(R)/Pentium(R) Silver Processor I2C 0 - 31AC"
+PCI\VEN_8086&DEV_31AEDesc="Intel(R) Celeron(R)/Pentium(R) Silver Processor I2C 1 - 31AE"
+PCI\VEN_8086&DEV_31B0Desc="Intel(R) Celeron(R)/Pentium(R) Silver Processor I2C 2 - 31B0"
+PCI\VEN_8086&DEV_31B2Desc="Intel(R) Celeron(R)/Pentium(R) Silver Processor I2C 3 - 31B2"
+PCI\VEN_8086&DEV_31B4Desc="Intel(R) Celeron(R)/Pentium(R) Silver Processor I2C 4 - 31B4"
+PCI\VEN_8086&DEV_31B6Desc="Intel(R) Celeron(R)/Pentium(R) Silver Processor I2C 5 - 31B6"
+PCI\VEN_8086&DEV_31B8Desc="Intel(R) Celeron(R)/Pentium(R) Silver Processor I2C 6 - 31B8"
+PCI\VEN_8086&DEV_31BADesc="Intel(R) Celeron(R)/Pentium(R) Silver Processor I2C 7 - 31BA"
+PCI\VEN_8086&DEV_31BCDesc="Intel(R) Celeron(R)/Pentium(R) Silver Processor UART 0 - 31BC"
+PCI\VEN_8086&DEV_31BEDesc="Intel(R) Celeron(R)/Pentium(R) Silver Processor UART 1 - 31BE"
+PCI\VEN_8086&DEV_31C0Desc="Intel(R) Celeron(R)/Pentium(R) Silver Processor UART 2 - 31C0"
+PCI\VEN_8086&DEV_31C2Desc="Intel(R) Celeron(R)/Pentium(R) Silver Processor SPI 0 - 31C2"
+PCI\VEN_8086&DEV_31C4Desc="Intel(R) Celeron(R)/Pentium(R) Silver Processor SPI 1 - 31C4"
+PCI\VEN_8086&DEV_31C6Desc="Intel(R) Celeron(R)/Pentium(R) Silver Processor SPI 2 - 31C6"
+PCI\VEN_8086&DEV_31EEDesc="Intel(R) Celeron(R)/Pentium(R) Silver Processor UART 3 - 31EE"
+
+
+
+
+; Copyright (c) 2003-2017 Intel Corporation
+; 
+; ********************************************************************************
+; Intel is making no claims of usability, efficacy or warranty.
+; ********************************************************************************
+; Information in this document is provided in connection with Intel products. No
+; license, express or implied, by estoppel or otherwise, to any intellectual
+; property rights is granted by this document. Intel assumes no liability
+; whatsoever, and Intel disclaims any express or implied warranty, relating to
+; sale and/or use of Intel products including liability or warranties relating to
+; fitness for a particular purpose, merchantability, or infringement of any
+; patent, copyright or other intellectual property right. Intel products are not
+; intended for use in medical, life saving, or life sustaining applications.
+; ********************************************************************************
+; Intel Corporation disclaims all warranties and liabilities for the use of this
+; document and the information contained herein, and assumes no responsibility for
+; any errors which may appear in this document, nor does Intel make a commitment
+; to update the information contained herein. Intel reserves the right to make
+; changes to this document at any time, without notice.
+; ********************************************************************************
+; ********************************************************************************
+; 
+; * Third-party brands and names are the property of their respective owners.

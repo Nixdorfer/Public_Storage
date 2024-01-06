@@ -1,0 +1,165 @@
+; ************************************************************
+; ************************************************************
+; **  Filename: TigerlakeSystem.inf                         **
+; **  Abstract: Assigns the null driver to devices          **
+; **            for yellow-bang removal and                 **
+; **            brands Intel(R) devices                     ** 
+; ************************************************************
+; ************************************************************
+
+[Version]
+Signature=$WINDOWS NT$
+Class=System
+ClassGUID={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%INTEL%
+CatalogFile=Tigerlake.cat
+DriverVer=07/18/1968, 10.1.43.5
+PnpLockDown=1
+
+[SourceDisksNames]
+
+[SourceDisksFiles]
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%INTEL%=INTEL,NTx86,NTamd64
+
+[INTEL.NTx86]
+%PCI\VEN_8086&DEV_9A02Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9A02
+%PCI\VEN_8086&DEV_9A04Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9A04
+%PCI\VEN_8086&DEV_9A12Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9A12
+%PCI\VEN_8086&DEV_9A14Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9A14
+%PCI\VEN_8086&DEV_9A01Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9A01
+%PCI\VEN_8086&DEV_9A05Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9A05
+%PCI\VEN_8086&DEV_9A07Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9A07
+%PCI\VEN_8086&DEV_9A03Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9A03
+%PCI\VEN_8086&DEV_9A09Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9A09
+%PCI\VEN_8086&DEV_9A0FDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9A0F
+%PCI\VEN_8086&DEV_9A35Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9A35
+%PCI\VEN_8086&DEV_9a23Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9a23
+%PCI\VEN_8086&DEV_9a2BDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9a2B
+%PCI\VEN_8086&DEV_9a37Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9a37
+%PCI\VEN_8086&DEV_9a25Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9a25
+%PCI\VEN_8086&DEV_9a2DDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9a2D
+%PCI\VEN_8086&DEV_9a3BDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9a3B
+%PCI\VEN_8086&DEV_9a27Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9a27
+%PCI\VEN_8086&DEV_9a2fDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9a2f
+%PCI\VEN_8086&DEV_9a3DDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9a3D
+%PCI\VEN_8086&DEV_9a29Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9a29
+%PCI\VEN_8086&DEV_9a31Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9a31
+%PCI\VEN_8086&DEV_9a3FDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9a3F
+%PCI\VEN_8086&DEV_9A11Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9A11
+%PCI\VEN_8086&DEV_9a33Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9a33
+%PCI\VEN_8086&DEV_9a0DDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9a0D
+%ACPI\INTC1023Desc%=Needs_NO_DRV,ACPI\INTC1023
+%ACPI\INTC1024Desc%=Needs_NO_DRV,ACPI\INTC1024
+
+[INTEL.NTamd64]
+%PCI\VEN_8086&DEV_9A02Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9A02
+%PCI\VEN_8086&DEV_9A04Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9A04
+%PCI\VEN_8086&DEV_9A12Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9A12
+%PCI\VEN_8086&DEV_9A14Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9A14
+%PCI\VEN_8086&DEV_9A01Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9A01
+%PCI\VEN_8086&DEV_9A05Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9A05
+%PCI\VEN_8086&DEV_9A07Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9A07
+%PCI\VEN_8086&DEV_9A03Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9A03
+%PCI\VEN_8086&DEV_9A09Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9A09
+%PCI\VEN_8086&DEV_9A0FDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9A0F
+%PCI\VEN_8086&DEV_9A35Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9A35
+%PCI\VEN_8086&DEV_9a23Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9a23
+%PCI\VEN_8086&DEV_9a2BDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9a2B
+%PCI\VEN_8086&DEV_9a37Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9a37
+%PCI\VEN_8086&DEV_9a25Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9a25
+%PCI\VEN_8086&DEV_9a2DDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9a2D
+%PCI\VEN_8086&DEV_9a3BDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9a3B
+%PCI\VEN_8086&DEV_9a27Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9a27
+%PCI\VEN_8086&DEV_9a2fDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9a2f
+%PCI\VEN_8086&DEV_9a3DDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9a3D
+%PCI\VEN_8086&DEV_9a29Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9a29
+%PCI\VEN_8086&DEV_9a31Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9a31
+%PCI\VEN_8086&DEV_9a3FDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9a3F
+%PCI\VEN_8086&DEV_9A11Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9A11
+%PCI\VEN_8086&DEV_9a33Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9a33
+%PCI\VEN_8086&DEV_9a0DDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9a0D
+%ACPI\INTC1023Desc%=Needs_NO_DRV,ACPI\INTC1023
+%ACPI\INTC1024Desc%=Needs_NO_DRV,ACPI\INTC1024
+
+[Needs_NO_DRV]
+Include=machine.inf
+Needs=NO_DRV
+
+[Needs_NO_DRV.Services]
+Include=machine.inf
+Needs=NO_DRV.Services
+
+[Needs_PCI_DRV]
+Include=machine.inf
+Needs=PCI_DRV
+
+[Needs_PCI_DRV.Services]
+Include=machine.inf
+Needs=PCI_DRV.Services
+
+[Needs_PCI_DRV.HW]
+Include=machine.inf
+Needs=PCI_DRV.HW
+
+[Strings]
+INTEL="INTEL"
+PCI\VEN_8086&DEV_9A02Desc="Intel(R) Host Bridge/DRAM Registers - 9A02"
+PCI\VEN_8086&DEV_9A04Desc="Intel(R) Host Bridge/DRAM Registers - 9A04"
+PCI\VEN_8086&DEV_9A12Desc="Intel(R) Host Bridge/DRAM Registers - 9A12"
+PCI\VEN_8086&DEV_9A14Desc="Intel(R) Host Bridge/DRAM Registers - 9A14"
+PCI\VEN_8086&DEV_9A01Desc="Intel(R) PEG10 - 9A01"
+PCI\VEN_8086&DEV_9A05Desc="Intel(R) PEG11 - 9A05"
+PCI\VEN_8086&DEV_9A07Desc="Intel(R) PEG12 - 9A07"
+PCI\VEN_8086&DEV_9A03Desc="Intel(R) Camarillo - 9A03"
+PCI\VEN_8086&DEV_9A09Desc="Intel(R) PEG60 - 9A09"
+PCI\VEN_8086&DEV_9A0FDesc="Intel(R) PEG60 - 9A0F"
+PCI\VEN_8086&DEV_9A35Desc="Intel(R) PEG60 - 9A35"
+PCI\VEN_8086&DEV_9a23Desc="Intel(R) TypeC PCIE - 9A23"
+PCI\VEN_8086&DEV_9a2BDesc="Intel(R) TypeC PCIE - 9A2B"
+PCI\VEN_8086&DEV_9a37Desc="Intel(R) TypeC PCIE - 9A37"
+PCI\VEN_8086&DEV_9a25Desc="Intel(R) TypeC PCIE - 9A25"
+PCI\VEN_8086&DEV_9a2DDesc="Intel(R) TypeC PCIE - 9A2D"
+PCI\VEN_8086&DEV_9a3BDesc="Intel(R) TypeC PCIE - 9A3B"
+PCI\VEN_8086&DEV_9a27Desc="Intel(R) TypeC PCIE - 9A27"
+PCI\VEN_8086&DEV_9a2fDesc="Intel(R) TypeC PCIE - 9A2F"
+PCI\VEN_8086&DEV_9a3DDesc="Intel(R) TypeC PCIE - 9A3D"
+PCI\VEN_8086&DEV_9a29Desc="Intel(R) TypeC PCIE - 9A29"
+PCI\VEN_8086&DEV_9a31Desc="Intel(R) TypeC PCIE - 9A31"
+PCI\VEN_8086&DEV_9a3FDesc="Intel(R) TypeC PCIE - 9A3F"
+PCI\VEN_8086&DEV_9A11Desc="Intel(R) GNA - 9A11"
+PCI\VEN_8086&DEV_9a33Desc="Intel(R) NPK - 9A33"
+PCI\VEN_8086&DEV_9a0DDesc="Intel(R) Telemetry Aggregator - 9A0D"
+ACPI\INTC1023Desc="Intel(R) Time-Aware GPIO device - 1023"
+ACPI\INTC1024Desc="Intel(R) Time-Aware GPIO device - 1024"
+
+
+
+
+; Copyright (c) 2003-2019 Intel Corporation
+; 
+; ********************************************************************************
+; Intel is making no claims of usability, efficacy or warranty.
+; ********************************************************************************
+; Information in this document is provided in connection with Intel products. No
+; license, express or implied, by estoppel or otherwise, to any intellectual
+; property rights is granted by this document. Intel assumes no liability
+; whatsoever, and Intel disclaims any express or implied warranty, relating to
+; sale and/or use of Intel products including liability or warranties relating to
+; fitness for a particular purpose, merchantability, or infringement of any
+; patent, copyright or other intellectual property right. Intel products are not
+; intended for use in medical, life saving, or life sustaining applications.
+; ********************************************************************************
+; Intel Corporation disclaims all warranties and liabilities for the use of this
+; document and the information contained herein, and assumes no responsibility for
+; any errors which may appear in this document, nor does Intel make a commitment
+; to update the information contained herein. Intel reserves the right to make
+; changes to this document at any time, without notice.
+; ********************************************************************************
+; ********************************************************************************
+; 
+; * Third-party brands and names are the property of their respective owners.

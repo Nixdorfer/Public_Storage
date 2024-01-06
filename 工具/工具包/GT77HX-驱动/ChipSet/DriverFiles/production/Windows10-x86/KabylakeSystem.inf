@@ -1,0 +1,117 @@
+; ************************************************************
+; ************************************************************
+; **  Filename: KabylakeSystem.inf                          **
+; **  Abstract: Assigns the null driver to devices          **
+; **            for yellow-bang removal and                 **
+; **            brands Intel(R) devices                     ** 
+; ************************************************************
+; ************************************************************
+
+[Version]
+Signature=$WINDOWS NT$
+Class=System
+ClassGUID={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%INTEL%
+CatalogFile=Kabylake.cat
+DriverVer=07/18/1968, 10.1.10.5
+PnpLockDown=1
+
+[SourceDisksNames]
+
+[SourceDisksFiles]
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%INTEL%=INTEL,NTx86,NTamd64
+
+[INTEL.NTx86]
+%PCI\VEN_8086&DEV_5900Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_5900
+%PCI\VEN_8086&DEV_5901Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_5901
+%PCI\VEN_8086&DEV_5904Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_5904
+%PCI\VEN_8086&DEV_5905Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_5905
+%PCI\VEN_8086&DEV_5909Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_5909
+%PCI\VEN_8086&DEV_590CDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_590C
+%PCI\VEN_8086&DEV_590FDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_590F
+%PCI\VEN_8086&DEV_5910Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_5910
+%PCI\VEN_8086&DEV_5914Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_5914
+%PCI\VEN_8086&DEV_5918Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_5918
+%PCI\VEN_8086&DEV_591FDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_591F
+%PCI\VEN_8086&DEV_590DDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_590D
+
+[INTEL.NTamd64]
+%PCI\VEN_8086&DEV_5900Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_5900
+%PCI\VEN_8086&DEV_5901Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_5901
+%PCI\VEN_8086&DEV_5904Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_5904
+%PCI\VEN_8086&DEV_5905Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_5905
+%PCI\VEN_8086&DEV_5909Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_5909
+%PCI\VEN_8086&DEV_590CDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_590C
+%PCI\VEN_8086&DEV_590FDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_590F
+%PCI\VEN_8086&DEV_5910Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_5910
+%PCI\VEN_8086&DEV_5914Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_5914
+%PCI\VEN_8086&DEV_5918Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_5918
+%PCI\VEN_8086&DEV_591FDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_591F
+%PCI\VEN_8086&DEV_590DDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_590D
+
+[Needs_NO_DRV]
+Include=machine.inf
+Needs=NO_DRV
+
+[Needs_NO_DRV.Services]
+Include=machine.inf
+Needs=NO_DRV.Services
+
+[Needs_PCI_DRV]
+Include=machine.inf
+Needs=PCI_DRV
+
+[Needs_PCI_DRV.Services]
+Include=machine.inf
+Needs=PCI_DRV.Services
+
+[Needs_PCI_DRV.HW]
+Include=machine.inf
+Needs=PCI_DRV.HW
+
+[Strings]
+INTEL="INTEL"
+PCI\VEN_8086&DEV_5900Desc="Intel(R) Host Bridge/DRAM Registers - 5900"
+PCI\VEN_8086&DEV_5901Desc="Intel(R) PCIe Controller (x16) - 5901"
+PCI\VEN_8086&DEV_5904Desc="Intel(R) Host Bridge/DRAM Registers - 5904"
+PCI\VEN_8086&DEV_5905Desc="Intel(R) PCIe Controller (x8) - 5905"
+PCI\VEN_8086&DEV_5909Desc="Intel(R) PCIe Controller (x4) - 5909"
+PCI\VEN_8086&DEV_590CDesc="Intel(R) Host Bridge/DRAM Registers - 590C"
+PCI\VEN_8086&DEV_590FDesc="Intel(R) Host Bridge/DRAM Registers - 590F"
+PCI\VEN_8086&DEV_5910Desc="Intel(R) Host Bridge/DRAM Registers - 5910"
+PCI\VEN_8086&DEV_5914Desc="Intel(R) Host Bridge/DRAM Registers - 5914"
+PCI\VEN_8086&DEV_5918Desc="Intel(R) Host Bridge/DRAM Registers - 5918"
+PCI\VEN_8086&DEV_591FDesc="Intel(R) Host Bridge/DRAM Registers - 591F"
+PCI\VEN_8086&DEV_590DDesc="Intel(R) Host Bridge/DRAM Registers - 590D"
+
+
+
+
+; Copyright (c) 2003-2019 Intel Corporation
+; 
+; ********************************************************************************
+; Intel is making no claims of usability, efficacy or warranty.
+; ********************************************************************************
+; Information in this document is provided in connection with Intel products. No
+; license, express or implied, by estoppel or otherwise, to any intellectual
+; property rights is granted by this document. Intel assumes no liability
+; whatsoever, and Intel disclaims any express or implied warranty, relating to
+; sale and/or use of Intel products including liability or warranties relating to
+; fitness for a particular purpose, merchantability, or infringement of any
+; patent, copyright or other intellectual property right. Intel products are not
+; intended for use in medical, life saving, or life sustaining applications.
+; ********************************************************************************
+; Intel Corporation disclaims all warranties and liabilities for the use of this
+; document and the information contained herein, and assumes no responsibility for
+; any errors which may appear in this document, nor does Intel make a commitment
+; to update the information contained herein. Intel reserves the right to make
+; changes to this document at any time, without notice.
+; ********************************************************************************
+; ********************************************************************************
+; 
+; * Third-party brands and names are the property of their respective owners.

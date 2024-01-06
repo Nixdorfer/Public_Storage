@@ -1,0 +1,167 @@
+; ************************************************************
+; ************************************************************
+; **  Filename: SunrisePoint-LPSystem.inf                   **
+; **  Abstract: Assigns the null driver to devices          **
+; **            for yellow-bang removal and                 **
+; **            brands Intel(R) devices                     ** 
+; ************************************************************
+; ************************************************************
+
+[Version]
+Signature=$WINDOWS NT$
+Class=System
+ClassGUID={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%INTEL%
+CatalogFile=SunrisePoint-LP.cat
+DriverVer=07/18/1968, 10.1.5.3
+PnpLockDown=1
+
+[SourceDisksNames]
+
+[SourceDisksFiles]
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%INTEL%=INTEL,NTx86,NTamd64
+
+[INTEL.NTx86]
+%PCI\VEN_8086&DEV_9D10Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9D10
+%PCI\VEN_8086&DEV_9D11Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9D11
+%PCI\VEN_8086&DEV_9D12Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9D12
+%PCI\VEN_8086&DEV_9D13Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9D13
+%PCI\VEN_8086&DEV_9D14Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9D14
+%PCI\VEN_8086&DEV_9D15Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9D15
+%PCI\VEN_8086&DEV_9D16Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9D16
+%PCI\VEN_8086&DEV_9D17Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9D17
+%PCI\VEN_8086&DEV_9D18Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9D18
+%PCI\VEN_8086&DEV_9D19Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9D19
+%PCI\VEN_8086&DEV_9D1ADesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9D1A
+%PCI\VEN_8086&DEV_9D1BDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9D1B
+%PCI\VEN_8086&DEV_9D21Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9D21
+%PCI\VEN_8086&DEV_9D23Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9D23
+%PCI\VEN_8086&DEV_9D24Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9D24
+%PCI\VEN_8086&DEV_9D41Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_9D41
+%PCI\VEN_8086&DEV_9D43Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_9D43
+%PCI\VEN_8086&DEV_9D46Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_9D46
+%PCI\VEN_8086&DEV_9D48Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_9D48
+%PCI\VEN_8086&DEV_9D4BDesc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_9D4B
+%PCI\VEN_8086&DEV_9D4EDesc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_9D4E
+%PCI\VEN_8086&DEV_9D50Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_9D50
+%PCI\VEN_8086&DEV_9D51Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_9D51
+%PCI\VEN_8086&DEV_9D53Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_9D53
+%PCI\VEN_8086&DEV_9D56Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_9D56
+%PCI\VEN_8086&DEV_9D58Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_9D58
+
+[INTEL.NTamd64]
+%PCI\VEN_8086&DEV_9D10Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9D10
+%PCI\VEN_8086&DEV_9D11Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9D11
+%PCI\VEN_8086&DEV_9D12Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9D12
+%PCI\VEN_8086&DEV_9D13Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9D13
+%PCI\VEN_8086&DEV_9D14Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9D14
+%PCI\VEN_8086&DEV_9D15Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9D15
+%PCI\VEN_8086&DEV_9D16Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9D16
+%PCI\VEN_8086&DEV_9D17Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9D17
+%PCI\VEN_8086&DEV_9D18Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9D18
+%PCI\VEN_8086&DEV_9D19Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9D19
+%PCI\VEN_8086&DEV_9D1ADesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9D1A
+%PCI\VEN_8086&DEV_9D1BDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_9D1B
+%PCI\VEN_8086&DEV_9D21Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9D21
+%PCI\VEN_8086&DEV_9D23Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9D23
+%PCI\VEN_8086&DEV_9D24Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_9D24
+%PCI\VEN_8086&DEV_9D41Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_9D41
+%PCI\VEN_8086&DEV_9D43Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_9D43
+%PCI\VEN_8086&DEV_9D46Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_9D46
+%PCI\VEN_8086&DEV_9D48Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_9D48
+%PCI\VEN_8086&DEV_9D4BDesc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_9D4B
+%PCI\VEN_8086&DEV_9D4EDesc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_9D4E
+%PCI\VEN_8086&DEV_9D50Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_9D50
+%PCI\VEN_8086&DEV_9D51Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_9D51
+%PCI\VEN_8086&DEV_9D53Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_9D53
+%PCI\VEN_8086&DEV_9D56Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_9D56
+%PCI\VEN_8086&DEV_9D58Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_9D58
+
+[Needs_PCI_DRV]
+Include=machine.inf
+Needs=PCI_DRV
+
+[Needs_PCI_DRV.Services]
+Include=machine.inf
+Needs=PCI_DRV.Services
+
+[Needs_PCI_DRV.HW]
+Include=machine.inf
+Needs=PCI_DRV.HW
+
+[Needs_NO_DRV]
+Include=machine.inf
+Needs=NO_DRV
+
+[Needs_NO_DRV.Services]
+Include=machine.inf
+Needs=NO_DRV.Services
+
+[Needs_ISAPNP_DRV]
+Include=machine.inf
+Needs=ISAPNP_DRV
+
+[Needs_ISAPNP_DRV.Services]
+Include=machine.inf
+Needs=ISAPNP_DRV.Services
+
+[Strings]
+INTEL="INTEL"
+PCI\VEN_8086&DEV_9D10Desc="Mobile Intel(R) Processor Family I/O PCI Express Root Port #1 - 9D10"
+PCI\VEN_8086&DEV_9D11Desc="Mobile Intel(R) Processor Family I/O PCI Express Root Port #2 - 9D11"
+PCI\VEN_8086&DEV_9D12Desc="Mobile Intel(R) Processor Family I/O PCI Express Root Port #3 - 9D12"
+PCI\VEN_8086&DEV_9D13Desc="Mobile Intel(R) Processor Family I/O PCI Express Root Port #4 - 9D13"
+PCI\VEN_8086&DEV_9D14Desc="Mobile Intel(R) Processor Family I/O PCI Express Root Port #5 - 9D14"
+PCI\VEN_8086&DEV_9D15Desc="Mobile Intel(R) Processor Family I/O PCI Express Root Port #6 - 9D15"
+PCI\VEN_8086&DEV_9D16Desc="Mobile Intel(R) Processor Family I/O PCI Express Root Port #7 - 9D16"
+PCI\VEN_8086&DEV_9D17Desc="Mobile Intel(R) Processor Family I/O PCI Express Root Port #8 - 9D17"
+PCI\VEN_8086&DEV_9D18Desc="Mobile Intel(R) Processor Family I/O PCI Express Root Port #9 - 9D18"
+PCI\VEN_8086&DEV_9D19Desc="Mobile Intel(R) Processor Family I/O PCI Express Root Port #10 - 9D19"
+PCI\VEN_8086&DEV_9D1ADesc="Mobile Intel(R) Processor Family I/O PCI Express Root Port #11 - 9D1A"
+PCI\VEN_8086&DEV_9D1BDesc="Mobile Intel(R) Processor Family I/O PCI Express Root Port #12 - 9D1B"
+PCI\VEN_8086&DEV_9D21Desc="Mobile Intel(R) Processor Family I/O PMC - 9D21"
+PCI\VEN_8086&DEV_9D23Desc="Mobile Intel(R) Processor Family I/O SMBUS - 9D23"
+PCI\VEN_8086&DEV_9D24Desc="Mobile Intel(R) Processor Family I/O SPI Controller - 9D24"
+PCI\VEN_8086&DEV_9D41Desc="Mobile 7th Generation Intel(R) Processor Family I/O LPC Controller (Engineering Sample) - 9D41"
+PCI\VEN_8086&DEV_9D43Desc="Mobile 6th/7th Generation Intel(R) Processor Family I/O LPC Controller (U Baseline SKU) - 9D43"
+PCI\VEN_8086&DEV_9D46Desc="Mobile 6th/7th Generation Intel(R) Processor Family I/O LPC Controller (Y Premium SKU) - 9D46"
+PCI\VEN_8086&DEV_9D48Desc="Mobile 6th/7th Generation Intel(R) Processor Family I/O LPC Controller (U Premium SKU) - 9D48"
+PCI\VEN_8086&DEV_9D4BDesc="Mobile 7th Generation Intel(R) Processor Family I/O LPC Controller (Y with iHDCP2.2 Premium) - 9D4B"
+PCI\VEN_8086&DEV_9D4EDesc="Mobile 7th/8th Generation Intel(R) Processor Family I/O LPC Controller (U with iHDCP2.2 Premium) - 9D4E"
+PCI\VEN_8086&DEV_9D50Desc="Mobile 7th/8th Generation Intel(R) Processor Family I/O LPC Controller (U with iHDCP2.2 Base) - 9D50"
+PCI\VEN_8086&DEV_9D51Desc="Mobile 7th Generation Intel(R) Processor Family I/O LPC Controller (iHDCP2.2 Engineering Sample) - 9D51"
+PCI\VEN_8086&DEV_9D53Desc="Mobile 7th Generation Intel(R) Processor Family I/O LPC Controller (U Base) - 9D53"
+PCI\VEN_8086&DEV_9D56Desc="Mobile 7th Generation Intel(R) Processor Family I/O LPC Controller (Y Premium) - 9D56"
+PCI\VEN_8086&DEV_9D58Desc="Mobile 7th Generation Intel(R) Processor Family I/O LPC Controller (U Premium) - 9D58"
+
+
+
+
+; Copyright (c) 2003-2019 Intel Corporation
+; 
+; ********************************************************************************
+; Intel is making no claims of usability, efficacy or warranty.
+; ********************************************************************************
+; Information in this document is provided in connection with Intel products. No
+; license, express or implied, by estoppel or otherwise, to any intellectual
+; property rights is granted by this document. Intel assumes no liability
+; whatsoever, and Intel disclaims any express or implied warranty, relating to
+; sale and/or use of Intel products including liability or warranties relating to
+; fitness for a particular purpose, merchantability, or infringement of any
+; patent, copyright or other intellectual property right. Intel products are not
+; intended for use in medical, life saving, or life sustaining applications.
+; ********************************************************************************
+; Intel Corporation disclaims all warranties and liabilities for the use of this
+; document and the information contained herein, and assumes no responsibility for
+; any errors which may appear in this document, nor does Intel make a commitment
+; to update the information contained herein. Intel reserves the right to make
+; changes to this document at any time, without notice.
+; ********************************************************************************
+; ********************************************************************************
+; 
+; * Third-party brands and names are the property of their respective owners.

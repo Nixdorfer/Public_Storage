@@ -1,0 +1,141 @@
+; ************************************************************
+; ************************************************************
+; **  Filename: CoffeelakeSystem.inf                        **
+; **  Abstract: Assigns the null driver to devices          **
+; **            for yellow-bang removal and                 **
+; **            brands Intel(R) devices                     ** 
+; ************************************************************
+; ************************************************************
+
+[Version]
+Signature=$WINDOWS NT$
+Class=System
+ClassGUID={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%INTEL%
+CatalogFile=Coffeelake.cat
+DriverVer=07/18/1968, 10.1.14.8
+PnpLockDown=1
+
+[SourceDisksNames]
+
+[SourceDisksFiles]
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%INTEL%=INTEL,NTx86,NTamd64
+
+[INTEL.NTx86]
+%PCI\VEN_8086&DEV_3E0FDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3E0F
+%PCI\VEN_8086&DEV_3E10Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3E10
+%PCI\VEN_8086&DEV_3E18Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3E18
+%PCI\VEN_8086&DEV_3E1FDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3E1F
+%PCI\VEN_8086&DEV_3E34Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3E34
+%PCI\VEN_8086&DEV_3E81Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3E81
+%PCI\VEN_8086&DEV_3E85Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3E85
+%PCI\VEN_8086&DEV_3E89Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3E89
+%PCI\VEN_8086&DEV_3EC2Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3EC2
+%PCI\VEN_8086&DEV_3EC4Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3EC4
+%PCI\VEN_8086&DEV_3EC6Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3EC6
+%PCI\VEN_8086&DEV_3ECADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3ECA
+%PCI\VEN_8086&DEV_3ED0Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3ED0
+%PCI\VEN_8086&DEV_3E35Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3E35
+%PCI\VEN_8086&DEV_3E30Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3E30
+%PCI\VEN_8086&DEV_3eccDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3ecc
+%PCI\VEN_8086&DEV_3e20Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3e20
+%PCI\VEN_8086&DEV_3e31Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3e31
+%PCI\VEN_8086&DEV_3e32Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3e32
+%PCI\VEN_8086&DEV_3e33Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3e33
+
+[INTEL.NTamd64]
+%PCI\VEN_8086&DEV_3E0FDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3E0F
+%PCI\VEN_8086&DEV_3E10Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3E10
+%PCI\VEN_8086&DEV_3E18Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3E18
+%PCI\VEN_8086&DEV_3E1FDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3E1F
+%PCI\VEN_8086&DEV_3E34Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3E34
+%PCI\VEN_8086&DEV_3E81Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3E81
+%PCI\VEN_8086&DEV_3E85Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3E85
+%PCI\VEN_8086&DEV_3E89Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_3E89
+%PCI\VEN_8086&DEV_3EC2Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3EC2
+%PCI\VEN_8086&DEV_3EC4Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3EC4
+%PCI\VEN_8086&DEV_3EC6Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3EC6
+%PCI\VEN_8086&DEV_3ECADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3ECA
+%PCI\VEN_8086&DEV_3ED0Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3ED0
+%PCI\VEN_8086&DEV_3E35Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3E35
+%PCI\VEN_8086&DEV_3E30Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3E30
+%PCI\VEN_8086&DEV_3eccDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3ecc
+%PCI\VEN_8086&DEV_3e20Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3e20
+%PCI\VEN_8086&DEV_3e31Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3e31
+%PCI\VEN_8086&DEV_3e32Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3e32
+%PCI\VEN_8086&DEV_3e33Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3e33
+
+[Needs_NO_DRV]
+Include=machine.inf
+Needs=NO_DRV
+
+[Needs_NO_DRV.Services]
+Include=machine.inf
+Needs=NO_DRV.Services
+
+[Needs_PCI_DRV]
+Include=machine.inf
+Needs=PCI_DRV
+
+[Needs_PCI_DRV.Services]
+Include=machine.inf
+Needs=PCI_DRV.Services
+
+[Needs_PCI_DRV.HW]
+Include=machine.inf
+Needs=PCI_DRV.HW
+
+[Strings]
+INTEL="INTEL"
+PCI\VEN_8086&DEV_3E0FDesc="Intel(R) Host Bridge/DRAM Registers - 3E0F"
+PCI\VEN_8086&DEV_3E10Desc="Intel(R) Host Bridge/DRAM Registers - 3E10"
+PCI\VEN_8086&DEV_3E18Desc="Intel(R) Host Bridge/DRAM Registers - 3E18"
+PCI\VEN_8086&DEV_3E1FDesc="Intel(R) Host Bridge/DRAM Registers - 3E1F"
+PCI\VEN_8086&DEV_3E34Desc="Intel(R) Host Bridge/DRAM Registers - 3E34"
+PCI\VEN_8086&DEV_3E81Desc="Intel(R) PCIe Controller (x16) - 3E81"
+PCI\VEN_8086&DEV_3E85Desc="Intel(R) PCIe Controller (x8) - 3E85"
+PCI\VEN_8086&DEV_3E89Desc="Intel(R) PCIe Controller (x4) - 3E89"
+PCI\VEN_8086&DEV_3EC2Desc="Intel(R) Host Bridge/DRAM Registers - 3EC2"
+PCI\VEN_8086&DEV_3EC4Desc="Intel(R) Host Bridge/DRAM Registers - 3EC4"
+PCI\VEN_8086&DEV_3EC6Desc="Intel(R) Host Bridge/DRAM Registers - 3EC6"
+PCI\VEN_8086&DEV_3ECADesc="Intel(R) Host Bridge/DRAM Registers - 3ECA"
+PCI\VEN_8086&DEV_3ED0Desc="Intel(R) Host Bridge/DRAM Registers - 3ED0"
+PCI\VEN_8086&DEV_3E35Desc="Intel(R) Host Bridge/DRAM Registers - 3E35"
+PCI\VEN_8086&DEV_3E30Desc="Intel(R) Host Bridge/DRAM Registers - 3E30"
+PCI\VEN_8086&DEV_3eccDesc="Intel(R) Host Bridge/DRAM Registers - 3ECC"
+PCI\VEN_8086&DEV_3e20Desc="Intel(R) Host Bridge/DRAM Registers - 3E20"
+PCI\VEN_8086&DEV_3e31Desc="Intel(R) Host Bridge/DRAM Registers - 3E31"
+PCI\VEN_8086&DEV_3e32Desc="Intel(R) Host Bridge/DRAM Registers - 3E32"
+PCI\VEN_8086&DEV_3e33Desc="Intel(R) Host Bridge/DRAM Registers - 3E33"
+
+
+
+
+; Copyright (c) 2003-2019 Intel Corporation
+; 
+; ********************************************************************************
+; Intel is making no claims of usability, efficacy or warranty.
+; ********************************************************************************
+; Information in this document is provided in connection with Intel products. No
+; license, express or implied, by estoppel or otherwise, to any intellectual
+; property rights is granted by this document. Intel assumes no liability
+; whatsoever, and Intel disclaims any express or implied warranty, relating to
+; sale and/or use of Intel products including liability or warranties relating to
+; fitness for a particular purpose, merchantability, or infringement of any
+; patent, copyright or other intellectual property right. Intel products are not
+; intended for use in medical, life saving, or life sustaining applications.
+; ********************************************************************************
+; Intel Corporation disclaims all warranties and liabilities for the use of this
+; document and the information contained herein, and assumes no responsibility for
+; any errors which may appear in this document, nor does Intel make a commitment
+; to update the information contained herein. Intel reserves the right to make
+; changes to this document at any time, without notice.
+; ********************************************************************************
+; ********************************************************************************
+; 
+; * Third-party brands and names are the property of their respective owners.

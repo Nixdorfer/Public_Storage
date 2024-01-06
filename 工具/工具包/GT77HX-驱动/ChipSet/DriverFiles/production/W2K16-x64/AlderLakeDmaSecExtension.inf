@@ -1,0 +1,127 @@
+; ************************************************************
+; ************************************************************
+; **  Filename: AlderLakeDmaSecExtension.inf                **
+; **  Abstract: Adds devices in registry as AllowedBus      **
+; **            for BitLocker device encryption support     ** 
+; ************************************************************
+; ************************************************************
+
+[Version]
+Signature=$WINDOWS NT$
+Class=Extension
+ClassGUID={E2F84CE7-8EFA-411C-AA69-97454CA4CB57}
+Provider=%INTEL%
+CatalogFile=AlderLakeDmaSec.cat
+DriverVer=07/18/1968, 10.1.45.9
+PnpLockDown=1
+ExtensionId={aaa2e5d0-bba2-4900-95b4-fee1e274e6fe}
+
+[Manufacturer]
+%INTEL%=INTEL,NTx86,NTamd64
+
+[INTEL.NTx86]
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_460D_Install,PCI\VEN_8086&DEV_460D
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_462D_Install,PCI\VEN_8086&DEV_462D
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_463D_Install,PCI\VEN_8086&DEV_463D
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_464D_Install,PCI\VEN_8086&DEV_464D
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_466E_Install,PCI\VEN_8086&DEV_466E
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_463F_Install,PCI\VEN_8086&DEV_463F
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_462F_Install,PCI\VEN_8086&DEV_462F
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_461F_Install,PCI\VEN_8086&DEV_461F
+
+[INTEL.NTamd64]
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_460D_Install,PCI\VEN_8086&DEV_460D
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_462D_Install,PCI\VEN_8086&DEV_462D
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_463D_Install,PCI\VEN_8086&DEV_463D
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_464D_Install,PCI\VEN_8086&DEV_464D
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_466E_Install,PCI\VEN_8086&DEV_466E
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_463F_Install,PCI\VEN_8086&DEV_463F
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_462F_Install,PCI\VEN_8086&DEV_462F
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_461F_Install,PCI\VEN_8086&DEV_461F
+
+[DmaSecPCI\VEN_8086&DEV_460D_Install]
+[DmaSecPCI\VEN_8086&DEV_460D_Install.HW]
+AddReg=DmaSecPCI\VEN_8086&DEV_460D_AddReg
+
+[DmaSecPCI\VEN_8086&DEV_460D_AddReg]
+HKLM,SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses,Intel(R) PEG10 - 460D,0,PCI\VEN_8086&DEV_460D
+
+[DmaSecPCI\VEN_8086&DEV_462D_Install]
+[DmaSecPCI\VEN_8086&DEV_462D_Install.HW]
+AddReg=DmaSecPCI\VEN_8086&DEV_462D_AddReg
+
+[DmaSecPCI\VEN_8086&DEV_462D_AddReg]
+HKLM,SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses,Intel(R) PEG11 - 462D,0,PCI\VEN_8086&DEV_462D
+
+[DmaSecPCI\VEN_8086&DEV_463D_Install]
+[DmaSecPCI\VEN_8086&DEV_463D_Install.HW]
+AddReg=DmaSecPCI\VEN_8086&DEV_463D_AddReg
+
+[DmaSecPCI\VEN_8086&DEV_463D_AddReg]
+HKLM,SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses,Intel(R) PEG62 - 463D,0,PCI\VEN_8086&DEV_463D
+
+[DmaSecPCI\VEN_8086&DEV_464D_Install]
+[DmaSecPCI\VEN_8086&DEV_464D_Install.HW]
+AddReg=DmaSecPCI\VEN_8086&DEV_464D_AddReg
+
+[DmaSecPCI\VEN_8086&DEV_464D_AddReg]
+HKLM,SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses,Intel(R) PEG60 - 464D,0,PCI\VEN_8086&DEV_464D
+
+[DmaSecPCI\VEN_8086&DEV_466E_Install]
+[DmaSecPCI\VEN_8086&DEV_466E_Install.HW]
+AddReg=DmaSecPCI\VEN_8086&DEV_466E_AddReg
+
+[DmaSecPCI\VEN_8086&DEV_466E_AddReg]
+HKLM,SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses,Intel(R) TypeC PCIe - 466E,0,PCI\VEN_8086&DEV_466E
+
+[DmaSecPCI\VEN_8086&DEV_463F_Install]
+[DmaSecPCI\VEN_8086&DEV_463F_Install.HW]
+AddReg=DmaSecPCI\VEN_8086&DEV_463F_AddReg
+
+[DmaSecPCI\VEN_8086&DEV_463F_AddReg]
+HKLM,SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses,Intel(R) TypeC PCIe - 463F,0,PCI\VEN_8086&DEV_463F
+
+[DmaSecPCI\VEN_8086&DEV_462F_Install]
+[DmaSecPCI\VEN_8086&DEV_462F_Install.HW]
+AddReg=DmaSecPCI\VEN_8086&DEV_462F_AddReg
+
+[DmaSecPCI\VEN_8086&DEV_462F_AddReg]
+HKLM,SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses,Intel(R) TypeC PCIe - 462F,0,PCI\VEN_8086&DEV_462F
+
+[DmaSecPCI\VEN_8086&DEV_461F_Install]
+[DmaSecPCI\VEN_8086&DEV_461F_Install.HW]
+AddReg=DmaSecPCI\VEN_8086&DEV_461F_AddReg
+
+[DmaSecPCI\VEN_8086&DEV_461F_AddReg]
+HKLM,SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses,Intel(R) TypeC PCIe - 461F,0,PCI\VEN_8086&DEV_461F
+
+[Strings]
+INTEL="INTEL"
+DmaSecExtension=DmaSecurity AllowedBus Extension
+
+
+
+
+; Copyright (c) 2003-2019 Intel Corporation
+; 
+; ********************************************************************************
+; Intel is making no claims of usability, efficacy or warranty.
+; ********************************************************************************
+; Information in this document is provided in connection with Intel products. No
+; license, express or implied, by estoppel or otherwise, to any intellectual
+; property rights is granted by this document. Intel assumes no liability
+; whatsoever, and Intel disclaims any express or implied warranty, relating to
+; sale and/or use of Intel products including liability or warranties relating to
+; fitness for a particular purpose, merchantability, or infringement of any
+; patent, copyright or other intellectual property right. Intel products are not
+; intended for use in medical, life saving, or life sustaining applications.
+; ********************************************************************************
+; Intel Corporation disclaims all warranties and liabilities for the use of this
+; document and the information contained herein, and assumes no responsibility for
+; any errors which may appear in this document, nor does Intel make a commitment
+; to update the information contained herein. Intel reserves the right to make
+; changes to this document at any time, without notice.
+; ********************************************************************************
+; ********************************************************************************
+; 
+; * Third-party brands and names are the property of their respective owners.

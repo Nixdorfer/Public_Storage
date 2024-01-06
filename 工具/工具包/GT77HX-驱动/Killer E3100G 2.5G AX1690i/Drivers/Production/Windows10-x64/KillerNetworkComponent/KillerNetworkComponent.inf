@@ -1,0 +1,646 @@
+;-------------------------------------------------
+[Version]
+Signature	         = "$WINDOWS NT$"
+Provider             = %IntelCorp%
+DriverVer = 11/28/2022,3.1422.1129.1
+PnPLockdown          = 1
+Class                = SoftwareComponent
+ClassGuid            = {5c4c3332-344d-483c-8739-259e934c9cc8}
+CatalogFile	         = KillerNetworkComponent.cat
+
+[Manufacturer]
+%IntelCorp% = KillerNetworkComponent, NTAMD64.10.0, NTAMD64.10.0...21262
+
+[KillerNetworkComponent.NTAMD64.10.0]
+%Killer_Network_Component% = KillerNetwork_Install_W10, SWC\VID_1A56&PID_1000&SID_0001
+%Killer_Network_Component% = KillerNetwork_Install_vPro_W10, SWC\VID_1A56&PID_1001&SID_0001
+%Killer_Network_Component% = KillerNetwork_Install_xTend_W10, SWC\VID_1A56&PID_1000&SID_0002
+%Killer_Network_Component% = KillerNetwork_Install_Gigabyte_W10, SWC\VID_1A56&PID_1000&SID_0003
+%Killer_Network_Component% = KillerNetwork_Install_MSI_W10, SWC\VID_1A56&PID_1000&SID_0004
+%Killer_Network_Component% = KillerNetwork_Install_Productivity_W10, SWC\VID_1A56&PID_1000&SID_0005
+%Killer_Network_Component% = KillerNetwork_Install_Creator_W10, SWC\VID_1A56&PID_1000&SID_0006
+
+[KillerNetworkComponent.NTAMD64.10.0...21262]
+%Killer_Network_Component% = KillerNetwork_Install_W11, SWC\VID_1A56&PID_1000&SID_0001
+%Killer_Network_Component% = KillerNetwork_Install_vPro_W11, SWC\VID_1A56&PID_1001&SID_0001
+%Killer_Network_Component% = KillerNetwork_Install_xTend_W11, SWC\VID_1A56&PID_1000&SID_0002
+%Killer_Network_Component% = KillerNetwork_Install_Gigabyte_W11, SWC\VID_1A56&PID_1000&SID_0003
+%Killer_Network_Component% = KillerNetwork_Install_MSI_W11, SWC\VID_1A56&PID_1000&SID_0004
+%Killer_Network_Component% = KillerNetwork_Install_Productivity_W11, SWC\VID_1A56&PID_1000&SID_0005
+%Killer_Network_Component% = KillerNetwork_Install_Creator_W11, SWC\VID_1A56&PID_1000&SID_0006
+
+[SourceDisksFiles]
+KfeCo10X64.sys=1,,
+KfeCo11X64.sys=1,,
+KillerNetworkService.exe=1,,
+KillerAnalyticsService.exe=1,,
+KillerLU.exe=1,,
+CustomizeInstallFirstRun.exe=1,,
+KillerProviderDataHelperService.exe=1,,
+KillerEventLogMessages.dll=1,,
+rn.stg=1,,
+oem.xml=1,,
+user.xml=1,,
+keysink.exe=1,,
+KAPS.exe=1,,
+KAPSService.exe=1,,
+KAPSService.xml=1,,
+KNDBWM.exe=1,,
+KNDBWMService.exe=1,,
+KNDBWMService.xml=1,,
+KSPS.exe=1,,
+KSPSService.exe=1,,
+KSPSService.xml=1,,
+LicenseAttribution.txt=1,,
+
+[SourceDisksNames]
+1="Bundle",,,""
+
+[InstallFileList]
+KillerNetworkService.exe,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+KillerAnalyticsService.exe,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+KillerLU.exe,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+CustomizeInstallFirstRun.exe,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+KillerProviderDataHelperService.exe,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+KillerEventLogMessages.dll,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+rn.stg,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+oem.xml,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+user.xml,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+keysink.exe,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+KAPS.exe,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+KAPSService.exe,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+KAPSService.xml,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+KNDBWM.exe,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+KNDBWMService.exe,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+KNDBWMService.xml,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+KSPS.exe,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+KSPSService.exe,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+KSPSService.xml,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+LicenseAttribution.txt,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+
+[CopyFiles_Driver_W10]
+KfeCo10X64.sys,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+
+[CopyFiles_Driver_W11]
+KfeCo11X64.sys,,,0x00000004   ; COPYFLG_NOVERSIONCHECK
+
+[DestinationDirs]
+DefaultDestDir=12,RivetNetworks\Killer
+
+[KillerNetwork_Install_W10]
+CopyFiles=InstallFileList,CopyFiles_Driver_W10
+AddReg=KillerCOM, EventLogRegistry, FirstRunRegistry, KAPSServiceRegistry, DataSharingRegistry, XPSFeatureRegistry, KillerProviderDataHelperCOM
+
+[KillerNetwork_Install_W11]
+CopyFiles=InstallFileList,CopyFiles_Driver_W11
+AddReg=KillerCOM, EventLogRegistry, FirstRunRegistry, KAPSServiceRegistry, DataSharingRegistry, XPSFeatureRegistry, KillerProviderDataHelperCOM
+
+[KillerNetwork_Install_vPro_W10]
+CopyFiles=InstallFileList,CopyFiles_Driver_W10
+AddReg=KillerCOM, EventLogRegistry, FirstRunRegistryVPro, KAPSServiceRegistry, DataSharingRegistry, XPSFeatureRegistry, ValidvPro, KillerProviderDataHelperCOM
+
+[KillerNetwork_Install_vPro_W11]
+CopyFiles=InstallFileList,CopyFiles_Driver_W11
+AddReg=KillerCOM, EventLogRegistry, FirstRunRegistryVPro, KAPSServiceRegistry, DataSharingRegistry, XPSFeatureRegistry, ValidvPro, KillerProviderDataHelperCOM
+
+[KillerNetwork_Install_xTend_W10]
+CopyFiles=InstallFileList,CopyFiles_Driver_W10
+AddReg=KillerCOM, EventLogRegistry, FirstRunRegistry, KAPSServiceRegistry, KAPSAdditionalRegistry, DataSharingRegistry, DefaultFeatureRegistry, KillerProviderDataHelperCOM
+
+[KillerNetwork_Install_xTend_W11]
+CopyFiles=InstallFileList,CopyFiles_Driver_W11
+AddReg=KillerCOM, EventLogRegistry, FirstRunRegistry, KAPSServiceRegistry, KAPSAdditionalRegistry, DataSharingRegistry, DefaultFeatureRegistry, KillerProviderDataHelperCOM
+
+[KillerNetwork_Install_Gigabyte_W10]
+CopyFiles=InstallFileList,CopyFiles_Driver_W10
+AddReg=KillerCOM, EventLogRegistry, FirstRunRegistry, KAPSServiceRegistry, KAPSAdditionalRegistry, DataSharingRegistry, DefaultFeatureRegistry, KillerProviderDataHelperCOM
+
+[KillerNetwork_Install_Gigabyte_W11]
+CopyFiles=InstallFileList,CopyFiles_Driver_W11
+AddReg=KillerCOM, EventLogRegistry, FirstRunRegistry, KAPSServiceRegistry, KAPSAdditionalRegistry, DataSharingRegistry, DefaultFeatureRegistry, KillerProviderDataHelperCOM
+
+[KillerNetwork_Install_MSI_W10]
+CopyFiles=InstallFileList,CopyFiles_Driver_W10
+AddReg=KillerCOM, EventLogRegistry, FirstRunRegistry, KAPSServiceRegistry, KAPSAdditionalRegistry, DataSharingRegistry, DefaultFeatureRegistry, MSIFeatureRegistry, KillerProviderDataHelperCOM
+
+[KillerNetwork_Install_MSI_W11]
+CopyFiles=InstallFileList,CopyFiles_Driver_W11
+AddReg=KillerCOM, EventLogRegistry, FirstRunRegistry, KAPSServiceRegistry, KAPSAdditionalRegistry, DataSharingRegistry, DefaultFeatureRegistry, MSIFeatureRegistry, KillerProviderDataHelperCOM
+
+[KillerNetwork_Install_Productivity_W10]
+CopyFiles=InstallFileList,CopyFiles_Driver_W10
+AddReg=KillerCOM, EventLogRegistry, FirstRunRegistry, KAPSServiceRegistry, KAPSAdditionalRegistry, DataSharingRegistry, ProductivityFeatureRegistry, KillerProviderDataHelperCOM
+
+[KillerNetwork_Install_Productivity_W11]
+CopyFiles=InstallFileList,CopyFiles_Driver_W11
+AddReg=KillerCOM, EventLogRegistry, FirstRunRegistry, KAPSServiceRegistry, KAPSAdditionalRegistry, DataSharingRegistry, ProductivityFeatureRegistry, KillerProviderDataHelperCOM
+
+[KillerNetwork_Install_Creator_W10]
+CopyFiles=InstallFileList,CopyFiles_Driver_W10
+AddReg=KillerCOM, EventLogRegistry, FirstRunRegistry, KAPSServiceRegistry, KAPSAdditionalRegistry, DataSharingRegistry, CreatorFeatureRegistry, KillerProviderDataHelperCOM
+
+[KillerNetwork_Install_Creator_W11]
+CopyFiles=InstallFileList,CopyFiles_Driver_W11
+AddReg=KillerCOM, EventLogRegistry, FirstRunRegistry, KAPSServiceRegistry, KAPSAdditionalRegistry, DataSharingRegistry, CreatorFeatureRegistry, KillerProviderDataHelperCOM
+
+[KillerNetwork_Install_W10.Services]
+AddService = , 0x00000002
+AddService = %RivetCoServiceName%,,RivetCoW10.Service
+AddService = %Killer_Service%,0x00000800,ServiceInstall,EventLogInstall
+AddService = %KAPSService%,,KAPSServiceInstall
+AddService = %KNDBWMService%,,KNDBWMServiceInstall
+AddService = %KillerAnalyticsService%,0x00000800,KillerAnalyticsServiceInstall
+AddService = %KillerProviderDataHelperService%,0x00000800,KillerProviderDataHelperServiceInstall
+
+[KillerNetwork_Install_W11.Services]
+AddService = , 0x00000002
+AddService = %RivetCoServiceName%,,RivetCoW11.Service
+AddService = %Killer_Service%,0x00000800,ServiceInstall,EventLogInstall
+AddService = %KAPSService%,,KAPSServiceInstall
+AddService = %KNDBWMService%,,KNDBWMServiceInstall
+AddService = %KillerAnalyticsService%,0x00000800,KillerAnalyticsServiceInstall
+
+[KillerNetwork_Install_vPro_W10.Services]
+AddService = , 0x00000002
+AddService = %RivetCoServiceName%,,RivetCoW10.Service
+AddService = %Killer_Service%,0x00000800,ServiceInstall,EventLogInstall
+AddService = %KAPSService%,,KAPSServiceInstall
+AddService = %KNDBWMService%,,KNDBWMServiceInstall
+AddService = %KillerAnalyticsService%,0x00000800,KillerAnalyticsServiceInstall
+
+[KillerNetwork_Install_vPro_W11.Services]
+AddService = , 0x00000002
+AddService = %RivetCoServiceName%,,RivetCoW11.Service
+AddService = %Killer_Service%,0x00000800,ServiceInstall,EventLogInstall
+AddService = %KAPSService%,,KAPSServiceInstall
+AddService = %KNDBWMService%,,KNDBWMServiceInstall
+AddService = %KillerAnalyticsService%,0x00000800,KillerAnalyticsServiceInstall
+
+[KillerNetwork_Install_xTend_W10.Services]
+AddService = , 0x00000002
+AddService = %RivetCoServiceName%,,RivetCoW10.Service
+AddService = %Killer_Service%,0x00000800,ServiceInstall,EventLogInstall
+AddService = %KAPSService%,,KAPSServiceInstall
+AddService = %KNDBWMService%,,KNDBWMServiceInstall
+AddService = %KillerAnalyticsService%,0x00000800,KillerAnalyticsServiceInstall
+
+[KillerNetwork_Install_xTend_W11.Services]
+AddService = , 0x00000002
+AddService = %RivetCoServiceName%,,RivetCoW11.Service
+AddService = %Killer_Service%,0x00000800,ServiceInstall,EventLogInstall
+AddService = %KAPSService%,,KAPSServiceInstall
+AddService = %KNDBWMService%,,KNDBWMServiceInstall
+AddService = %KillerAnalyticsService%,0x00000800,KillerAnalyticsServiceInstall
+
+[KillerNetwork_Install_Gigabyte_W10.Services]
+AddService = , 0x00000002
+AddService = %RivetCoServiceName%,,RivetCoW10.Service
+AddService = %Killer_Service%,0x00000800,ServiceInstall,EventLogInstall
+AddService = %KAPSService%,,KAPSServiceInstall
+AddService = %KNDBWMService%,,KNDBWMServiceInstall
+AddService = %KSPSService%,0x00000800,KSPSServiceInstall
+AddService = %KillerAnalyticsService%,0x00000800,KillerAnalyticsServiceInstall
+
+[KillerNetwork_Install_Gigabyte_W11.Services]
+AddService = , 0x00000002
+AddService = %RivetCoServiceName%,,RivetCoW11.Service
+AddService = %Killer_Service%,0x00000800,ServiceInstall,EventLogInstall
+AddService = %KAPSService%,,KAPSServiceInstall
+AddService = %KNDBWMService%,,KNDBWMServiceInstall
+AddService = %KSPSService%,0x00000800,KSPSServiceInstall
+AddService = %KillerAnalyticsService%,0x00000800,KillerAnalyticsServiceInstall
+
+[KillerNetwork_Install_MSI_W10.Services]
+AddService = , 0x00000002
+AddService = %RivetCoServiceName%,,RivetCoW10.Service
+AddService = %Killer_Service%,0x00000800,ServiceInstall,EventLogInstall
+AddService = %KAPSService%,,KAPSServiceInstall
+AddService = %KNDBWMService%,,KNDBWMServiceInstall
+AddService = %KSPSService%,0x00000800,KSPSServiceInstall
+AddService = %KillerAnalyticsService%,0x00000800,KillerAnalyticsServiceInstall
+
+[KillerNetwork_Install_MSI_W11.Services]
+AddService = , 0x00000002
+AddService = %RivetCoServiceName%,,RivetCoW11.Service
+AddService = %Killer_Service%,0x00000800,ServiceInstall,EventLogInstall
+AddService = %KAPSService%,,KAPSServiceInstall
+AddService = %KNDBWMService%,,KNDBWMServiceInstall
+AddService = %KSPSService%,0x00000800,KSPSServiceInstall
+AddService = %KillerAnalyticsService%,0x00000800,KillerAnalyticsServiceInstall
+
+[KillerNetwork_Install_Productivity_W10.Services]
+AddService = , 0x00000002
+AddService = %RivetCoServiceName%,,RivetCoW10.Service
+AddService = %Killer_Service%,0x00000800,ServiceInstall,EventLogInstall
+AddService = %KAPSService%,,KAPSServiceInstall
+AddService = %KNDBWMService%,,KNDBWMServiceInstall
+AddService = %KillerAnalyticsService%,0x00000800,KillerAnalyticsServiceInstall
+
+[KillerNetwork_Install_Productivity_W11.Services]
+AddService = , 0x00000002
+AddService = %RivetCoServiceName%,,RivetCoW11.Service
+AddService = %Killer_Service%,0x00000800,ServiceInstall,EventLogInstall
+AddService = %KAPSService%,,KAPSServiceInstall
+AddService = %KNDBWMService%,,KNDBWMServiceInstall
+AddService = %KillerAnalyticsService%,0x00000800,KillerAnalyticsServiceInstall
+
+[KillerNetwork_Install_Creator_W10.Services]
+AddService = , 0x00000002
+AddService = %RivetCoServiceName%,,RivetCoW10.Service
+AddService = %Killer_Service%,0x00000800,ServiceInstall,EventLogInstall
+AddService = %KAPSService%,,KAPSServiceInstall
+AddService = %KNDBWMService%,,KNDBWMServiceInstall
+AddService = %KillerAnalyticsService%,0x00000800,KillerAnalyticsServiceInstall
+
+[KillerNetwork_Install_Creator_W11.Services]
+AddService = , 0x00000002
+AddService = %RivetCoServiceName%,,RivetCoW11.Service
+AddService = %Killer_Service%,0x00000800,ServiceInstall,EventLogInstall
+AddService = %KAPSService%,,KAPSServiceInstall
+AddService = %KNDBWMService%,,KNDBWMServiceInstall
+AddService = %KillerAnalyticsService%,0x00000800,KillerAnalyticsServiceInstall
+
+[KillerNetwork_Install_W10.Software]
+AddSoftware=KillerControlCenter,0,Killer_Control_Center_Software
+
+[KillerNetwork_Install_W11.Software]
+AddSoftware=KillerControlCenter,0,Killer_Control_Center_Software
+
+[KillerNetwork_Install_vPro_W10.Software]
+AddSoftware=KillerControlCenter,0,Killer_Control_Center_Software
+
+[KillerNetwork_Install_vPro_W11.Software]
+AddSoftware=KillerControlCenter,0,Killer_Control_Center_Software
+
+[KillerNetwork_Install_xTend_W10.Software]
+AddSoftware=KillerControlCenter,0,Killer_Control_Center_Software
+
+[KillerNetwork_Install_xTend_W11.Software]
+AddSoftware=KillerControlCenter,0,Killer_Control_Center_Software
+
+[KillerNetwork_Install_Gigabyte_W10.Software]
+AddSoftware=KillerControlCenter,0,Killer_Control_Center_Software
+
+[KillerNetwork_Install_Gigabyte_W11.Software]
+AddSoftware=KillerControlCenter,0,Killer_Control_Center_Software
+
+[KillerNetwork_Install_MSI_W10.Software]
+AddSoftware=KillerControlCenter,0,Killer_Control_Center_Software
+
+[KillerNetwork_Install_MSI_W11.Software]
+AddSoftware=KillerControlCenter,0,Killer_Control_Center_Software
+
+[KillerNetwork_Install_Productivity_W10.Software]
+AddSoftware=KillerControlCenter,0,Killer_Control_Center_Software
+
+[KillerNetwork_Install_Productivity_W11.Software]
+AddSoftware=KillerControlCenter,0,Killer_Control_Center_Software
+
+[KillerNetwork_Install_Creator_W10.Software]
+AddSoftware=KillerControlCenter,0,Killer_Control_Center_Software
+
+[KillerNetwork_Install_Creator_W11.Software]
+AddSoftware=KillerControlCenter,0,Killer_Control_Center_Software
+
+[Killer_Control_Center_Software]
+SoftwareType=2
+SoftwareBinary=KillerControlCenter.exe
+SoftwareVersion=3.1422.1129.1
+SoftwareID=pfn://RivetNetworks.KillerControlCenter_rh07ty8m5nkag
+
+[ServiceInstall]
+AddReg=KillerCOM
+DisplayName=%Killer_Service%
+Description=%KillerServiceDesc%
+Dependencies=nsi,EventLog,kfecosvc
+ErrorControl=0
+ServiceBinary=%12%\"RivetNetworks\Killer\KillerNetworkService.exe"
+ServiceType=0x00000010
+StartType=2
+
+[RivetCoW10.Service]
+DisplayName      = %RivetCoServiceName%
+Description      = %RivetCoServiceDesc%
+ServiceBinary    = %12%\RivetNetworks\Killer\KfeCo10X64.sys
+ServiceType      = 1; SERVICE_KERNEL_DRIVER
+StartType        = 3; SERVICE_DEMAND_START
+ErrorControl     = 1; SERVICE_ERROR_NORMAL
+
+[RivetCoW11.Service]
+DisplayName      = %RivetCoServiceName%
+Description      = %RivetCoServiceDesc%
+ServiceBinary    = %12%\RivetNetworks\Killer\KfeCo11X64.sys
+ServiceType      = 1; SERVICE_KERNEL_DRIVER
+StartType        = 3; SERVICE_DEMAND_START
+ErrorControl     = 1; SERVICE_ERROR_NORMAL
+
+[KAPSServiceInstall]
+DisplayName=%KAPSServiceDisplayName%
+Description=%KAPSServiceDesc%
+Dependencies=Netman,NetSetupSvc,LanmanServer
+ErrorControl=0
+ServiceBinary=%12%\"RivetNetworks\Killer\KAPSService.exe"
+ServiceType=0x00000010
+StartType=3;
+
+[KNDBWMServiceInstall]
+DisplayName=%KNDBWMServiceDisplayName%
+Description=%KNDBWMServiceDesc%
+Dependencies=Netman,NetSetupSvc
+ErrorControl=0
+ServiceBinary=%12%\"RivetNetworks\Killer\KNDBWMService.exe"
+ServiceType=0x00000010
+StartType=3;
+
+[KSPSServiceInstall]
+DisplayName=%KSPSService%
+Description=%KSPSServiceDesc%
+Dependencies=bthserv,Netman
+ErrorControl=0
+ServiceBinary=%12%\"RivetNetworks\Killer\KSPSService.exe"
+ServiceType=0x00000010
+StartType=2
+
+[KillerProviderDataHelperServiceInstall]
+AddReg=KillerProviderDataHelperCOM
+DisplayName=%KillerProviderDataHelperService%
+Description=%KillerProviderDataHelperServiceDesc%
+Dependencies=
+ErrorControl=0
+ServiceBinary=%12%\"Intel\Killer\KillerProviderDataHelperService.exe"
+ServiceType=0x00000010
+StartType=2;
+
+[KillerAnalyticsServiceInstall]
+AddReg=KillerAnalyticsCOM
+DisplayName=%KillerAnalyticsService%
+Description=%KillerAnalyticsServiceDesc%
+Dependencies=
+ErrorControl=0
+ServiceBinary=%12%\"RivetNetworks\Killer\KillerAnalyticsService.exe"
+ServiceType=0x00000010
+StartType=2;
+
+[KillerCOM]
+; mostly from https://github.com/RivetNetworks/Sniper_Build/tree/master/Install/ServiceCOMRegistryKeys
+HKCR, "AppID\{FBB4E5FF-17F2-4F5A-88D9-EAC8ABB00B32}",LocalService, 0, "Killer Network Service"
+HKCR, "CLSID\{7972960B-C3EE-4794-B28B-75F9D36760E6}", , 0, "BandwidthControlManager Class"
+HKCR, "CLSID\{7972960B-C3EE-4794-B28B-75F9D36760E6}", AppID, 0, "{FBB4E5FF-17F2-4F5A-88D9-EAC8ABB00B32}"
+HKCR, "CLSID\{7972960B-C3EE-4794-B28B-75F9D36760E6}\LocalServer32", , 0x00020000, "%%systemroot%%\system32\drivers\RivetNetworks\Killer\KillerNetworkService.exe"
+HKCR, "CLSID\{7972960B-C3EE-4794-B28B-75F9D36760E6}\LocalServer32", ServerExecutable, 0x00020000, "%%systemroot%%\system32\drivers\RivetNetworks\Killer\KillerNetworkService.exe"
+HKCR, "CLSID\{7972960B-C3EE-4794-B28B-75F9D36760E6}\Programmable", , 0, ""
+HKCR, "CLSID\{7972960B-C3EE-4794-B28B-75F9D36760E6}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "CLSID\{7972960B-C3EE-4794-B28B-75F9D36760E6}\Version", , 0, "1.0"
+HKCR, "Interface\{0E6017F7-C75D-44E7-9BBA-AE555EBCF8F7}", , 0, "IServiceManager"
+HKCR, "Interface\{0E6017F7-C75D-44E7-9BBA-AE555EBCF8F7}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{0E6017F7-C75D-44E7-9BBA-AE555EBCF8F7}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "Interface\{0E6017F7-C75D-44E7-9BBA-AE555EBCF8F7}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{F553DDF8-D93D-4426-B8D2-19144E520955}", , 0, "IMultiInterfaceManager"
+HKCR, "Interface\{F553DDF8-D93D-4426-B8D2-19144E520955}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{F553DDF8-D93D-4426-B8D2-19144E520955}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "Interface\{F553DDF8-D93D-4426-B8D2-19144E520955}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{18B64549-3762-4A12-94A2-1245BB812EC6}", , 0, "IMultiInterfaceRoutingManagerType1"
+HKCR, "Interface\{18B64549-3762-4A12-94A2-1245BB812EC6}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{18B64549-3762-4A12-94A2-1245BB812EC6}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "Interface\{18B64549-3762-4A12-94A2-1245BB812EC6}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{1E2D19E1-BF00-4A8E-89AB-1FCEF7E8B803}", , 0, "IConfigurationManager"
+HKCR, "Interface\{1E2D19E1-BF00-4A8E-89AB-1FCEF7E8B803}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{1E2D19E1-BF00-4A8E-89AB-1FCEF7E8B803}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "Interface\{1E2D19E1-BF00-4A8E-89AB-1FCEF7E8B803}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{27121ECB-32AC-4162-B64D-9DC4D00A0E08}", , 0, "INetworkManager"
+HKCR, "Interface\{27121ECB-32AC-4162-B64D-9DC4D00A0E08}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{27121ECB-32AC-4162-B64D-9DC4D00A0E08}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "Interface\{27121ECB-32AC-4162-B64D-9DC4D00A0E08}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{2E396495-F59E-4451-B55A-78DDA857F636}", , 0, "IBandwidthControlManager"
+HKCR, "Interface\{2E396495-F59E-4451-B55A-78DDA857F636}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{2E396495-F59E-4451-B55A-78DDA857F636}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "Interface\{2E396495-F59E-4451-B55A-78DDA857F636}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{2E482EC6-3F1C-45BF-B222-EB723A54B0CC}", , 0, "ISpeedTestManager"
+HKCR, "Interface\{2E482EC6-3F1C-45BF-B222-EB723A54B0CC}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{2E482EC6-3F1C-45BF-B222-EB723A54B0CC}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "Interface\{2E482EC6-3F1C-45BF-B222-EB723A54B0CC}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{37B3C434-2E28-4366-88A1-772DAB3D29A2}", , 0, "ICategoriesManager"
+HKCR, "Interface\{37B3C434-2E28-4366-88A1-772DAB3D29A2}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{37B3C434-2E28-4366-88A1-772DAB3D29A2}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "Interface\{37B3C434-2E28-4366-88A1-772DAB3D29A2}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{4478CEFF-1578-4B07-9E78-F337B87A3769}", , 0, "IMultiInterfaceRoutingManagerType2"
+HKCR, "Interface\{4478CEFF-1578-4B07-9E78-F337B87A3769}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{4478CEFF-1578-4B07-9E78-F337B87A3769}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "Interface\{4478CEFF-1578-4B07-9E78-F337B87A3769}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{A2FEE54C-5AC0-434D-B94F-13E886E4EAC5}", , 0, "IActivityManager"
+HKCR, "Interface\{A2FEE54C-5AC0-434D-B94F-13E886E4EAC5}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{A2FEE54C-5AC0-434D-B94F-13E886E4EAC5}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "Interface\{A2FEE54C-5AC0-434D-B94F-13E886E4EAC5}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{6DA98B60-FCF1-4482-BDBA-0B2B2332CB4D}", , 0, "IGroupBoostManager"
+HKCR, "Interface\{6DA98B60-FCF1-4482-BDBA-0B2B2332CB4D}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{6DA98B60-FCF1-4482-BDBA-0B2B2332CB4D}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "Interface\{6DA98B60-FCF1-4482-BDBA-0B2B2332CB4D}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{AAF9E99F-43ED-4802-9D60-BD295B0E16E4}", , 0, "IExternalStateManager"
+HKCR, "Interface\{AAF9E99F-43ED-4802-9D60-BD295B0E16E4}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{AAF9E99F-43ED-4802-9D60-BD295B0E16E4}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "Interface\{AAF9E99F-43ED-4802-9D60-BD295B0E16E4}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{480FE643-968C-42CF-9696-5DF391ACC5D0}", , 0, "IScoringManager"
+HKCR, "Interface\{480FE643-968C-42CF-9696-5DF391ACC5D0}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{480FE643-968C-42CF-9696-5DF391ACC5D0}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "Interface\{480FE643-968C-42CF-9696-5DF391ACC5D0}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{5301058F-E9CD-4D15-BD46-C6536D68EE83}", , 0, "IConfigurationFileManager"
+HKCR, "Interface\{5301058F-E9CD-4D15-BD46-C6536D68EE83}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{5301058F-E9CD-4D15-BD46-C6536D68EE83}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "Interface\{5301058F-E9CD-4D15-BD46-C6536D68EE83}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{559F99D3-58E9-4CAE-A7EE-8DE6B04F4129}", , 0, "_INetworkManagerEvents"
+HKCR, "Interface\{559F99D3-58E9-4CAE-A7EE-8DE6B04F4129}\ProxyStubClsid32", , 0, "{00020420-0000-0000-C000-000000000046}"
+HKCR, "Interface\{559F99D3-58E9-4CAE-A7EE-8DE6B04F4129}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "Interface\{559F99D3-58E9-4CAE-A7EE-8DE6B04F4129}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{67D729A5-39EB-4469-80E6-5CDF6E3F35B7}", , 0, "IFactoryManager"
+HKCR, "Interface\{67D729A5-39EB-4469-80E6-5CDF6E3F35B7}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{67D729A5-39EB-4469-80E6-5CDF6E3F35B7}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "Interface\{67D729A5-39EB-4469-80E6-5CDF6E3F35B7}\TypeLib", Version, 0, "1.0"
+HKCR, "Interface\{8485AF07-A179-4EE6-9707-A38E336FC137}", , 0, "IRulesManager"
+HKCR, "Interface\{8485AF07-A179-4EE6-9707-A38E336FC137}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "Interface\{8485AF07-A179-4EE6-9707-A38E336FC137}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "Interface\{8485AF07-A179-4EE6-9707-A38E336FC137}\TypeLib", Version, 0, "1.0"
+HKCR, "TypeLib\{A347736C-22E1-4E25-ADBC-76349A368F74}", , 0, ""
+HKCR, "TypeLib\{A347736C-22E1-4E25-ADBC-76349A368F74}\1.0", , 0, "KillerNetworkServiceLib"
+HKCR, "TypeLib\{A347736C-22E1-4E25-ADBC-76349A368F74}\1.0\0", , 0, ""
+HKCR, "TypeLib\{A347736C-22E1-4E25-ADBC-76349A368F74}\1.0\0\win64", , 0x00020000, "%%systemroot%%\system32\drivers\RivetNetworks\Killer\KillerNetworkService.exe"
+HKCR, "TypeLib\{A347736C-22E1-4E25-ADBC-76349A368F74}\1.0\FLAGS", , 0, "0"
+HKCR, "TypeLib\{A347736C-22E1-4E25-ADBC-76349A368F74}\1.0\HELPDIR", , 0x00020000, "%%systemroot%%\system32\drivers\RivetNetworks\Killer"
+HKCR, "WOW6432Node\Interface\{0E6017F7-C75D-44E7-9BBA-AE555EBCF8F7}", , 0, "IServiceManager"
+HKCR, "WOW6432Node\Interface\{0E6017F7-C75D-44E7-9BBA-AE555EBCF8F7}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{0E6017F7-C75D-44E7-9BBA-AE555EBCF8F7}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "WOW6432Node\Interface\{0E6017F7-C75D-44E7-9BBA-AE555EBCF8F7}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{F553DDF8-D93D-4426-B8D2-19144E520955}", , 0, "IMultiInterfaceManager"
+HKCR, "WOW6432Node\Interface\{F553DDF8-D93D-4426-B8D2-19144E520955}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{F553DDF8-D93D-4426-B8D2-19144E520955}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "WOW6432Node\Interface\{F553DDF8-D93D-4426-B8D2-19144E520955}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{18B64549-3762-4A12-94A2-1245BB812EC6}", , 0, "IMultiInterfaceRoutingManagerType1"
+HKCR, "WOW6432Node\Interface\{18B64549-3762-4A12-94A2-1245BB812EC6}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{18B64549-3762-4A12-94A2-1245BB812EC6}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "WOW6432Node\Interface\{18B64549-3762-4A12-94A2-1245BB812EC6}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{1E2D19E1-BF00-4A8E-89AB-1FCEF7E8B803}", , 0, "IConfigurationManager"
+HKCR, "WOW6432Node\Interface\{1E2D19E1-BF00-4A8E-89AB-1FCEF7E8B803}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{1E2D19E1-BF00-4A8E-89AB-1FCEF7E8B803}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "WOW6432Node\Interface\{1E2D19E1-BF00-4A8E-89AB-1FCEF7E8B803}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{27121ECB-32AC-4162-B64D-9DC4D00A0E08}", , 0, "INetworkManager"
+HKCR, "WOW6432Node\Interface\{27121ECB-32AC-4162-B64D-9DC4D00A0E08}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{27121ECB-32AC-4162-B64D-9DC4D00A0E08}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "WOW6432Node\Interface\{27121ECB-32AC-4162-B64D-9DC4D00A0E08}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{2E396495-F59E-4451-B55A-78DDA857F636}", , 0, "IBandwidthControlManager"
+HKCR, "WOW6432Node\Interface\{2E396495-F59E-4451-B55A-78DDA857F636}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{2E396495-F59E-4451-B55A-78DDA857F636}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "WOW6432Node\Interface\{2E396495-F59E-4451-B55A-78DDA857F636}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{2E482EC6-3F1C-45BF-B222-EB723A54B0CC}", , 0, "ISpeedTestManager"
+HKCR, "WOW6432Node\Interface\{2E482EC6-3F1C-45BF-B222-EB723A54B0CC}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{2E482EC6-3F1C-45BF-B222-EB723A54B0CC}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "WOW6432Node\Interface\{2E482EC6-3F1C-45BF-B222-EB723A54B0CC}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{37B3C434-2E28-4366-88A1-772DAB3D29A2}", , 0, "ICategoriesManager"
+HKCR, "WOW6432Node\Interface\{37B3C434-2E28-4366-88A1-772DAB3D29A2}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{37B3C434-2E28-4366-88A1-772DAB3D29A2}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "WOW6432Node\Interface\{37B3C434-2E28-4366-88A1-772DAB3D29A2}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{4478CEFF-1578-4B07-9E78-F337B87A3769}", , 0, "IMultiInterfaceRoutingManagerType2"
+HKCR, "WOW6432Node\Interface\{4478CEFF-1578-4B07-9E78-F337B87A3769}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{4478CEFF-1578-4B07-9E78-F337B87A3769}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "WOW6432Node\Interface\{4478CEFF-1578-4B07-9E78-F337B87A3769}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{A2FEE54C-5AC0-434D-B94F-13E886E4EAC5}", , 0, "IActivityManager"
+HKCR, "WOW6432Node\Interface\{A2FEE54C-5AC0-434D-B94F-13E886E4EAC5}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{A2FEE54C-5AC0-434D-B94F-13E886E4EAC5}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "WOW6432Node\Interface\{A2FEE54C-5AC0-434D-B94F-13E886E4EAC5}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{6DA98B60-FCF1-4482-BDBA-0B2B2332CB4D}", , 0, "IGroupBoostManager"
+HKCR, "WOW6432Node\Interface\{6DA98B60-FCF1-4482-BDBA-0B2B2332CB4D}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{6DA98B60-FCF1-4482-BDBA-0B2B2332CB4D}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "WOW6432Node\Interface\{6DA98B60-FCF1-4482-BDBA-0B2B2332CB4D}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{AAF9E99F-43ED-4802-9D60-BD295B0E16E4}", , 0, "IExternalStateManager"
+HKCR, "WOW6432Node\Interface\{AAF9E99F-43ED-4802-9D60-BD295B0E16E4}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{AAF9E99F-43ED-4802-9D60-BD295B0E16E4}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "WOW6432Node\Interface\{AAF9E99F-43ED-4802-9D60-BD295B0E16E4}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{480FE643-968C-42CF-9696-5DF391ACC5D0}", , 0, "IScoringManager"
+HKCR, "WOW6432Node\Interface\{480FE643-968C-42CF-9696-5DF391ACC5D0}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{480FE643-968C-42CF-9696-5DF391ACC5D0}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "WOW6432Node\Interface\{480FE643-968C-42CF-9696-5DF391ACC5D0}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{5301058F-E9CD-4D15-BD46-C6536D68EE83}", , 0, "IConfigurationFileManager"
+HKCR, "WOW6432Node\Interface\{5301058F-E9CD-4D15-BD46-C6536D68EE83}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{5301058F-E9CD-4D15-BD46-C6536D68EE83}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "WOW6432Node\Interface\{5301058F-E9CD-4D15-BD46-C6536D68EE83}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{559F99D3-58E9-4CAE-A7EE-8DE6B04F4129}", , 0, "_INetworkManagerEvents"
+HKCR, "WOW6432Node\Interface\{559F99D3-58E9-4CAE-A7EE-8DE6B04F4129}\ProxyStubClsid32", , 0, "{00020420-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{559F99D3-58E9-4CAE-A7EE-8DE6B04F4129}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "WOW6432Node\Interface\{559F99D3-58E9-4CAE-A7EE-8DE6B04F4129}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{67D729A5-39EB-4469-80E6-5CDF6E3F35B7}", , 0, "IFactoryManager"
+HKCR, "WOW6432Node\Interface\{67D729A5-39EB-4469-80E6-5CDF6E3F35B7}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{67D729A5-39EB-4469-80E6-5CDF6E3F35B7}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "WOW6432Node\Interface\{67D729A5-39EB-4469-80E6-5CDF6E3F35B7}\TypeLib", Version, 0, "1.0"
+HKCR, "WOW6432Node\Interface\{8485AF07-A179-4EE6-9707-A38E336FC137}", , 0, "IRulesManager"
+HKCR, "WOW6432Node\Interface\{8485AF07-A179-4EE6-9707-A38E336FC137}\ProxyStubClsid32", , 0, "{00020424-0000-0000-C000-000000000046}"
+HKCR, "WOW6432Node\Interface\{8485AF07-A179-4EE6-9707-A38E336FC137}\TypeLib", , 0, "{A347736C-22E1-4E25-ADBC-76349A368F74}"
+HKCR, "WOW6432Node\Interface\{8485AF07-A179-4EE6-9707-A38E336FC137}\TypeLib", Version, 0, "1.0"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", ClientCertAllowList, 0x00010000, "020849F1CDAE9EC5A11F4E3599091595|US, \"DigiCert, Inc.\", DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", ClientCertAllowList, 0x00010008, "0824024FDA0B4B1B496EEEDDFCFF6E16|US, DigiCert Inc, www.digicert.com, DigiCert SHA2 Assured ID Code Signing CA"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", ClientCertAllowList, 0x00010008, "00BFCCE9854E3F154FF8E62C2CE2FDE84D|GB, Greater Manchester, Salford, Sectigo Limited, Sectigo RSA Code Signing CA"
+
+[KillerAnalyticsCOM]
+HKCR, "AppID\{E8492D05-6F1D-4389-944B-CB95FA083F24}",LocalService, 0, "KillerAnalyticsService"
+
+[KillerProviderDataHelperCOM]
+HKCR, "AppID\{253B813A-DF4A-4E99-A2C7-F79A71382E10}",LocalService, 0, "KillerProviderDataHelperService"
+
+[EventLogRegistry]
+HKLM, "SYSTEM\CurrentControlSet\Services\EventLog\System\Killer Analytics Service", CategoryCount, 0x00010001, "00000004"
+HKLM, "SYSTEM\CurrentControlSet\Services\EventLog\System\Killer Analytics Service", CategoryMessageFile, 0x00020000,"%%systemroot%%\system32\drivers\Intel\ICPS\IntelAnalyticsEventLogMessages.dll"
+HKLM, "SYSTEM\CurrentControlSet\Services\EventLog\System\Killer Analytics Service", EventMessageFile, 0x00020000, "%%systemroot%%\system32\drivers\Intel\ICPS\IntelAnalyticsEventLogMessages.dll"
+HKLM, "SYSTEM\CurrentControlSet\Services\EventLog\System\Killer Analytics Service", TypesSupported, 0x00010001, "00000007"
+HKLM, "SYSTEM\CurrentControlSet\Services\EventLog\System\Killer Network Service", CategoryCount, 0x00010001, "00000004"
+HKLM, "SYSTEM\CurrentControlSet\Services\EventLog\System\Killer Network Service", CategoryMessageFile, 0x00020000,"%%systemroot%%\system32\drivers\RivetNetworks\Killer\KillerEventLogMessages.dll"
+HKLM, "SYSTEM\CurrentControlSet\Services\EventLog\System\Killer Network Service", EventMessageFile, 0x00020000, "%%systemroot%%\system32\drivers\RivetNetworks\Killer\KillerEventLogMessages.dll"
+HKLM, "SYSTEM\CurrentControlSet\Services\EventLog\System\Killer Network Service", TypesSupported, 0x00010001, "00000007"
+
+[EventLogInstall]
+AddReg=EventLogRegistry
+
+[FirstRunRegistry]
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", FirstRun, 0x00010001, "00000001"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\AppCFG", App_AppVersion, 0x00010001, "00000002"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", ValidateOneList, 0x00010000, "Win32_NetworkAdapter|Name@Killer.*"
+
+[FirstRunRegistryVPro]
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", FirstRun, 0x00010001, "00000001"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\AppCFG", App_AppVersion, 0x00010001, "00000002"
+
+[DataSharingRegistry]
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\AppCFG", App_ShowDataCollection, 0x00010001, "00000000"
+
+[KAPSServiceRegistry]
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\AppCFG", App_ShowRunAPSuggestionService, 0x00010001, "00000001"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service", UpgradeKAPS, 0x00010001, "00000001"
+
+[KAPSAdditionalRegistry]
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service", ScoreDiffPct, 0x00010001, "00000000"
+
+[XPSFeatureRegistry]
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\AppCFG", App_EventsTypesForNotification, 0x00000000, "205|11,205|31,204|16"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", ShowToastNotifications, 0x00010001, "00000001"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", DynamicBandwidthMode, 0x00010001, "00000001"
+
+[MSIFeatureRegistry]
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\AppCFG", App_ShowDynamicBandwidthMode, 0x00010001, "00000001"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", ShowToastNotifications, 0x00010001, "00000001"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", DynamicBandwidthMode, 0x00010001, "00000002"
+
+[DefaultFeatureRegistry]
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\AppCFG", App_EventsTypesForNotification, 0x00000000, "205|11,205|31,204|16"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", ShowToastNotifications, 0x00010001, "00000001"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", DynamicBandwidthMode, 0x00010001, "00000001"
+
+[ProductivityFeatureRegistry]
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\AppCFG", App_CategoryDisplayRedirections, 0x00020000, "Creator|Productivity"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\AppCFG", App_AlwaysUseKillerSplash, 0x00010001, "00000001"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\AppCFG", App_EventsTypesForNotification, 0x00000000, "205|11,205|31,204|16"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", ShowToastNotifications, 0x00010001, "00000001"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", CurrentProfile, 0x00020000, "Creator"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", DynamicBandwidthMode, 0x00010001, "00000001"
+
+[CreatorFeatureRegistry]
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\AppCFG", App_EventsTypesForNotification, 0x00000000, "205|11,205|31,204|16"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", ShowToastNotifications, 0x00010001, "00000001"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", CurrentProfile, 0x00020000, "Creator"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", DynamicBandwidthMode, 0x00010001, "00000001"
+
+[ValidvPro]
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", ValidateOneList, 0x00010000, "Win32_NetworkAdapter|Name@Killer.*"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", ValidateOneList, 0x00010008, "Win32_ComputerSystem|SystemSKUNumber@0AF3,Manufacturer@Dell.*"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", ValidateOneList, 0x00010008, "Win32_ComputerSystem|SystemSKUNumber@0B19,Manufacturer@Dell.*"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", ValidateOneList, 0x00010008, "Win32_ComputerSystem|SystemSKUNumber@0B14,Manufacturer@Dell.*"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", ValidateOneList, 0x00010008, "Win32_ComputerSystem|SystemSKUNumber@0AFE,Manufacturer@Dell.*"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", ValidateOneList, 0x00010008, "Win32_ComputerSystem|SystemSKUNumber@0AFF,Manufacturer@Dell.*"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", ValidateOneList, 0x00010008, "Win32_ComputerSystem|SystemSKUNumber@0B34,Manufacturer@Dell.*"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", ValidateOneList, 0x00010008, "Win32_ComputerSystem|SystemSKUNumber@0B49,Manufacturer@Dell.*"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", ValidateOneList, 0x00010008, "Win32_ComputerSystem|SystemSKUNumber@0BDA,Manufacturer@Dell.*"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", ValidateOneList, 0x00010008, "Win32_ComputerSystem|SystemSKUNumber@0BDB,Manufacturer@Dell.*"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", ValidateOneList, 0x00010008, "Win32_ComputerSystem|SystemSKUNumber@0BEB,Manufacturer@Dell.*"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", ValidateOneList, 0x00010008, "Win32_ComputerSystem|SystemSKUNumber@0C10,Manufacturer@Dell.*"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\AppCFG", App_RivetOnly, 0x00010001, "00000000"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\SLibCFG", SupportOemDevice, 0x00010001, "00000002"
+HKLM, "SYSTEM\CurrentControlSet\Services\KAPSService", AllowNonKiller, 0x00010001, "00000001"
+HKLM, "SYSTEM\CurrentControlSet\Services\Killer Network Service\ServiceCFG", Killer_HWConfigDefault, 0x00010001, "04000000"
+
+; User visible strings
+;-------------------------------------------------
+[Strings]
+Bundle = "Killer Network DCHU Component Installation Disk"
+RivetCoServiceName  = "KfeCoSvc"
+RivetCoServiceDesc  = "RN Traffic Control Callout"
+Killer_Service = "Killer Network Service"
+Killer_Network_Component = "Killer Networking Software"
+KillerServiceDesc = "Killer Network Service provides the Killer software functionality"
+KillerAnalyticsService = "Killer Analytics Service"
+KillerAnalyticsServiceDesc = "Killer Analytics Service"
+KillerProviderDataHelperService = "Killer Provider Data Helper Service"
+KillerProviderDataHelperServiceDesc = "Killer Provider Data Helper Service"
+KAPSService = "KAPSService"
+KAPSServiceDisplayName = "Killer Smart AP Selection Service"
+KAPSServiceDesc = "Offers Wifi related suggestions to the Killer Network Service"
+KNDBWMService = "KNDBWM"
+KNDBWMServiceDisplayName = "Killer Dynamic Bandwidth Management"
+KNDBWMServiceDesc = "This service dynamically manages bandwidth settings based on detection of internet traffic congestion."
+KSPSService = "KillerSmartphoneSleepService"
+KSPSServiceDesc = "Killer Smartphone Sleep Service"
+IntelCorp = "Intel Corporation"

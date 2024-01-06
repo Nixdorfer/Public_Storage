@@ -1,0 +1,114 @@
+; ************************************************************
+; ************************************************************
+; **  Filename: ElkhartLakeSystemLPSS.inf                   **
+; **  Abstract: Assigns the null driver to devices          **
+; **            for yellow-bang removal and                 **
+; **            brands Intel(R) devices                     ** 
+; ************************************************************
+; ************************************************************
+
+[Version]
+Signature=$WINDOWS NT$
+Class=System
+ClassGUID={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%INTEL%
+CatalogFile=ElkhartLake.cat
+DriverVer=07/18/1968, 10.1.25.6
+PnpLockDown=1
+
+[SourceDisksNames]
+
+[SourceDisksFiles]
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%INTEL%=INTEL,NTx86,NTamd64
+
+[INTEL.NTx86]
+%PCI\VEN_8086&DEV_4B28Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B28
+%PCI\VEN_8086&DEV_4B29Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B29
+%PCI\VEN_8086&DEV_4B2ADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B2A
+%PCI\VEN_8086&DEV_4B2BDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B2B
+%PCI\VEN_8086&DEV_4B4BDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B4B
+%PCI\VEN_8086&DEV_4B4CDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B4C
+%PCI\VEN_8086&DEV_4B4DDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B4D
+%PCI\VEN_8086&DEV_4B68Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B68
+%PCI\VEN_8086&DEV_4B69Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B69
+%PCI\VEN_8086&DEV_4B78Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B78
+%PCI\VEN_8086&DEV_4B79Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B79
+%PCI\VEN_8086&DEV_4B7ADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B7A
+%PCI\VEN_8086&DEV_4B7BDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B7B
+%PCI\VEN_8086&DEV_4B8FDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B8F
+%PCI\VEN_8086&DEV_4B91Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B91
+
+[INTEL.NTamd64]
+%PCI\VEN_8086&DEV_4B28Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B28
+%PCI\VEN_8086&DEV_4B29Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B29
+%PCI\VEN_8086&DEV_4B2ADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B2A
+%PCI\VEN_8086&DEV_4B2BDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B2B
+%PCI\VEN_8086&DEV_4B4BDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B4B
+%PCI\VEN_8086&DEV_4B4CDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B4C
+%PCI\VEN_8086&DEV_4B4DDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B4D
+%PCI\VEN_8086&DEV_4B68Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B68
+%PCI\VEN_8086&DEV_4B69Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B69
+%PCI\VEN_8086&DEV_4B78Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B78
+%PCI\VEN_8086&DEV_4B79Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B79
+%PCI\VEN_8086&DEV_4B7ADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B7A
+%PCI\VEN_8086&DEV_4B7BDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B7B
+%PCI\VEN_8086&DEV_4B8FDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B8F
+%PCI\VEN_8086&DEV_4B91Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4B91
+
+[Needs_NO_DRV]
+Include=machine.inf
+Needs=NO_DRV
+
+[Needs_NO_DRV.Services]
+Include=machine.inf
+Needs=NO_DRV.Services
+
+[Strings]
+INTEL="INTEL"
+PCI\VEN_8086&DEV_4B28Desc="Intel(R) Serial IO UART Host Controller #0 - 4B28"
+PCI\VEN_8086&DEV_4B29Desc="Intel(R) Serial IO UART Host Controller #1 - 4B29"
+PCI\VEN_8086&DEV_4B2ADesc="Intel(R) Serial IO SPI Host Controller #0 - 4B2A"
+PCI\VEN_8086&DEV_4B2BDesc="Intel(R) Serial IO SPI Host Controller #1 - 4B2B"
+PCI\VEN_8086&DEV_4B4BDesc="Intel(R) Serial IO I2C Controller #4 - 4B4B"
+PCI\VEN_8086&DEV_4B4CDesc="Intel(R) Serial IO I2C Controller #5 - 4B4C"
+PCI\VEN_8086&DEV_4B4DDesc="Intel(R) Serial IO UART Host Controller #2 - 4B4D"
+PCI\VEN_8086&DEV_4B68Desc="Intel(R) Serial IO I2C Controller #6 - 4B68"
+PCI\VEN_8086&DEV_4B69Desc="Intel(R) Serial IO I2C Controller #7 - 4B69"
+PCI\VEN_8086&DEV_4B78Desc="Intel(R) Serial IO I2C Controller #0 - 4B78"
+PCI\VEN_8086&DEV_4B79Desc="Intel(R) Serial IO I2C Controller #1 - 4B79"
+PCI\VEN_8086&DEV_4B7ADesc="Intel(R) Serial IO I2C Controller #2 - 4B7A"
+PCI\VEN_8086&DEV_4B7BDesc="Intel(R) Serial IO I2C Controller #3 - 4B7B"
+PCI\VEN_8086&DEV_4B8FDesc="Intel(R) Serial IO Generic SPI #2 - 4B8F"
+PCI\VEN_8086&DEV_4B91Desc="Intel(R) Serial IO Generic SPI #2 - 4B91"
+
+
+
+
+; Copyright (c) 2003-2019 Intel Corporation
+; 
+; ********************************************************************************
+; Intel is making no claims of usability, efficacy or warranty.
+; ********************************************************************************
+; Information in this document is provided in connection with Intel products. No
+; license, express or implied, by estoppel or otherwise, to any intellectual
+; property rights is granted by this document. Intel assumes no liability
+; whatsoever, and Intel disclaims any express or implied warranty, relating to
+; sale and/or use of Intel products including liability or warranties relating to
+; fitness for a particular purpose, merchantability, or infringement of any
+; patent, copyright or other intellectual property right. Intel products are not
+; intended for use in medical, life saving, or life sustaining applications.
+; ********************************************************************************
+; Intel Corporation disclaims all warranties and liabilities for the use of this
+; document and the information contained herein, and assumes no responsibility for
+; any errors which may appear in this document, nor does Intel make a commitment
+; to update the information contained herein. Intel reserves the right to make
+; changes to this document at any time, without notice.
+; ********************************************************************************
+; ********************************************************************************
+; 
+; * Third-party brands and names are the property of their respective owners.

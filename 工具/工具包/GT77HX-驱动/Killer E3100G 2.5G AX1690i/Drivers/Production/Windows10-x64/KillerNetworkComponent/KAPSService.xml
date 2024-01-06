@@ -1,0 +1,17 @@
+<service>
+  <id>KAPSService</id>
+  <name>Killer AP Selector Service</name>
+  <description>This service provides provides a service which automatically connects of the best known Wifi AP.</description>
+  <env name="KAPSS_HOME" value="%BASE%"/>
+  <executable>KAPS.exe</executable>
+  <arguments></arguments>
+  <logmode>rotate</logmode>
+  <startmode>Automatic</startmode>
+  <depend>Netman</depend>
+  <depend>NetSetupSvc</depend>
+  <depend>LanmanServer</depend>
+  <delaystart>false</delaystart>
+  <onfailure action="restart" delay="2 sec"/>
+  <onfailure action="restart" delay="2 sec"/>
+  <onfailure action="restart" delay="2 sec"/>
+</service>

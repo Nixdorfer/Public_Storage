@@ -1,0 +1,99 @@
+; ************************************************************
+; ************************************************************
+; **  Filename: CometLakePCH-HSystemLPSS.inf                **
+; **  Abstract: Assigns the null driver to devices          **
+; **            for yellow-bang removal and                 **
+; **            brands Intel(R) devices                     ** 
+; ************************************************************
+; ************************************************************
+
+[Version]
+Signature=$WINDOWS NT$
+Class=System
+ClassGUID={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%INTEL%
+CatalogFile=CometLakePCH-H.cat
+DriverVer=07/18/1968, 10.1.31.2
+PnpLockDown=1
+
+[SourceDisksNames]
+
+[SourceDisksFiles]
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%INTEL%=INTEL,NTx86,NTamd64
+
+[INTEL.NTx86]
+%PCI\VEN_8086&DEV_06A8Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_06A8
+%PCI\VEN_8086&DEV_06A9Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_06A9
+%PCI\VEN_8086&DEV_06AADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_06AA
+%PCI\VEN_8086&DEV_06ABDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_06AB
+%PCI\VEN_8086&DEV_06C7Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_06C7
+%PCI\VEN_8086&DEV_06E8Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_06E8
+%PCI\VEN_8086&DEV_06E9Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_06E9
+%PCI\VEN_8086&DEV_06EADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_06EA
+%PCI\VEN_8086&DEV_06EBDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_06EB
+%PCI\VEN_8086&DEV_06FBDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_06FB
+
+[INTEL.NTamd64]
+%PCI\VEN_8086&DEV_06A8Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_06A8
+%PCI\VEN_8086&DEV_06A9Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_06A9
+%PCI\VEN_8086&DEV_06AADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_06AA
+%PCI\VEN_8086&DEV_06ABDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_06AB
+%PCI\VEN_8086&DEV_06C7Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_06C7
+%PCI\VEN_8086&DEV_06E8Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_06E8
+%PCI\VEN_8086&DEV_06E9Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_06E9
+%PCI\VEN_8086&DEV_06EADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_06EA
+%PCI\VEN_8086&DEV_06EBDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_06EB
+%PCI\VEN_8086&DEV_06FBDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_06FB
+
+[Needs_NO_DRV]
+Include=machine.inf
+Needs=NO_DRV
+
+[Needs_NO_DRV.Services]
+Include=machine.inf
+Needs=NO_DRV.Services
+
+[Strings]
+INTEL="INTEL"
+PCI\VEN_8086&DEV_06A8Desc="Intel(R) LPSS: UART #0 - 06A8"
+PCI\VEN_8086&DEV_06A9Desc="Intel(R) LPSS: UART #1 - 06A9"
+PCI\VEN_8086&DEV_06AADesc="Intel(R) LPSS: SPI #0 - 06AA"
+PCI\VEN_8086&DEV_06ABDesc="Intel(R) LPSS: SPI #1 - 06AB"
+PCI\VEN_8086&DEV_06C7Desc="Intel(R) LPSS:  UART #2 - 06C7"
+PCI\VEN_8086&DEV_06E8Desc="Intel(R) LPSS: I2C Controller #0 - 06E8"
+PCI\VEN_8086&DEV_06E9Desc="Intel(R) LPSS: I2C Controller #1 - 06E9"
+PCI\VEN_8086&DEV_06EADesc="Intel(R) LPSS: I2C Controller #2 - 06EA"
+PCI\VEN_8086&DEV_06EBDesc="Intel(R) LPSS: I2C Controller #3 - 06EB"
+PCI\VEN_8086&DEV_06FBDesc="Intel(R) LPSS: SPI #2 - 06FB"
+
+
+
+
+; Copyright (c) 2003-2019 Intel Corporation
+; 
+; ********************************************************************************
+; Intel is making no claims of usability, efficacy or warranty.
+; ********************************************************************************
+; Information in this document is provided in connection with Intel products. No
+; license, express or implied, by estoppel or otherwise, to any intellectual
+; property rights is granted by this document. Intel assumes no liability
+; whatsoever, and Intel disclaims any express or implied warranty, relating to
+; sale and/or use of Intel products including liability or warranties relating to
+; fitness for a particular purpose, merchantability, or infringement of any
+; patent, copyright or other intellectual property right. Intel products are not
+; intended for use in medical, life saving, or life sustaining applications.
+; ********************************************************************************
+; Intel Corporation disclaims all warranties and liabilities for the use of this
+; document and the information contained herein, and assumes no responsibility for
+; any errors which may appear in this document, nor does Intel make a commitment
+; to update the information contained herein. Intel reserves the right to make
+; changes to this document at any time, without notice.
+; ********************************************************************************
+; ********************************************************************************
+; 
+; * Third-party brands and names are the property of their respective owners.

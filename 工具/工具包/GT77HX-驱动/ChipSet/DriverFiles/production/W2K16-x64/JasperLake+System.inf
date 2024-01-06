@@ -1,0 +1,126 @@
+; ************************************************************
+; ************************************************************
+; **  Filename: JasperLake+System.inf                       **
+; **  Abstract: Assigns the null driver to devices          **
+; **            for yellow-bang removal and                 **
+; **            brands Intel(R) devices                     ** 
+; ************************************************************
+; ************************************************************
+
+[Version]
+Signature=$WINDOWS NT$
+Class=System
+ClassGUID={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%INTEL%
+CatalogFile=JasperLake+.cat
+DriverVer=07/18/1968, 10.1.29.4
+PnpLockDown=1
+
+[SourceDisksNames]
+
+[SourceDisksFiles]
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%INTEL%=INTEL,NTx86,NTamd64
+
+[INTEL.NTx86]
+%PCI\VEN_8086&DEV_4E00Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E00
+%PCI\VEN_8086&DEV_4E03Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E03
+%PCI\VEN_8086&DEV_4E10Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E10
+%PCI\VEN_8086&DEV_4E12Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E12
+%PCI\VEN_8086&DEV_4E14Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E14
+%PCI\VEN_8086&DEV_4E19Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E19
+%PCI\VEN_8086&DEV_4E20Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E20
+%PCI\VEN_8086&DEV_4E22Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E22
+%PCI\VEN_8086&DEV_4E24Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E24
+%PCI\VEN_8086&DEV_4E26Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E26
+%PCI\VEN_8086&DEV_4E28Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E28
+%PCI\VEN_8086&DEV_4E30Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E30
+%PCI\VEN_8086&DEV_4E40Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E40
+%PCI\VEN_8086&DEV_4E41Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E41
+%PCI\VEN_8086&DEV_4E50Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E50
+%PCI\VEN_8086&DEV_4E51Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E51
+%PCI\VEN_8086&DEV_4E60Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E60
+%PCI\VEN_8086&DEV_4E70Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E70
+%PCI\VEN_8086&DEV_4E71Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E71
+
+[INTEL.NTamd64]
+%PCI\VEN_8086&DEV_4E00Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E00
+%PCI\VEN_8086&DEV_4E03Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E03
+%PCI\VEN_8086&DEV_4E10Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E10
+%PCI\VEN_8086&DEV_4E12Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E12
+%PCI\VEN_8086&DEV_4E14Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E14
+%PCI\VEN_8086&DEV_4E19Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E19
+%PCI\VEN_8086&DEV_4E20Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E20
+%PCI\VEN_8086&DEV_4E22Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E22
+%PCI\VEN_8086&DEV_4E24Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E24
+%PCI\VEN_8086&DEV_4E26Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E26
+%PCI\VEN_8086&DEV_4E28Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E28
+%PCI\VEN_8086&DEV_4E30Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E30
+%PCI\VEN_8086&DEV_4E40Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E40
+%PCI\VEN_8086&DEV_4E41Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E41
+%PCI\VEN_8086&DEV_4E50Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E50
+%PCI\VEN_8086&DEV_4E51Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E51
+%PCI\VEN_8086&DEV_4E60Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E60
+%PCI\VEN_8086&DEV_4E70Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E70
+%PCI\VEN_8086&DEV_4E71Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4E71
+
+[Needs_NO_DRV]
+Include=machine.inf
+Needs=NO_DRV
+
+[Needs_NO_DRV.Services]
+Include=machine.inf
+Needs=NO_DRV.Services
+
+[Strings]
+INTEL="INTEL"
+PCI\VEN_8086&DEV_4E00Desc="Intel(R) Host Bridge Super SKU1 - 4E00"
+PCI\VEN_8086&DEV_4E03Desc="Intel(R) Camarillo Device - 4E03"
+PCI\VEN_8086&DEV_4E10Desc="Intel(R) Host Bridge Super SKU2 - 4E10"
+PCI\VEN_8086&DEV_4E12Desc="Intel(R) SKU 2 Core - 4E12"
+PCI\VEN_8086&DEV_4E14Desc="Intel(R) SKU 2 Core - 4E14"
+PCI\VEN_8086&DEV_4E19Desc="Intel(R) IPU - 4E19"
+PCI\VEN_8086&DEV_4E20Desc="Intel(R) Host Bridge Super SKU3 - 4E20"
+PCI\VEN_8086&DEV_4E22Desc="Intel(R) SKU 4 Core - 4E22"
+PCI\VEN_8086&DEV_4E24Desc="Intel(R) SKU 4 Core - 4E24"
+PCI\VEN_8086&DEV_4E26Desc="Intel(R) SKU 4 Core - 4E26"
+PCI\VEN_8086&DEV_4E28Desc="Intel(R) SKU 4 Core - 4E28"
+PCI\VEN_8086&DEV_4E30Desc="Intel(R) Host Bridge Super SKU4 - 4E30"
+PCI\VEN_8086&DEV_4E40Desc="Intel(R) GT Super SKU1 - 4E40"
+PCI\VEN_8086&DEV_4E41Desc="Intel(R) GT SKU EU8 - 4E41"
+PCI\VEN_8086&DEV_4E50Desc="Intel(R) GT Super SKU2 - 4E50"
+PCI\VEN_8086&DEV_4E51Desc="Intel(R) GT SKU EU16 - 4E51"
+PCI\VEN_8086&DEV_4E60Desc="Intel(R) GT Super SKU3 - 4E60"
+PCI\VEN_8086&DEV_4E70Desc="Intel(R) GT Super SKU4 - 4E70"
+PCI\VEN_8086&DEV_4E71Desc="Intel(R) GT SKU EU32 - 4E71"
+
+
+
+
+; Copyright (c) 2003-2019 Intel Corporation
+; 
+; ********************************************************************************
+; Intel is making no claims of usability, efficacy or warranty.
+; ********************************************************************************
+; Information in this document is provided in connection with Intel products. No
+; license, express or implied, by estoppel or otherwise, to any intellectual
+; property rights is granted by this document. Intel assumes no liability
+; whatsoever, and Intel disclaims any express or implied warranty, relating to
+; sale and/or use of Intel products including liability or warranties relating to
+; fitness for a particular purpose, merchantability, or infringement of any
+; patent, copyright or other intellectual property right. Intel products are not
+; intended for use in medical, life saving, or life sustaining applications.
+; ********************************************************************************
+; Intel Corporation disclaims all warranties and liabilities for the use of this
+; document and the information contained herein, and assumes no responsibility for
+; any errors which may appear in this document, nor does Intel make a commitment
+; to update the information contained herein. Intel reserves the right to make
+; changes to this document at any time, without notice.
+; ********************************************************************************
+; ********************************************************************************
+; 
+; * Third-party brands and names are the property of their respective owners.

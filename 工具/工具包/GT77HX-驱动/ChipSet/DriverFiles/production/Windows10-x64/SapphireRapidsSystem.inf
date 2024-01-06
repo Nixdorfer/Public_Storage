@@ -1,0 +1,201 @@
+; ************************************************************
+; ************************************************************
+; **  Filename: SapphireRapidsSystem.inf                    **
+; **  Abstract: Assigns the null driver to devices          **
+; **            for yellow-bang removal and                 **
+; **            brands Intel(R) devices                     ** 
+; ************************************************************
+; ************************************************************
+
+[Version]
+Signature=$WINDOWS NT$
+Class=System
+ClassGUID={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%INTEL%
+CatalogFile=SapphireRapids.cat
+DriverVer=07/18/1968, 10.1.39.8
+PnpLockDown=1
+
+[SourceDisksNames]
+
+[SourceDisksFiles]
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%INTEL%=INTEL,NTx86,NTamd64,NTx86.10.0...20190,NTamd64.10.0...20190
+
+[INTEL.NTx86]
+%PCI\VEN_8086&DEV_0998Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_0998
+%PCI\VEN_8086&DEV_0B25Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_0B25
+%PCI\VEN_8086&DEV_0CFEDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_0CFE
+%PCI\VEN_8086&DEV_3240Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3240
+%PCI\VEN_8086&DEV_3241Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3241
+%PCI\VEN_8086&DEV_3245Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3245
+%PCI\VEN_8086&DEV_3246Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3246
+%PCI\VEN_8086&DEV_3247Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3247
+%PCI\VEN_8086&DEV_324ADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_324A
+%PCI\VEN_8086&DEV_324CDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_324C
+%PCI\VEN_8086&DEV_324DDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_324D
+%PCI\VEN_8086&DEV_3250Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3250
+%PCI\VEN_8086&DEV_3251Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3251
+%PCI\VEN_8086&DEV_3252Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3252
+%PCI\VEN_8086&DEV_3255Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3255
+%PCI\VEN_8086&DEV_3258Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3258
+%PCI\VEN_8086&DEV_3259Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3259
+%PCI\VEN_8086&DEV_325ADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_325A
+%PCI\VEN_8086&DEV_325BDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_325B
+%PCI\VEN_8086&DEV_325CDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_325C
+%PCI\VEN_8086&DEV_325DDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_325D
+%PCI\VEN_8086&DEV_325EDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_325E
+%PCI\VEN_8086&DEV_325FDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_325F
+%PCI\VEN_8086&DEV_0B23Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_0B23
+%PCI\VEN_8086&DEV_3242Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3242
+%PCI\VEN_8086&DEV_2710Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_2710
+
+[INTEL.NTx86.10.0...20190]
+%PCI\VEN_8086&DEV_0998Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_0998
+%PCI\VEN_8086&DEV_0B25Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_0B25
+%PCI\VEN_8086&DEV_0CFEDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_0CFE
+%PCI\VEN_8086&DEV_3240Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3240
+%PCI\VEN_8086&DEV_3241Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3241
+%PCI\VEN_8086&DEV_3245Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3245
+%PCI\VEN_8086&DEV_3246Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3246
+%PCI\VEN_8086&DEV_3247Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3247
+%PCI\VEN_8086&DEV_324ADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_324A
+%PCI\VEN_8086&DEV_324CDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_324C
+%PCI\VEN_8086&DEV_324DDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_324D
+%PCI\VEN_8086&DEV_3250Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3250
+%PCI\VEN_8086&DEV_3251Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3251
+%PCI\VEN_8086&DEV_3252Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3252
+%PCI\VEN_8086&DEV_3255Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3255
+%PCI\VEN_8086&DEV_3258Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3258
+%PCI\VEN_8086&DEV_3259Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3259
+%PCI\VEN_8086&DEV_325ADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_325A
+%PCI\VEN_8086&DEV_325BDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_325B
+%PCI\VEN_8086&DEV_325CDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_325C
+%PCI\VEN_8086&DEV_325DDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_325D
+%PCI\VEN_8086&DEV_325EDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_325E
+%PCI\VEN_8086&DEV_325FDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_325F
+%PCI\VEN_8086&DEV_3242Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3242
+%PCI\VEN_8086&DEV_2710Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_2710
+
+[INTEL.NTamd64]
+%PCI\VEN_8086&DEV_0998Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_0998
+%PCI\VEN_8086&DEV_0B25Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_0B25
+%PCI\VEN_8086&DEV_0CFEDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_0CFE
+%PCI\VEN_8086&DEV_3240Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3240
+%PCI\VEN_8086&DEV_3241Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3241
+%PCI\VEN_8086&DEV_3245Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3245
+%PCI\VEN_8086&DEV_3246Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3246
+%PCI\VEN_8086&DEV_3247Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3247
+%PCI\VEN_8086&DEV_324ADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_324A
+%PCI\VEN_8086&DEV_324CDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_324C
+%PCI\VEN_8086&DEV_324DDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_324D
+%PCI\VEN_8086&DEV_3250Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3250
+%PCI\VEN_8086&DEV_3251Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3251
+%PCI\VEN_8086&DEV_3252Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3252
+%PCI\VEN_8086&DEV_3255Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3255
+%PCI\VEN_8086&DEV_3258Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3258
+%PCI\VEN_8086&DEV_3259Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3259
+%PCI\VEN_8086&DEV_325ADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_325A
+%PCI\VEN_8086&DEV_325BDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_325B
+%PCI\VEN_8086&DEV_325CDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_325C
+%PCI\VEN_8086&DEV_325DDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_325D
+%PCI\VEN_8086&DEV_325EDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_325E
+%PCI\VEN_8086&DEV_325FDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_325F
+%PCI\VEN_8086&DEV_0B23Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_0B23
+%PCI\VEN_8086&DEV_3242Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3242
+%PCI\VEN_8086&DEV_2710Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_2710
+
+[INTEL.NTamd64.10.0...20190]
+%PCI\VEN_8086&DEV_0998Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_0998
+%PCI\VEN_8086&DEV_0B25Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_0B25
+%PCI\VEN_8086&DEV_0CFEDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_0CFE
+%PCI\VEN_8086&DEV_3240Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3240
+%PCI\VEN_8086&DEV_3241Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3241
+%PCI\VEN_8086&DEV_3245Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3245
+%PCI\VEN_8086&DEV_3246Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3246
+%PCI\VEN_8086&DEV_3247Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3247
+%PCI\VEN_8086&DEV_324ADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_324A
+%PCI\VEN_8086&DEV_324CDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_324C
+%PCI\VEN_8086&DEV_324DDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_324D
+%PCI\VEN_8086&DEV_3250Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3250
+%PCI\VEN_8086&DEV_3251Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3251
+%PCI\VEN_8086&DEV_3252Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3252
+%PCI\VEN_8086&DEV_3255Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3255
+%PCI\VEN_8086&DEV_3258Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3258
+%PCI\VEN_8086&DEV_3259Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3259
+%PCI\VEN_8086&DEV_325ADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_325A
+%PCI\VEN_8086&DEV_325BDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_325B
+%PCI\VEN_8086&DEV_325CDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_325C
+%PCI\VEN_8086&DEV_325DDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_325D
+%PCI\VEN_8086&DEV_325EDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_325E
+%PCI\VEN_8086&DEV_325FDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_325F
+%PCI\VEN_8086&DEV_3242Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3242
+%PCI\VEN_8086&DEV_2710Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_2710
+
+[Needs_NO_DRV]
+Include=machine.inf
+Needs=NO_DRV
+
+[Needs_NO_DRV.Services]
+Include=machine.inf
+Needs=NO_DRV.Services
+
+[Strings]
+INTEL="INTEL"
+PCI\VEN_8086&DEV_0998Desc="Intel(R) IEH3 - 0998"
+PCI\VEN_8086&DEV_0B25Desc="Intel(R) DSA Registers - 0B25"
+PCI\VEN_8086&DEV_0CFEDesc="Intel(R) IAX Registers - 0CFE"
+PCI\VEN_8086&DEV_3240Desc="Intel(R) UPI Registers - 3240"
+PCI\VEN_8086&DEV_3241Desc="Intel(R) UPI #2 - 3241"
+PCI\VEN_8086&DEV_3245Desc="Intel(R) M2UPI - 3245"
+PCI\VEN_8086&DEV_3246Desc="Intel(R) UPI PMON0 Registers - 3246"
+PCI\VEN_8086&DEV_3247Desc="Intel(R) UPI PMON1 Registers - 3247"
+PCI\VEN_8086&DEV_324ADesc="Intel(R) IMC0 Mesh to Mem Registers - 324A"
+PCI\VEN_8086&DEV_324CDesc="Intel(R) UNICAST CHA Registers - 324C"
+PCI\VEN_8086&DEV_324DDesc="Intel(R) UNICAST CHA Registers - 324D"
+PCI\VEN_8086&DEV_3250Desc="Intel(R) EVNTS - 3250"
+PCI\VEN_8086&DEV_3251Desc="Intel(R) URACU - 3251"
+PCI\VEN_8086&DEV_3252Desc="Intel(R) DECS - 3252"
+PCI\VEN_8086&DEV_3255Desc="Intel(R) MS2UBOX - 3255"
+PCI\VEN_8086&DEV_3258Desc="Intel(R) PCU CR0 Registers - 3258"
+PCI\VEN_8086&DEV_3259Desc="Intel(R) PCU CR1 Registers - 3259"
+PCI\VEN_8086&DEV_325ADesc="Intel(R) PCU CR2 Registers - 325A"
+PCI\VEN_8086&DEV_325BDesc="Intel(R) PCU CR3 Registers - 325B"
+PCI\VEN_8086&DEV_325CDesc="Intel(R) PCU CR4 Registers - 325C"
+PCI\VEN_8086&DEV_325DDesc="Intel(R) PCU CR5 Registers - 325D"
+PCI\VEN_8086&DEV_325EDesc="Intel(R) PCU CR6 Registers - 325E"
+PCI\VEN_8086&DEV_325FDesc="Intel(R) PCU CR7 Registers - 325F"
+PCI\VEN_8086&DEV_0B23Desc="Intel(R) Satellite IEH - 0B23"
+PCI\VEN_8086&DEV_3242Desc="Intel(R) UPI #3 - 3242"
+PCI\VEN_8086&DEV_2710Desc="Intel(R) HQM/DLB - 2710"
+
+
+
+
+; Copyright (c) 2003-2019 Intel Corporation
+; 
+; ********************************************************************************
+; Intel is making no claims of usability, efficacy or warranty.
+; ********************************************************************************
+; Information in this document is provided in connection with Intel products. No
+; license, express or implied, by estoppel or otherwise, to any intellectual
+; property rights is granted by this document. Intel assumes no liability
+; whatsoever, and Intel disclaims any express or implied warranty, relating to
+; sale and/or use of Intel products including liability or warranties relating to
+; fitness for a particular purpose, merchantability, or infringement of any
+; patent, copyright or other intellectual property right. Intel products are not
+; intended for use in medical, life saving, or life sustaining applications.
+; ********************************************************************************
+; Intel Corporation disclaims all warranties and liabilities for the use of this
+; document and the information contained herein, and assumes no responsibility for
+; any errors which may appear in this document, nor does Intel make a commitment
+; to update the information contained herein. Intel reserves the right to make
+; changes to this document at any time, without notice.
+; ********************************************************************************
+; ********************************************************************************
+; 
+; * Third-party brands and names are the property of their respective owners.

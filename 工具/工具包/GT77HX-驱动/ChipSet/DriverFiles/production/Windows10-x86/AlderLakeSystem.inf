@@ -1,0 +1,219 @@
+; ************************************************************
+; ************************************************************
+; **  Filename: AlderLakeSystem.inf                         **
+; **  Abstract: Assigns the null driver to devices          **
+; **            for yellow-bang removal and                 **
+; **            brands Intel(R) devices                     ** 
+; ************************************************************
+; ************************************************************
+
+[Version]
+Signature=$WINDOWS NT$
+Class=System
+ClassGUID={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%INTEL%
+CatalogFile=AlderLake.cat
+DriverVer=07/18/1968, 10.1.45.9
+PnpLockDown=1
+
+[SourceDisksNames]
+
+[SourceDisksFiles]
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%INTEL%=INTEL,NTx86,NTamd64
+
+[INTEL.NTx86]
+%PCI\VEN_8086&DEV_4601Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4601
+%PCI\VEN_8086&DEV_4602Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4602
+%PCI\VEN_8086&DEV_4609Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4609
+%PCI\VEN_8086&DEV_460ADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_460A
+%PCI\VEN_8086&DEV_460DDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_460D
+%PCI\VEN_8086&DEV_4610Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4610
+%PCI\VEN_8086&DEV_4614Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4614
+%PCI\VEN_8086&DEV_4617Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4617
+%PCI\VEN_8086&DEV_4618Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4618
+%PCI\VEN_8086&DEV_4619Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4619
+%PCI\VEN_8086&DEV_461ADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_461A
+%PCI\VEN_8086&DEV_461BDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_461B
+%PCI\VEN_8086&DEV_461CDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_461C
+%PCI\VEN_8086&DEV_4621Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4621
+%PCI\VEN_8086&DEV_4622Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4622
+%PCI\VEN_8086&DEV_4623Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4623
+%PCI\VEN_8086&DEV_4629Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4629
+%PCI\VEN_8086&DEV_462DDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_462D
+%PCI\VEN_8086&DEV_4630Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4630
+%PCI\VEN_8086&DEV_4633Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4633
+%PCI\VEN_8086&DEV_4637Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4637
+%PCI\VEN_8086&DEV_463BDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_463B
+%PCI\VEN_8086&DEV_463DDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_463D
+%PCI\VEN_8086&DEV_4640Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4640
+%PCI\VEN_8086&DEV_4641Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4641
+%PCI\VEN_8086&DEV_4644Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4644
+%PCI\VEN_8086&DEV_4648Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4648
+%PCI\VEN_8086&DEV_4649Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4649
+%PCI\VEN_8086&DEV_464CDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_464C
+%PCI\VEN_8086&DEV_464DDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_464D
+%PCI\VEN_8086&DEV_4650Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4650
+%PCI\VEN_8086&DEV_4653Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4653
+%PCI\VEN_8086&DEV_4660Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4660
+%PCI\VEN_8086&DEV_4663Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4663
+%PCI\VEN_8086&DEV_4664Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4664
+%PCI\VEN_8086&DEV_4668Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4668
+%PCI\VEN_8086&DEV_466BDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_466B
+%PCI\VEN_8086&DEV_466CDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_466C
+%PCI\VEN_8086&DEV_4670Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4670
+%PCI\VEN_8086&DEV_467DDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_467D
+%PCI\VEN_8086&DEV_4603Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4603
+%PCI\VEN_8086&DEV_4643Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4643
+%PCI\VEN_8086&DEV_466EDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_466E
+%PCI\VEN_8086&DEV_463FDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_463F
+%PCI\VEN_8086&DEV_462FDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_462F
+%PCI\VEN_8086&DEV_461FDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_461F
+
+[INTEL.NTamd64]
+%PCI\VEN_8086&DEV_4601Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4601
+%PCI\VEN_8086&DEV_4602Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4602
+%PCI\VEN_8086&DEV_4609Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4609
+%PCI\VEN_8086&DEV_460ADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_460A
+%PCI\VEN_8086&DEV_460DDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_460D
+%PCI\VEN_8086&DEV_4610Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4610
+%PCI\VEN_8086&DEV_4614Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4614
+%PCI\VEN_8086&DEV_4617Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4617
+%PCI\VEN_8086&DEV_4618Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4618
+%PCI\VEN_8086&DEV_4619Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4619
+%PCI\VEN_8086&DEV_461ADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_461A
+%PCI\VEN_8086&DEV_461BDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_461B
+%PCI\VEN_8086&DEV_461CDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_461C
+%PCI\VEN_8086&DEV_4621Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4621
+%PCI\VEN_8086&DEV_4622Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4622
+%PCI\VEN_8086&DEV_4623Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4623
+%PCI\VEN_8086&DEV_4629Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4629
+%PCI\VEN_8086&DEV_462DDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_462D
+%PCI\VEN_8086&DEV_4630Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4630
+%PCI\VEN_8086&DEV_4633Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4633
+%PCI\VEN_8086&DEV_4637Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4637
+%PCI\VEN_8086&DEV_463BDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_463B
+%PCI\VEN_8086&DEV_463DDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_463D
+%PCI\VEN_8086&DEV_4640Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4640
+%PCI\VEN_8086&DEV_4641Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4641
+%PCI\VEN_8086&DEV_4644Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4644
+%PCI\VEN_8086&DEV_4648Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4648
+%PCI\VEN_8086&DEV_4649Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4649
+%PCI\VEN_8086&DEV_464CDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_464C
+%PCI\VEN_8086&DEV_464DDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_464D
+%PCI\VEN_8086&DEV_4650Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4650
+%PCI\VEN_8086&DEV_4653Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4653
+%PCI\VEN_8086&DEV_4660Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4660
+%PCI\VEN_8086&DEV_4663Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4663
+%PCI\VEN_8086&DEV_4664Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4664
+%PCI\VEN_8086&DEV_4668Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4668
+%PCI\VEN_8086&DEV_466BDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_466B
+%PCI\VEN_8086&DEV_466CDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_466C
+%PCI\VEN_8086&DEV_4670Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4670
+%PCI\VEN_8086&DEV_467DDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_467D
+%PCI\VEN_8086&DEV_4603Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4603
+%PCI\VEN_8086&DEV_4643Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4643
+%PCI\VEN_8086&DEV_466EDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_466E
+%PCI\VEN_8086&DEV_463FDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_463F
+%PCI\VEN_8086&DEV_462FDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_462F
+%PCI\VEN_8086&DEV_461FDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_461F
+
+[Needs_NO_DRV]
+Include=machine.inf
+Needs=NO_DRV
+
+[Needs_NO_DRV.Services]
+Include=machine.inf
+Needs=NO_DRV.Services
+
+[Needs_PCI_DRV]
+Include=machine.inf
+Needs=PCI_DRV
+
+[Needs_PCI_DRV.Services]
+Include=machine.inf
+Needs=PCI_DRV.Services
+
+[Needs_PCI_DRV.HW]
+Include=machine.inf
+Needs=PCI_DRV.HW
+
+[Strings]
+INTEL="INTEL"
+PCI\VEN_8086&DEV_4601Desc="Intel(R) Host Bridge/DRAM Registers - 4601"
+PCI\VEN_8086&DEV_4602Desc="Intel(R) Host Bridge/DRAM Registers - 4602"
+PCI\VEN_8086&DEV_4609Desc="Intel(R) Host Bridge/DRAM Registers - 4609"
+PCI\VEN_8086&DEV_460ADesc="Intel(R) Host Bridge/DRAM Registers - 460A"
+PCI\VEN_8086&DEV_460DDesc="Intel(R) PEG10 - 460D"
+PCI\VEN_8086&DEV_4610Desc="Intel(R) Host Bridge/DRAM Registers - 4610"
+PCI\VEN_8086&DEV_4614Desc="Intel(R) Host Bridge/DRAM Registers - 4614"
+PCI\VEN_8086&DEV_4617Desc="Intel(R) Host Bridge/DRAM Registers - 4617"
+PCI\VEN_8086&DEV_4618Desc="Intel(R) Host Bridge/DRAM Registers - 4618"
+PCI\VEN_8086&DEV_4619Desc="Intel(R) Host Bridge/DRAM Registers - 4619"
+PCI\VEN_8086&DEV_461ADesc="Intel(R) Host Bridge/DRAM Registers - 461A"
+PCI\VEN_8086&DEV_461BDesc="Intel(R) Host Bridge/DRAM Registers - 461B"
+PCI\VEN_8086&DEV_461CDesc="Intel(R) Host Bridge/DRAM Registers - 461C"
+PCI\VEN_8086&DEV_4621Desc="Intel(R) Host Bridge/DRAM Registers - 4621"
+PCI\VEN_8086&DEV_4622Desc="Intel(R) Host Bridge/DRAM Registers - 4622"
+PCI\VEN_8086&DEV_4623Desc="Intel(R) Host Bridge/DRAM Registers - 4623"
+PCI\VEN_8086&DEV_4629Desc="Intel(R) Host Bridge/DRAM Registers - 4629"
+PCI\VEN_8086&DEV_462DDesc="Intel(R) PEG11 - 462D"
+PCI\VEN_8086&DEV_4630Desc="Intel(R) Host Bridge/DRAM Registers - 4630"
+PCI\VEN_8086&DEV_4633Desc="Intel(R) Host Bridge/DRAM Registers - 4633"
+PCI\VEN_8086&DEV_4637Desc="Intel(R) Host Bridge/DRAM Registers - 4637"
+PCI\VEN_8086&DEV_463BDesc="Intel(R) Host Bridge/DRAM Registers - 463B"
+PCI\VEN_8086&DEV_463DDesc="Intel(R) PEG62 - 463D"
+PCI\VEN_8086&DEV_4640Desc="Intel(R) Host Bridge/DRAM Registers - 4640"
+PCI\VEN_8086&DEV_4641Desc="Intel(R) Host Bridge/DRAM Registers - 4641"
+PCI\VEN_8086&DEV_4644Desc="Intel(R) Host Bridge/DRAM Registers - 4644"
+PCI\VEN_8086&DEV_4648Desc="Intel(R) Host Bridge/DRAM Registers - 4648"
+PCI\VEN_8086&DEV_4649Desc="Intel(R) Host Bridge/DRAM Registers - 4649"
+PCI\VEN_8086&DEV_464CDesc="Intel(R) Host Bridge/DRAM Registers - 464C"
+PCI\VEN_8086&DEV_464DDesc="Intel(R) PEG60 - 464D"
+PCI\VEN_8086&DEV_4650Desc="Intel(R) Host Bridge/DRAM Registers - 4650"
+PCI\VEN_8086&DEV_4653Desc="Intel(R) Host Bridge/DRAM Registers - 4653"
+PCI\VEN_8086&DEV_4660Desc="Intel(R) Host Bridge/DRAM Registers - 4660"
+PCI\VEN_8086&DEV_4663Desc="Intel(R) Host Bridge/DRAM Registers - 4663"
+PCI\VEN_8086&DEV_4664Desc="Intel(R) Host Bridge/DRAM Registers - 4664"
+PCI\VEN_8086&DEV_4668Desc="Intel(R) Host Bridge/DRAM Registers - 4668"
+PCI\VEN_8086&DEV_466BDesc="Intel(R) Host Bridge/DRAM Registers - 466B"
+PCI\VEN_8086&DEV_466CDesc="Intel(R) Host Bridge/DRAM Registers - 466C"
+PCI\VEN_8086&DEV_4670Desc="Intel(R) Host Bridge/DRAM Registers - 4670"
+PCI\VEN_8086&DEV_467DDesc="Intel(R) Crashlog - 467D"
+PCI\VEN_8086&DEV_4603Desc="Intel(R) Host Bridge/DRAM Registers - 4603"
+PCI\VEN_8086&DEV_4643Desc="Intel(R) Host Bridge/DRAM Registers - 4643"
+PCI\VEN_8086&DEV_466EDesc="Intel(R) TypeC PCIe - 466E"
+PCI\VEN_8086&DEV_463FDesc="Intel(R) TypeC PCIe - 463F"
+PCI\VEN_8086&DEV_462FDesc="Intel(R) TypeC PCIe - 462F"
+PCI\VEN_8086&DEV_461FDesc="Intel(R) TypeC PCIe - 461F"
+
+
+
+
+; Copyright (c) 2003-2019 Intel Corporation
+; 
+; ********************************************************************************
+; Intel is making no claims of usability, efficacy or warranty.
+; ********************************************************************************
+; Information in this document is provided in connection with Intel products. No
+; license, express or implied, by estoppel or otherwise, to any intellectual
+; property rights is granted by this document. Intel assumes no liability
+; whatsoever, and Intel disclaims any express or implied warranty, relating to
+; sale and/or use of Intel products including liability or warranties relating to
+; fitness for a particular purpose, merchantability, or infringement of any
+; patent, copyright or other intellectual property right. Intel products are not
+; intended for use in medical, life saving, or life sustaining applications.
+; ********************************************************************************
+; Intel Corporation disclaims all warranties and liabilities for the use of this
+; document and the information contained herein, and assumes no responsibility for
+; any errors which may appear in this document, nor does Intel make a commitment
+; to update the information contained herein. Intel reserves the right to make
+; changes to this document at any time, without notice.
+; ********************************************************************************
+; ********************************************************************************
+; 
+; * Third-party brands and names are the property of their respective owners.

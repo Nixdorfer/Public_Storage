@@ -1,0 +1,121 @@
+; ************************************************************
+; ************************************************************
+; **  Filename: GeminilakeSystem.inf                        **
+; **  Abstract: Assigns the null driver to devices          **
+; **            for yellow-bang removal and                 **
+; **            brands Intel(R) devices                     ** 
+; ************************************************************
+; ************************************************************
+
+[Version]
+Signature=$WINDOWS NT$
+Class=System
+ClassGUID={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%INTEL%
+CatalogFile=Geminilake.cat
+DriverVer=07/18/1968, 10.1.13.3
+
+[SourceDisksNames]
+
+[SourceDisksFiles]
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%INTEL%=INTEL,NTx86,NTamd64
+
+[INTEL.NTx86]
+%PCI\VEN_8086&DEV_3192Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3192
+%ACPI\INT3194Desc%=Needs_NO_DRV,ACPI\INT3194
+%PCI\VEN_8086&DEV_31D4Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31D4
+%PCI\VEN_8086&DEV_31D6Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_31D6
+%PCI\VEN_8086&DEV_31D7Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_31D7
+%PCI\VEN_8086&DEV_31D8Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_31D8
+%PCI\VEN_8086&DEV_31D9Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_31D9
+%PCI\VEN_8086&DEV_31DADesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_31DA
+%PCI\VEN_8086&DEV_31DBDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_31DB
+%PCI\VEN_8086&DEV_31E8Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_31E8
+%PCI\VEN_8086&DEV_31F0Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31F0
+
+[INTEL.NTamd64]
+%PCI\VEN_8086&DEV_3192Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3192
+%ACPI\INT3194Desc%=Needs_NO_DRV,ACPI\INT3194
+%PCI\VEN_8086&DEV_31D4Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31D4
+%PCI\VEN_8086&DEV_31D6Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_31D6
+%PCI\VEN_8086&DEV_31D7Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_31D7
+%PCI\VEN_8086&DEV_31D8Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_31D8
+%PCI\VEN_8086&DEV_31D9Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_31D9
+%PCI\VEN_8086&DEV_31DADesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_31DA
+%PCI\VEN_8086&DEV_31DBDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_31DB
+%PCI\VEN_8086&DEV_31E8Desc%=Needs_MSISADRV,PCI\VEN_8086&DEV_31E8
+%PCI\VEN_8086&DEV_31F0Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_31F0
+
+[Needs_NO_DRV]
+Include=machine.inf
+Needs=NO_DRV
+
+[Needs_NO_DRV.Services]
+Include=machine.inf
+Needs=NO_DRV.Services
+
+[Needs_PCI_DRV]
+Include=machine.inf
+Needs=PCI_DRV
+
+[Needs_PCI_DRV.Services]
+Include=machine.inf
+Needs=PCI_DRV.Services
+
+[Needs_PCI_DRV.HW]
+Include=machine.inf
+Needs=PCI_DRV.HW
+
+[Needs_MSISADRV]
+Include=machine.inf
+Needs=MSISADRV
+
+[Needs_MSISADRV.Services]
+Include=machine.inf
+Needs=MSISADRV.Services
+
+[Strings]
+INTEL="INTEL"
+PCI\VEN_8086&DEV_3192Desc="Intel(R) Celeron(R)/Pentium(R) Silver Processor P2SB - 3192"
+ACPI\INT3194Desc="Intel(R) Celeron(R)/Pentium(R) Silver Processor PMC - 3194"
+PCI\VEN_8086&DEV_31D4Desc="Intel(R) Celeron(R)/Pentium(R) Silver Processor Gaussian Mixture Model - 31D4"
+PCI\VEN_8086&DEV_31D6Desc="Intel(R) Celeron(R)/Pentium(R) Silver Processor PCI Express Root Port - 31D6"
+PCI\VEN_8086&DEV_31D7Desc="Intel(R) Celeron(R)/Pentium(R) Silver Processor PCI Express Root Port - 31D7"
+PCI\VEN_8086&DEV_31D8Desc="Intel(R) Celeron(R)/Pentium(R) Silver Processor PCI Express Root Port - 31D8"
+PCI\VEN_8086&DEV_31D9Desc="Intel(R) Celeron(R)/Pentium(R) Silver Processor PCI Express Root Port - 31D9"
+PCI\VEN_8086&DEV_31DADesc="Intel(R) Celeron(R)/Pentium(R) Silver Processor PCI Express Root Port - 31DA"
+PCI\VEN_8086&DEV_31DBDesc="Intel(R) Celeron(R)/Pentium(R) Silver Processor PCI Express Root Port - 31DB"
+PCI\VEN_8086&DEV_31E8Desc="Intel(R) Celeron(R)/Pentium(R) Silver Processor LPC Controller - 31E8"
+PCI\VEN_8086&DEV_31F0Desc="Intel(R) Celeron(R)/Pentium(R) Silver Processor Host Bridge - 31F0"
+
+
+
+
+; Copyright (c) 2003-2017 Intel Corporation
+; 
+; ********************************************************************************
+; Intel is making no claims of usability, efficacy or warranty.
+; ********************************************************************************
+; Information in this document is provided in connection with Intel products. No
+; license, express or implied, by estoppel or otherwise, to any intellectual
+; property rights is granted by this document. Intel assumes no liability
+; whatsoever, and Intel disclaims any express or implied warranty, relating to
+; sale and/or use of Intel products including liability or warranties relating to
+; fitness for a particular purpose, merchantability, or infringement of any
+; patent, copyright or other intellectual property right. Intel products are not
+; intended for use in medical, life saving, or life sustaining applications.
+; ********************************************************************************
+; Intel Corporation disclaims all warranties and liabilities for the use of this
+; document and the information contained herein, and assumes no responsibility for
+; any errors which may appear in this document, nor does Intel make a commitment
+; to update the information contained herein. Intel reserves the right to make
+; changes to this document at any time, without notice.
+; ********************************************************************************
+; ********************************************************************************
+; 
+; * Third-party brands and names are the property of their respective owners.

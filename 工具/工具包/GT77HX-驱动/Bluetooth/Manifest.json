@@ -1,0 +1,244 @@
+{
+   "TimeStamp" : "Mon Nov 14 10:10:11 2022",
+   "BuildTic" : "PHBTW68221",
+   "FWDAT" : "",
+   "BuildType" : "REL",
+   "PkgVersion" : "22.190.0",
+   "MileStone" : "PV Candidate",
+   "TOOLS_INST_COMPONENTS" : {
+      "INSTALL" : "22.190.0.2",
+      "TOOLS" : "22.190.0.2"
+   },
+   "BUILD_COMPONENTS" : {
+      "THP" : {
+         "USB" : {
+            "Win10_UWD" : {
+               "x64" : {
+                  "Properties" : {
+                     "FWDAT" : [
+                        "BT_Pulsar_REL20332_22.20.2245.20332"
+                     ],
+                     "Version" : "22.190.0.2",
+                     "VidPid" : "USB\\VID_8087&PID_0025",
+                     "Cert" : "HLK",
+                     "BuildTic" : "PHBTW2229"
+                  }
+               }
+            }
+         }
+      },
+      "HRP" : {
+         "USB" : {
+            "Win10_UWD" : {
+               "x64" : {
+                  "Properties" : {
+                     "FWDAT" : [
+                        "BT_Quasar_REL53263_22.180.2245.53263",
+                        "BT_Solar_REL54536_22.190.2246.54536"
+                     ],
+                     "Version" : "22.190.0.2",
+                     "VidPid" : "USB\\VID_8087&PID_0026",
+                     "Cert" : "HLK",
+                     "BuildTic" : "PHBTW2229"
+                  }
+               }
+            }
+         }
+      },
+      "SFP" : {
+         "USB" : {
+            "Win10_UWD" : {
+               "x64" : {
+                  "Properties" : {
+                     "FWDAT" : [
+                        "BT_LightningPeak_REL1387_21.110.2206.1387"
+                     ],
+                     "Version" : "22.190.0.2",
+                     "VidPid" : "USB\\VID_8087&PID_0A2B&REV_0001",
+                     "Cert" : "HLK",
+                     "BuildTic" : "PHBTW2229"
+                  }
+               }
+            }
+         }
+      },
+      "GFP" : {
+         "USB" : {
+            "Win10_UWD" : {
+               "x64" : {
+                  "Properties" : {
+                     "FWDAT" : [
+                        "BT_Quasar_REL53263_22.180.2245.53263",
+                        "BT_Solar_REL54536_22.190.2246.54536"
+                     ],
+                     "Version" : "22.190.0.2",
+                     "VidPid" : "USB\\VID_8087&PID_0033",
+                     "Cert" : "HLK",
+                     "BuildTic" : "PHBTW2229"
+                  }
+               }
+            }
+         }
+      },
+      "CCP" : {
+         "UART" : {
+            "Win10_UWD" : {
+               "x64" : {
+                  "Properties" : {
+                     "FWDAT" : [
+                        "BT_Quasar_REL53263_22.180.2245.53263"
+                     ],
+                     "Version" : "22.190.0.2",
+                     "VidPid" : "USB\\VID_8087&PID_0029",
+                     "Cert" : "HLK",
+                     "BuildTic" : "PHBTW2229"
+                  }
+               }
+            }
+         },
+         "USB" : {
+            "Win10_UWD" : {
+               "x64" : {
+                  "Properties" : {
+                     "FWDAT" : [
+                        "BT_Quasar_REL53263_22.180.2245.53263"
+                     ],
+                     "Version" : "22.190.0.2",
+                     "VidPid" : "USB\\VID_8087&PID_0029",
+                     "Cert" : "HLK",
+                     "BuildTic" : "PHBTW2229"
+                  }
+               }
+            }
+         },
+         "INFEXT" : {
+            "Win10_UWD" : {
+               "x64" : {
+                  "Properties" : {
+                     "FWDAT" : [
+                        "BT_Quasar_REL53263_22.180.2245.53263"
+                     ],
+                     "Version" : "22.190.0.2",
+                     "VidPid" : "USB\\VID_8087&PID_0029",
+                     "Cert" : "Intel",
+                     "BuildTic" : "PHBTW2229"
+                  }
+               }
+            }
+         }
+      },
+      "JFP" : {
+         "USB" : {
+            "Win10_UWD" : {
+               "x64" : {
+                  "Properties" : {
+                     "FWDAT" : [
+                        "BT_Pulsar_REL20332_22.20.2245.20332",
+                        "BT_Quasar_REL53263_22.180.2245.53263",
+                        "BT_SolarJfp_REL91_22.180.2245.91"
+                     ],
+                     "Version" : "22.190.0.2",
+                     "VidPid" : "USB\\VID_8087&PID_0AAA",
+                     "Cert" : "HLK",
+                     "BuildTic" : "PHBTW2229"
+                  }
+               }
+            }
+         }
+      },
+      "STP" : {
+         "USB" : {
+            "Win10_UWD" : {
+               "x64" : {
+                  "Properties" : {
+                     "FWDAT" : [
+                        "BT_StonePeak_C0_REL_63_00004",
+                        "BT_StonePeak_D0_REL_57_1098",
+                        "BT_StonePeak_D1_REL_60_1275"
+                     ],
+                     "Version" : "20.100.10.9",
+                     "VidPid" : "USB\\VID_8087&PID_0A2A",
+                     "Cert" : "HLK",
+                     "BuildTic" : "PHBTW56768"
+                  }
+               },
+               "x86" : {
+                  "Properties" : {
+                     "FWDAT" : [
+                        "BT_StonePeak_C0_REL_63_00004",
+                        "BT_StonePeak_D0_REL_57_1098",
+                        "BT_StonePeak_D1_REL_60_1275"
+                     ],
+                     "Version" : "20.100.9.7",
+                     "VidPid" : "USB\\VID_8087&PID_0A2A",
+                     "Cert" : "HLK",
+                     "BuildTic" : "PHBTW45814"
+                  }
+               }
+            }
+         }
+      },
+      "SDP" : {
+         "USB" : {
+            "Win10_UWD" : {
+               "x64" : {
+                  "Properties" : {
+                     "FWDAT" : [
+                        "BT_StonePeak_D1_REL_60_1275"
+                     ],
+                     "Version" : "20.100.10.9",
+                     "VidPid" : "USB\\VID_8087&PID_0AA7",
+                     "Cert" : "HLK",
+                     "BuildTic" : "PHBTW56768"
+                  }
+               },
+               "x86" : {
+                  "Properties" : {
+                     "FWDAT" : [
+                        "BT_StonePeak_D1_REL_60_1275"
+                     ],
+                     "Version" : "20.100.9.7",
+                     "VidPid" : "USB\\VID_8087&PID_0AA7",
+                     "Cert" : "HLK",
+                     "BuildTic" : "PHBTW45814"
+                  }
+               }
+            }
+         }
+      },
+      "WSP" : {
+         "USB" : {
+            "Win10_UWD" : {
+               "x64" : {
+                  "Properties" : {
+                     "FWDAT" : [
+                        "BT_WindStormPeak_REL1388_21.110.2206.1388"
+                     ],
+                     "Version" : "22.190.0.2",
+                     "VidPid" : "USB\\VID_8087&PID_0A2B&REV_0010",
+                     "Cert" : "HLK",
+                     "BuildTic" : "PHBTW2229"
+                  }
+               }
+            }
+         }
+      },
+      "TYP" : {
+         "USB" : {
+            "Win10_UWD" : {
+               "x64" : {
+                  "Properties" : {
+                     "FWDAT" : [
+                        "BT_Solar_REL54536_22.190.2246.54536"
+                     ],
+                     "Version" : "22.190.0.2",
+                     "VidPid" : "USB\\VID_8087&PID_0032",
+                     "Cert" : "HLK",
+                     "BuildTic" : "PHBTW2229"
+                  }
+               }
+            }
+         }
+      }
+   }
+}

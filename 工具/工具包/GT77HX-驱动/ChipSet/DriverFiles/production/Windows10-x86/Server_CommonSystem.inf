@@ -1,0 +1,114 @@
+; ************************************************************
+; ************************************************************
+; **  Filename: Server_CommonSystem.inf                     **
+; **  Abstract: Assigns the null driver to devices          **
+; **            for yellow-bang removal and                 **
+; **            brands Intel(R) devices                     ** 
+; ************************************************************
+; ************************************************************
+
+[Version]
+Signature=$WINDOWS NT$
+Class=System
+ClassGUID={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%INTEL%
+CatalogFile=Server_Common.cat
+DriverVer=07/18/1968, 10.1.42.11
+PnpLockDown=1
+
+[SourceDisksNames]
+
+[SourceDisksFiles]
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%INTEL%=INTEL,NTx86,NTamd64,NTamd64...3
+
+[INTEL.NTx86]
+%ACPI\INTL0000Desc%=Needs_NO_DRV,ACPI\INTL0000
+%PCI\VEN_8086&DEV_09A2Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_09A2
+%PCI\VEN_8086&DEV_09A3Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_09A3
+%PCI\VEN_8086&DEV_09A4Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_09A4
+%PCI\VEN_8086&DEV_09A7Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_09A7
+%PCI\VEN_8086&DEV_09A5Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_09A5
+%PCI\VEN_8086&DEV_09a6Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_09a6
+%PCI\VEN_8086&DEV_0000Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_0000
+%PCI\VEN_8086&DEV_2880Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_2880
+%PCI\VEN_8086&DEV_344FDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_344F
+%PCI\VEN_8086&DEV_3457Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3457
+
+[INTEL.NTamd64]
+%ACPI\INTL0000Desc%=Needs_NO_DRV,ACPI\INTL0000
+%PCI\VEN_8086&DEV_09A2Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_09A2
+%PCI\VEN_8086&DEV_09A3Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_09A3
+%PCI\VEN_8086&DEV_09A4Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_09A4
+%PCI\VEN_8086&DEV_09A7Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_09A7
+%PCI\VEN_8086&DEV_09A5Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_09A5
+%PCI\VEN_8086&DEV_09a6Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_09a6
+%PCI\VEN_8086&DEV_2880Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_2880
+%PCI\VEN_8086&DEV_344FDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_344F
+%PCI\VEN_8086&DEV_3457Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3457
+
+[INTEL.NTamd64...3]
+%ACPI\INTL0000Desc%=Needs_NO_DRV,ACPI\INTL0000
+%PCI\VEN_8086&DEV_09A2Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_09A2
+%PCI\VEN_8086&DEV_09A3Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_09A3
+%PCI\VEN_8086&DEV_09A4Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_09A4
+%PCI\VEN_8086&DEV_09A7Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_09A7
+%PCI\VEN_8086&DEV_09A5Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_09A5
+%PCI\VEN_8086&DEV_09a6Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_09a6
+%PCI\VEN_8086&DEV_0000Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_0000
+%PCI\VEN_8086&DEV_2880Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_2880
+%PCI\VEN_8086&DEV_344FDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_344F
+%PCI\VEN_8086&DEV_3457Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_3457
+
+[Needs_NO_DRV]
+Include=machine.inf
+Needs=NO_DRV
+
+[Needs_NO_DRV.Services]
+Include=machine.inf
+Needs=NO_DRV.Services
+
+[Strings]
+INTEL="INTEL"
+ACPI\INTL0000Desc="Intel(R) address translation DSM interface"
+PCI\VEN_8086&DEV_09A2Desc="Intel (R) VT-d Registers - 09A2"
+PCI\VEN_8086&DEV_09A3Desc="Intel (R) RAS Registers - 09A3"
+PCI\VEN_8086&DEV_09A4Desc="Intel (R) Mesh 2 PCIe Registers - 09A4"
+PCI\VEN_8086&DEV_09A7Desc="Intel (R) PMON MSM Registers - 09A7"
+PCI\VEN_8086&DEV_09A5Desc="Intel (R) DFX Registers - 09A5"
+PCI\VEN_8086&DEV_09a6Desc="Intel (R) MSM Registers - 09A6"
+PCI\VEN_8086&DEV_0000Desc="Intel (R) NTB Registers - "
+PCI\VEN_8086&DEV_2880Desc="Intel (R) DDRIO Host Config Registers - 2880"
+PCI\VEN_8086&DEV_344FDesc="Intel (R) CHA ALL0 Registers - 344F"
+PCI\VEN_8086&DEV_3457Desc="Intel (R) CHA ALL1 Registers - 3457"
+
+
+
+
+; Copyright (c) 2003-2019 Intel Corporation
+; 
+; ********************************************************************************
+; Intel is making no claims of usability, efficacy or warranty.
+; ********************************************************************************
+; Information in this document is provided in connection with Intel products. No
+; license, express or implied, by estoppel or otherwise, to any intellectual
+; property rights is granted by this document. Intel assumes no liability
+; whatsoever, and Intel disclaims any express or implied warranty, relating to
+; sale and/or use of Intel products including liability or warranties relating to
+; fitness for a particular purpose, merchantability, or infringement of any
+; patent, copyright or other intellectual property right. Intel products are not
+; intended for use in medical, life saving, or life sustaining applications.
+; ********************************************************************************
+; Intel Corporation disclaims all warranties and liabilities for the use of this
+; document and the information contained herein, and assumes no responsibility for
+; any errors which may appear in this document, nor does Intel make a commitment
+; to update the information contained herein. Intel reserves the right to make
+; changes to this document at any time, without notice.
+; ********************************************************************************
+; ********************************************************************************
+; 
+; * Third-party brands and names are the property of their respective owners.

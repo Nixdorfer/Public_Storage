@@ -1,0 +1,223 @@
+; ************************************************************
+; ************************************************************
+; **  Filename: SunrisePoint-HSystem.inf                    **
+; **  Abstract: Assigns the null driver to devices          **
+; **            for yellow-bang removal and                 **
+; **            brands Intel(R) devices                     ** 
+; ************************************************************
+; ************************************************************
+
+[Version]
+Signature=$WINDOWS NT$
+Class=System
+ClassGUID={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%INTEL%
+CatalogFile=SunrisePoint-H.cat
+DriverVer=07/18/1968, 10.1.6.2
+
+[SourceDisksNames]
+
+[SourceDisksFiles]
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%INTEL%=INTEL,NTx86,NTamd64
+
+[INTEL.NTx86]
+%PCI\VEN_8086&DEV_A110Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A110
+%PCI\VEN_8086&DEV_A111Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A111
+%PCI\VEN_8086&DEV_A112Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A112
+%PCI\VEN_8086&DEV_A113Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A113
+%PCI\VEN_8086&DEV_A114Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A114
+%PCI\VEN_8086&DEV_A115Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A115
+%PCI\VEN_8086&DEV_A116Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A116
+%PCI\VEN_8086&DEV_A117Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A117
+%PCI\VEN_8086&DEV_A118Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A118
+%PCI\VEN_8086&DEV_A119Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A119
+%PCI\VEN_8086&DEV_A11ADesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A11A
+%PCI\VEN_8086&DEV_A11BDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A11B
+%PCI\VEN_8086&DEV_A11CDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A11C
+%PCI\VEN_8086&DEV_A11DDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A11D
+%PCI\VEN_8086&DEV_A11EDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A11E
+%PCI\VEN_8086&DEV_A11FDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A11F
+%PCI\VEN_8086&DEV_A120Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_A120
+%PCI\VEN_8086&DEV_A121Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_A121
+%PCI\VEN_8086&DEV_A123Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_A123
+%PCI\VEN_8086&DEV_A124Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_A124
+%PCI\VEN_8086&DEV_A126Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_A126
+%PCI\VEN_8086&DEV_A141Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A141
+%PCI\VEN_8086&DEV_A142Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A142
+%PCI\VEN_8086&DEV_A143Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A143
+%PCI\VEN_8086&DEV_A144Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A144
+%PCI\VEN_8086&DEV_A145Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A145
+%PCI\VEN_8086&DEV_A146Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A146
+%PCI\VEN_8086&DEV_A147Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A147
+%PCI\VEN_8086&DEV_A148Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A148
+%PCI\VEN_8086&DEV_A149Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A149
+%PCI\VEN_8086&DEV_A14ADesc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A14A
+%PCI\VEN_8086&DEV_A14BDesc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A14B
+%PCI\VEN_8086&DEV_A14CDesc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A14C
+%PCI\VEN_8086&DEV_A14DDesc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A14D
+%PCI\VEN_8086&DEV_A14EDesc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A14E
+%PCI\VEN_8086&DEV_A150Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A150
+%PCI\VEN_8086&DEV_A151Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A151
+%PCI\VEN_8086&DEV_A152Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A152
+%PCI\VEN_8086&DEV_A153Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A153
+%PCI\VEN_8086&DEV_A154Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A154
+%PCI\VEN_8086&DEV_A155Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A155
+%PCI\VEN_8086&DEV_A167Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A167
+%PCI\VEN_8086&DEV_A168Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A168
+%PCI\VEN_8086&DEV_A169Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A169
+%PCI\VEN_8086&DEV_A16ADesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A16A
+
+[INTEL.NTamd64]
+%PCI\VEN_8086&DEV_A110Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A110
+%PCI\VEN_8086&DEV_A111Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A111
+%PCI\VEN_8086&DEV_A112Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A112
+%PCI\VEN_8086&DEV_A113Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A113
+%PCI\VEN_8086&DEV_A114Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A114
+%PCI\VEN_8086&DEV_A115Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A115
+%PCI\VEN_8086&DEV_A116Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A116
+%PCI\VEN_8086&DEV_A117Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A117
+%PCI\VEN_8086&DEV_A118Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A118
+%PCI\VEN_8086&DEV_A119Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A119
+%PCI\VEN_8086&DEV_A11ADesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A11A
+%PCI\VEN_8086&DEV_A11BDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A11B
+%PCI\VEN_8086&DEV_A11CDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A11C
+%PCI\VEN_8086&DEV_A11DDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A11D
+%PCI\VEN_8086&DEV_A11EDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A11E
+%PCI\VEN_8086&DEV_A11FDesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A11F
+%PCI\VEN_8086&DEV_A120Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_A120
+%PCI\VEN_8086&DEV_A121Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_A121
+%PCI\VEN_8086&DEV_A123Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_A123
+%PCI\VEN_8086&DEV_A124Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_A124
+%PCI\VEN_8086&DEV_A126Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_A126
+%PCI\VEN_8086&DEV_A141Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A141
+%PCI\VEN_8086&DEV_A142Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A142
+%PCI\VEN_8086&DEV_A143Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A143
+%PCI\VEN_8086&DEV_A144Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A144
+%PCI\VEN_8086&DEV_A145Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A145
+%PCI\VEN_8086&DEV_A146Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A146
+%PCI\VEN_8086&DEV_A147Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A147
+%PCI\VEN_8086&DEV_A148Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A148
+%PCI\VEN_8086&DEV_A149Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A149
+%PCI\VEN_8086&DEV_A14ADesc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A14A
+%PCI\VEN_8086&DEV_A14BDesc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A14B
+%PCI\VEN_8086&DEV_A14CDesc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A14C
+%PCI\VEN_8086&DEV_A14DDesc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A14D
+%PCI\VEN_8086&DEV_A14EDesc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A14E
+%PCI\VEN_8086&DEV_A150Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A150
+%PCI\VEN_8086&DEV_A151Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A151
+%PCI\VEN_8086&DEV_A152Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A152
+%PCI\VEN_8086&DEV_A153Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A153
+%PCI\VEN_8086&DEV_A154Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A154
+%PCI\VEN_8086&DEV_A155Desc%=Needs_ISAPNP_DRV,PCI\VEN_8086&DEV_A155
+%PCI\VEN_8086&DEV_A167Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A167
+%PCI\VEN_8086&DEV_A168Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A168
+%PCI\VEN_8086&DEV_A169Desc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A169
+%PCI\VEN_8086&DEV_A16ADesc%=Needs_PCI_DRV,PCI\VEN_8086&DEV_A16A
+
+[Needs_PCI_DRV]
+Include=machine.inf
+Needs=PCI_DRV
+
+[Needs_PCI_DRV.Services]
+Include=machine.inf
+Needs=PCI_DRV.Services
+
+[Needs_PCI_DRV.HW]
+Include=machine.inf
+Needs=PCI_DRV.HW
+
+[Needs_NO_DRV]
+Include=machine.inf
+Needs=NO_DRV
+
+[Needs_NO_DRV.Services]
+Include=machine.inf
+Needs=NO_DRV.Services
+
+[Needs_ISAPNP_DRV]
+Include=machine.inf
+Needs=ISAPNP_DRV
+
+[Needs_ISAPNP_DRV.Services]
+Include=machine.inf
+Needs=ISAPNP_DRV.Services
+
+[Strings]
+INTEL="INTEL"
+PCI\VEN_8086&DEV_A110Desc="Intel(R) 100 Series/C230 Series Chipset Family PCI Express Root Port #1 - A110"
+PCI\VEN_8086&DEV_A111Desc="Intel(R) 100 Series/C230 Series Chipset Family PCI Express Root Port #2 - A111"
+PCI\VEN_8086&DEV_A112Desc="Intel(R) 100 Series/C230 Series Chipset Family PCI Express Root Port #3 - A112"
+PCI\VEN_8086&DEV_A113Desc="Intel(R) 100 Series/C230 Series Chipset Family PCI Express Root Port #4 - A113"
+PCI\VEN_8086&DEV_A114Desc="Intel(R) 100 Series/C230 Series Chipset Family PCI Express Root Port #5 - A114"
+PCI\VEN_8086&DEV_A115Desc="Intel(R) 100 Series/C230 Series Chipset Family PCI Express Root Port #6 - A115"
+PCI\VEN_8086&DEV_A116Desc="Intel(R) 100 Series/C230 Series Chipset Family PCI Express Root Port #7 - A116"
+PCI\VEN_8086&DEV_A117Desc="Intel(R) 100 Series/C230 Series Chipset Family PCI Express Root Port #8 - A117"
+PCI\VEN_8086&DEV_A118Desc="Intel(R) 100 Series/C230 Series Chipset Family PCI Express Root Port #9 - A118"
+PCI\VEN_8086&DEV_A119Desc="Intel(R) 100 Series/C230 Series Chipset Family PCI Express Root Port #10 - A119"
+PCI\VEN_8086&DEV_A11ADesc="Intel(R) 100 Series/C230 Series Chipset Family PCI Express Root Port #11 - A11A"
+PCI\VEN_8086&DEV_A11BDesc="Intel(R) 100 Series/C230 Series Chipset Family PCI Express Root Port #12 - A11B"
+PCI\VEN_8086&DEV_A11CDesc="Intel(R) 100 Series/C230 Series Chipset Family PCI Express Root Port #13 - A11C"
+PCI\VEN_8086&DEV_A11DDesc="Intel(R) 100 Series/C230 Series Chipset Family PCI Express Root Port #14 - A11D"
+PCI\VEN_8086&DEV_A11EDesc="Intel(R) 100 Series/C230 Series Chipset Family PCI Express Root Port #15 - A11E"
+PCI\VEN_8086&DEV_A11FDesc="Intel(R) 100 Series/C230 Series Chipset Family PCI Express Root Port #16 - A11F"
+PCI\VEN_8086&DEV_A120Desc="Intel(R) 100 Series/C230 Series Chipset Family P2SB - A120"
+PCI\VEN_8086&DEV_A121Desc="Intel(R) 100 Series/C230 Series Chipset Family PMC - A121"
+PCI\VEN_8086&DEV_A123Desc="Intel(R) 100 Series/C230 Series Chipset Family SMBus - A123"
+PCI\VEN_8086&DEV_A124Desc="Intel(R) 100 Series/C230 Series Chipset Family SPI Controller - A124"
+PCI\VEN_8086&DEV_A126Desc="Intel(R) 100 Series/C230 Series Chipset Family Trace Hub - A126"
+PCI\VEN_8086&DEV_A141Desc="Intel(R) 100 Series/C230 Series Chipset Family LPC Controller (Client Engineering sample) - A141"
+PCI\VEN_8086&DEV_A142Desc="Intel(R) 100 Series/C230 Series Chipset Family LPC Controller - A142"
+PCI\VEN_8086&DEV_A143Desc="Intel(R) 100 Series/C230 Series Chipset Family LPC Controller (H110) - A143"
+PCI\VEN_8086&DEV_A144Desc="Intel(R) 100 Series/C230 Series Chipset Family LPC Controller (H170) - A144"
+PCI\VEN_8086&DEV_A145Desc="Intel(R) 100 Series/C230 Series Chipset Family LPC Controller (Z170) - A145"
+PCI\VEN_8086&DEV_A146Desc="Intel(R) 100 Series/C230 Series Chipset Family LPC Controller (Q170) - A146"
+PCI\VEN_8086&DEV_A147Desc="Intel(R) 100 Series/C230 Series Chipset Family LPC Controller (Q150) - A147"
+PCI\VEN_8086&DEV_A148Desc="Intel(R) 100 Series/C230 Series Chipset Family LPC Controller (B150) - A148"
+PCI\VEN_8086&DEV_A149Desc="Intel(R) 100 Series/C230 Series Chipset Family LPC Controller (C236) - A149"
+PCI\VEN_8086&DEV_A14ADesc="Intel(R) 100 Series/C230 Series Chipset Family LPC Controller (C232) - A14A"
+PCI\VEN_8086&DEV_A14BDesc="Intel(R) 100 Series/C230 Series Chipset Family LPC Controller (Server Engineering sample) - A14B"
+PCI\VEN_8086&DEV_A14CDesc="Intel(R) 100 Series/C230 Series Chipset Family LPC Controller - A14C"
+PCI\VEN_8086&DEV_A14DDesc="Intel(R) 100 Series/C230 Series Chipset Family LPC Controller (QM170) - A14D"
+PCI\VEN_8086&DEV_A14EDesc="Intel(R) 100 Series/C230 Series Chipset Family LPC Controller (HM170) - A14E"
+PCI\VEN_8086&DEV_A150Desc="Intel(R) 100 Series/C230 Series Chipset Family LPC Controller (CM236) - A150"
+PCI\VEN_8086&DEV_A151Desc="Intel(R) 100 Series/C230 Series Chipset Family LPC Controller (QMS180) - A151"
+PCI\VEN_8086&DEV_A152Desc="Intel(R) 100 Series/C230 Series Chipset Family LPC Controller (HM175) - A152"
+PCI\VEN_8086&DEV_A153Desc="Intel(R) 100 Series/C230 Series Chipset Family LPC Controller (QM175) - A153"
+PCI\VEN_8086&DEV_A154Desc="Intel(R) 100 Series/C230 Series Chipset Family LPC Controller (CM238) - A154"
+PCI\VEN_8086&DEV_A155Desc="Intel(R) 100 Series/C230 Series Chipset Family LPC Controller (QMU185) - A155"
+PCI\VEN_8086&DEV_A167Desc="Intel(R) 100 Series/C230 Series Chipset Family PCI Root Port #17 - A167"
+PCI\VEN_8086&DEV_A168Desc="Intel(R) 100 Series/C230 Series Chipset Family PCI Root Port #18 - A168"
+PCI\VEN_8086&DEV_A169Desc="Intel(R) 100 Series/C230 Series Chipset Family PCI Root Port #19 - A169"
+PCI\VEN_8086&DEV_A16ADesc="Intel(R) 100 Series/C230 Series Chipset Family PCI Root Port #20 - A16A"
+
+
+
+
+; Copyright (c) 2003-2017 Intel Corporation
+; 
+; ********************************************************************************
+; Intel is making no claims of usability, efficacy or warranty.
+; ********************************************************************************
+; Information in this document is provided in connection with Intel products. No
+; license, express or implied, by estoppel or otherwise, to any intellectual
+; property rights is granted by this document. Intel assumes no liability
+; whatsoever, and Intel disclaims any express or implied warranty, relating to
+; sale and/or use of Intel products including liability or warranties relating to
+; fitness for a particular purpose, merchantability, or infringement of any
+; patent, copyright or other intellectual property right. Intel products are not
+; intended for use in medical, life saving, or life sustaining applications.
+; ********************************************************************************
+; Intel Corporation disclaims all warranties and liabilities for the use of this
+; document and the information contained herein, and assumes no responsibility for
+; any errors which may appear in this document, nor does Intel make a commitment
+; to update the information contained herein. Intel reserves the right to make
+; changes to this document at any time, without notice.
+; ********************************************************************************
+; ********************************************************************************
+; 
+; * Third-party brands and names are the property of their respective owners.

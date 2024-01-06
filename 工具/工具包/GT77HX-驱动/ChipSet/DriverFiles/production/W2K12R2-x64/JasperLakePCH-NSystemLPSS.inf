@@ -1,0 +1,105 @@
+; ************************************************************
+; ************************************************************
+; **  Filename: JasperLakePCH-NSystemLPSS.inf               **
+; **  Abstract: Assigns the null driver to devices          **
+; **            for yellow-bang removal and                 **
+; **            brands Intel(R) devices                     ** 
+; ************************************************************
+; ************************************************************
+
+[Version]
+Signature=$WINDOWS NT$
+Class=System
+ClassGUID={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%INTEL%
+CatalogFile=JasperLakePCH-N.cat
+DriverVer=07/18/1968, 10.1.32.3
+PnpLockDown=1
+
+[SourceDisksNames]
+
+[SourceDisksFiles]
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%INTEL%=INTEL,NTx86,NTamd64
+
+[INTEL.NTx86]
+%PCI\VEN_8086&DEV_4DA8Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4DA8
+%PCI\VEN_8086&DEV_4DA9Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4DA9
+%PCI\VEN_8086&DEV_4DAADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4DAA
+%PCI\VEN_8086&DEV_4DABDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4DAB
+%PCI\VEN_8086&DEV_4DC5Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4DC5
+%PCI\VEN_8086&DEV_4DC6Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4DC6
+%PCI\VEN_8086&DEV_4DAFDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4DAF
+%PCI\VEN_8086&DEV_4DE8Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4DE8
+%PCI\VEN_8086&DEV_4DE9Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4DE9
+%PCI\VEN_8086&DEV_4DEADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4DEA
+%PCI\VEN_8086&DEV_4DEBDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4DEB
+%PCI\VEN_8086&DEV_4DFBDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4DFB
+
+[INTEL.NTamd64]
+%PCI\VEN_8086&DEV_4DA8Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4DA8
+%PCI\VEN_8086&DEV_4DA9Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4DA9
+%PCI\VEN_8086&DEV_4DAADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4DAA
+%PCI\VEN_8086&DEV_4DABDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4DAB
+%PCI\VEN_8086&DEV_4DC5Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4DC5
+%PCI\VEN_8086&DEV_4DC6Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4DC6
+%PCI\VEN_8086&DEV_4DAFDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4DAF
+%PCI\VEN_8086&DEV_4DE8Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4DE8
+%PCI\VEN_8086&DEV_4DE9Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4DE9
+%PCI\VEN_8086&DEV_4DEADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4DEA
+%PCI\VEN_8086&DEV_4DEBDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4DEB
+%PCI\VEN_8086&DEV_4DFBDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_4DFB
+
+[Needs_NO_DRV]
+Include=machine.inf
+Needs=NO_DRV
+
+[Needs_NO_DRV.Services]
+Include=machine.inf
+Needs=NO_DRV.Services
+
+[Strings]
+INTEL="INTEL"
+PCI\VEN_8086&DEV_4DA8Desc="Intel(R) LPSS: UART #0 - 4DA8"
+PCI\VEN_8086&DEV_4DA9Desc="Intel(R) LPSS: UART #1 - 4DA9"
+PCI\VEN_8086&DEV_4DAADesc="Intel(R) LPSS: SPI #0 - 4DAA"
+PCI\VEN_8086&DEV_4DABDesc="Intel(R) LPSS: SPI #1 - 4DAB"
+PCI\VEN_8086&DEV_4DC5Desc="Intel(R) LPSS: I2C Controller #4 - 4DC5"
+PCI\VEN_8086&DEV_4DC6Desc="Intel(R) LPSS: I2C Controller #5 - 4DC6"
+PCI\VEN_8086&DEV_4DAFDesc="Intel(R) LPSS: UART #2 - 4DAF"
+PCI\VEN_8086&DEV_4DE8Desc="Intel(R) LPSS: I2C Controller #0 - 4DE8"
+PCI\VEN_8086&DEV_4DE9Desc="Intel(R) LPSS: I2C Controller #1 - 4DE9"
+PCI\VEN_8086&DEV_4DEADesc="Intel(R) LPSS: I2C Controller #2 - 4DEA"
+PCI\VEN_8086&DEV_4DEBDesc="Intel(R) LPSS: I2C Controller #3 - 4DEB"
+PCI\VEN_8086&DEV_4DFBDesc="Intel(R) LPSS: SPI #2 - 4DFB"
+
+
+
+
+; Copyright (c) 2003-2019 Intel Corporation
+; 
+; ********************************************************************************
+; Intel is making no claims of usability, efficacy or warranty.
+; ********************************************************************************
+; Information in this document is provided in connection with Intel products. No
+; license, express or implied, by estoppel or otherwise, to any intellectual
+; property rights is granted by this document. Intel assumes no liability
+; whatsoever, and Intel disclaims any express or implied warranty, relating to
+; sale and/or use of Intel products including liability or warranties relating to
+; fitness for a particular purpose, merchantability, or infringement of any
+; patent, copyright or other intellectual property right. Intel products are not
+; intended for use in medical, life saving, or life sustaining applications.
+; ********************************************************************************
+; Intel Corporation disclaims all warranties and liabilities for the use of this
+; document and the information contained herein, and assumes no responsibility for
+; any errors which may appear in this document, nor does Intel make a commitment
+; to update the information contained herein. Intel reserves the right to make
+; changes to this document at any time, without notice.
+; ********************************************************************************
+; ********************************************************************************
+; 
+; * Third-party brands and names are the property of their respective owners.

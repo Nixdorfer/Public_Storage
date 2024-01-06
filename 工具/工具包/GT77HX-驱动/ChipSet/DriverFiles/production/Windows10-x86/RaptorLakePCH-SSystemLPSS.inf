@@ -1,0 +1,135 @@
+; ************************************************************
+; ************************************************************
+; **  Filename: RaptorLakePCH-SSystemLPSS.inf               **
+; **  Abstract: Assigns the null driver to devices          **
+; **            for yellow-bang removal and                 **
+; **            brands Intel(R) devices                     ** 
+; ************************************************************
+; ************************************************************
+
+[Version]
+Signature=$WINDOWS NT$
+Class=System
+ClassGUID={4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider=%INTEL%
+CatalogFile=RaptorLakePCH-S.cat
+DriverVer=07/18/1968, 10.1.46.3
+PnpLockDown=1
+
+[SourceDisksNames]
+
+[SourceDisksFiles]
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%INTEL%=INTEL,NTx86,NTamd64
+
+[INTEL.NTx86]
+%PCI\VEN_8086&DEV_7A28Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A28
+%PCI\VEN_8086&DEV_7A29Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A29
+%PCI\VEN_8086&DEV_7A2ADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A2A
+%PCI\VEN_8086&DEV_7A2BDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A2B
+%PCI\VEN_8086&DEV_7A5ADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A5A
+%PCI\VEN_8086&DEV_7A5BDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A5B
+%PCI\VEN_8086&DEV_7A5CDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A5C
+%PCI\VEN_8086&DEV_7A5DDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A5D
+%PCI\VEN_8086&DEV_7A5EDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A5E
+%PCI\VEN_8086&DEV_7A5FDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A5F
+%PCI\VEN_8086&DEV_7A6EDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A6E
+%PCI\VEN_8086&DEV_7A6FDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A6F
+%PCI\VEN_8086&DEV_7A4CDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A4C
+%PCI\VEN_8086&DEV_7A4DDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A4D
+%PCI\VEN_8086&DEV_7A4EDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A4E
+%PCI\VEN_8086&DEV_7A4FDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A4F
+%PCI\VEN_8086&DEV_7A7BDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A7B
+%PCI\VEN_8086&DEV_7A7CDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A7C
+%PCI\VEN_8086&DEV_7A7DDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A7D
+%PCI\VEN_8086&DEV_7A7EDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A7E
+%PCI\VEN_8086&DEV_7A79Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A79
+%PCI\VEN_8086&DEV_7A7ADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A7A
+
+[INTEL.NTamd64]
+%PCI\VEN_8086&DEV_7A28Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A28
+%PCI\VEN_8086&DEV_7A29Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A29
+%PCI\VEN_8086&DEV_7A2ADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A2A
+%PCI\VEN_8086&DEV_7A2BDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A2B
+%PCI\VEN_8086&DEV_7A5ADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A5A
+%PCI\VEN_8086&DEV_7A5BDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A5B
+%PCI\VEN_8086&DEV_7A5CDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A5C
+%PCI\VEN_8086&DEV_7A5DDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A5D
+%PCI\VEN_8086&DEV_7A5EDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A5E
+%PCI\VEN_8086&DEV_7A5FDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A5F
+%PCI\VEN_8086&DEV_7A6EDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A6E
+%PCI\VEN_8086&DEV_7A6FDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A6F
+%PCI\VEN_8086&DEV_7A4CDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A4C
+%PCI\VEN_8086&DEV_7A4DDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A4D
+%PCI\VEN_8086&DEV_7A4EDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A4E
+%PCI\VEN_8086&DEV_7A4FDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A4F
+%PCI\VEN_8086&DEV_7A7BDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A7B
+%PCI\VEN_8086&DEV_7A7CDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A7C
+%PCI\VEN_8086&DEV_7A7DDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A7D
+%PCI\VEN_8086&DEV_7A7EDesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A7E
+%PCI\VEN_8086&DEV_7A79Desc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A79
+%PCI\VEN_8086&DEV_7A7ADesc%=Needs_NO_DRV,PCI\VEN_8086&DEV_7A7A
+
+[Needs_NO_DRV]
+Include=machine.inf
+Needs=NO_DRV
+
+[Needs_NO_DRV.Services]
+Include=machine.inf
+Needs=NO_DRV.Services
+
+[Strings]
+INTEL="INTEL"
+PCI\VEN_8086&DEV_7A28Desc="Intel(R) LPSS: UART #0 - 7A28"
+PCI\VEN_8086&DEV_7A29Desc="Intel(R) LPSS: UART #1 - 7A29"
+PCI\VEN_8086&DEV_7A2ADesc="Intel(R) LPSS: SPI #0 - 7A2A"
+PCI\VEN_8086&DEV_7A2BDesc="Intel(R) LPSS: SPI #1 - 7A2B"
+PCI\VEN_8086&DEV_7A5ADesc="Intel(R) LPSS: I2C Controller #6 - 7A5A"
+PCI\VEN_8086&DEV_7A5BDesc="Intel(R) LPSS: I2C Controller #7 - 7A5B"
+PCI\VEN_8086&DEV_7A5CDesc="Intel(R) LPSS: UART #3 - 7A5C"
+PCI\VEN_8086&DEV_7A5DDesc="Intel(R) LPSS: UART #4 - 7A5D"
+PCI\VEN_8086&DEV_7A5EDesc="Intel(R) LPSS: UART #5 - 7A5E"
+PCI\VEN_8086&DEV_7A5FDesc="Intel(R) LPSS: UART #6 - 7A5F"
+PCI\VEN_8086&DEV_7A6EDesc="Intel(R) LPSS: SPI #5 - 7A6E"
+PCI\VEN_8086&DEV_7A6FDesc="Intel(R) LPSS: SPI #6 - 7A6F"
+PCI\VEN_8086&DEV_7A4CDesc="Intel(R) LPSS: I2C Controller #0 - 7A4C"
+PCI\VEN_8086&DEV_7A4DDesc="Intel(R) LPSS: I2C Controller #1 - 7A4D"
+PCI\VEN_8086&DEV_7A4EDesc="Intel(R) LPSS: I2C Controller #2 - 7A4E"
+PCI\VEN_8086&DEV_7A4FDesc="Intel(R) LPSS: I2C Controller #3 - 7A4F"
+PCI\VEN_8086&DEV_7A7BDesc="Intel(R) LPSS: SPI #2 - 7A7B"
+PCI\VEN_8086&DEV_7A7CDesc="Intel(R) LPSS: I2C Controller #4 - 7A7C"
+PCI\VEN_8086&DEV_7A7DDesc="Intel(R) LPSS: I2C Controller #5 - 7A7D"
+PCI\VEN_8086&DEV_7A7EDesc="Intel(R) LPSS: UART #2 - 7A7E"
+PCI\VEN_8086&DEV_7A79Desc="Intel(R) LPSS: SPI #3 - 7A79"
+PCI\VEN_8086&DEV_7A7ADesc="Intel(R) LPSS: SPI #4 - 7A7A"
+
+
+
+
+; Copyright (c) 2003-2019 Intel Corporation
+; 
+; ********************************************************************************
+; Intel is making no claims of usability, efficacy or warranty.
+; ********************************************************************************
+; Information in this document is provided in connection with Intel products. No
+; license, express or implied, by estoppel or otherwise, to any intellectual
+; property rights is granted by this document. Intel assumes no liability
+; whatsoever, and Intel disclaims any express or implied warranty, relating to
+; sale and/or use of Intel products including liability or warranties relating to
+; fitness for a particular purpose, merchantability, or infringement of any
+; patent, copyright or other intellectual property right. Intel products are not
+; intended for use in medical, life saving, or life sustaining applications.
+; ********************************************************************************
+; Intel Corporation disclaims all warranties and liabilities for the use of this
+; document and the information contained herein, and assumes no responsibility for
+; any errors which may appear in this document, nor does Intel make a commitment
+; to update the information contained herein. Intel reserves the right to make
+; changes to this document at any time, without notice.
+; ********************************************************************************
+; ********************************************************************************
+; 
+; * Third-party brands and names are the property of their respective owners.

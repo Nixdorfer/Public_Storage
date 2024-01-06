@@ -1,0 +1,18 @@
+
+<service>
+  <id>KNDBWM</id>
+  <name>Killer Dynamic Bandwidth Management</name>
+  <description>This service dynamically manages bandwidth settings based on detection of internet traffic congestion.</description>
+  <env name="KNDBWM_HOME" value="%BASE%"/>
+  <executable>KNDBWM.exe</executable>
+  <arguments></arguments>
+  <logmode>none</logmode>
+  <startmode>Manual</startmode>
+  <depend>Netman</depend>
+  <depend>NetSetupSvc</depend>
+  <delaystart>false</delaystart>
+  <stopparentprocessfirst>true</stopparentprocessfirst>
+  <onfailure action="restart" delay="2 sec"/>
+  <onfailure action="restart" delay="2 sec"/>
+  <onfailure action="restart" delay="2 sec"/>
+</service>

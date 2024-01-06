@@ -1,0 +1,79 @@
+; ************************************************************
+; ************************************************************
+; **  Filename: SunrisePoint-LPSDHost.inf                   **
+; **  Abstract: Assigns the null driver to devices          **
+; **            for yellow-bang removal and                 **
+; **            brands Intel(R) devices                     ** 
+; ************************************************************
+; ************************************************************
+
+[Version]
+Signature=$WINDOWS NT$
+Class=SDHost
+ClassGUID={A0A588A4-C46F-4B37-B7EA-C82FE89870C6}
+Provider=%INTEL%
+CatalogFile=SunrisePoint-LP.cat
+DriverVer=07/18/1968, 10.1.5.3
+PnpLockDown=1
+
+[SourceDisksNames]
+
+[SourceDisksFiles]
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[Manufacturer]
+%INTEL%=INTEL,NTx86.6.4,NTamd64.6.4
+
+[INTEL.NTx86.6.4]
+%PCI\VEN_8086&DEV_9D2BDesc%=Needs_SDHostCHT,PCI\VEN_8086&DEV_9D2B
+%PCI\VEN_8086&DEV_9D2DDesc%=Needs_SDHostCHT,PCI\VEN_8086&DEV_9D2D
+
+[INTEL.NTamd64.6.4]
+%PCI\VEN_8086&DEV_9D2BDesc%=Needs_SDHostCHT,PCI\VEN_8086&DEV_9D2B
+%PCI\VEN_8086&DEV_9D2DDesc%=Needs_SDHostCHT,PCI\VEN_8086&DEV_9D2D
+
+[Needs_SDHostCHT]
+Include=sdbus.inf
+Needs=SDHostIntelCherryTrail
+
+[Needs_SDHostCHT.Services]
+Include=sdbus.inf
+Needs=SDHostIntelCherryTrail.Services
+
+[Needs_SDHostCHT.HW]
+Include=sdbus.inf
+Needs=SDHostIntelCherryTrail.HW
+
+[Strings]
+INTEL="INTEL"
+PCI\VEN_8086&DEV_9D2BDesc="Mobile Intel(R) Processor Family I/O SCC: eMMC - 9D2B"
+PCI\VEN_8086&DEV_9D2DDesc="Mobile Intel(R) Processor Family I/O SCC: SDCard - 9D2D"
+
+
+
+
+; Copyright (c) 2003-2019 Intel Corporation
+; 
+; ********************************************************************************
+; Intel is making no claims of usability, efficacy or warranty.
+; ********************************************************************************
+; Information in this document is provided in connection with Intel products. No
+; license, express or implied, by estoppel or otherwise, to any intellectual
+; property rights is granted by this document. Intel assumes no liability
+; whatsoever, and Intel disclaims any express or implied warranty, relating to
+; sale and/or use of Intel products including liability or warranties relating to
+; fitness for a particular purpose, merchantability, or infringement of any
+; patent, copyright or other intellectual property right. Intel products are not
+; intended for use in medical, life saving, or life sustaining applications.
+; ********************************************************************************
+; Intel Corporation disclaims all warranties and liabilities for the use of this
+; document and the information contained herein, and assumes no responsibility for
+; any errors which may appear in this document, nor does Intel make a commitment
+; to update the information contained herein. Intel reserves the right to make
+; changes to this document at any time, without notice.
+; ********************************************************************************
+; ********************************************************************************
+; 
+; * Third-party brands and names are the property of their respective owners.

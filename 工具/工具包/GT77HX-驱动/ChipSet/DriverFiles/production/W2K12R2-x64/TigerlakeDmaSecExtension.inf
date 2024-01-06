@@ -1,0 +1,181 @@
+; ************************************************************
+; ************************************************************
+; **  Filename: TigerlakeDmaSecExtension.inf                **
+; **  Abstract: Adds devices in registry as AllowedBus      **
+; **            for BitLocker device encryption support     ** 
+; ************************************************************
+; ************************************************************
+
+[Version]
+Signature=$WINDOWS NT$
+Class=Extension
+ClassGUID={E2F84CE7-8EFA-411C-AA69-97454CA4CB57}
+Provider=%INTEL%
+CatalogFile=TigerlakeDmaSec.cat
+DriverVer=07/18/1968, 10.1.43.5
+PnpLockDown=1
+ExtensionId={de302a51-9c06-4b47-b201-6bf070faa935}
+
+[Manufacturer]
+%INTEL%=INTEL,NTx86,NTamd64
+
+[INTEL.NTx86]
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_9A01_Install,PCI\VEN_8086&DEV_9A01
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_9A0F_Install,PCI\VEN_8086&DEV_9A0F
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_9a23_Install,PCI\VEN_8086&DEV_9a23
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_9a2B_Install,PCI\VEN_8086&DEV_9a2B
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_9a37_Install,PCI\VEN_8086&DEV_9a37
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_9a25_Install,PCI\VEN_8086&DEV_9a25
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_9a2D_Install,PCI\VEN_8086&DEV_9a2D
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_9a3B_Install,PCI\VEN_8086&DEV_9a3B
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_9a27_Install,PCI\VEN_8086&DEV_9a27
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_9a2f_Install,PCI\VEN_8086&DEV_9a2f
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_9a3D_Install,PCI\VEN_8086&DEV_9a3D
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_9a29_Install,PCI\VEN_8086&DEV_9a29
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_9a31_Install,PCI\VEN_8086&DEV_9a31
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_9a3F_Install,PCI\VEN_8086&DEV_9a3F
+
+[INTEL.NTamd64]
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_9A01_Install,PCI\VEN_8086&DEV_9A01
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_9A0F_Install,PCI\VEN_8086&DEV_9A0F
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_9a23_Install,PCI\VEN_8086&DEV_9a23
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_9a2B_Install,PCI\VEN_8086&DEV_9a2B
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_9a37_Install,PCI\VEN_8086&DEV_9a37
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_9a25_Install,PCI\VEN_8086&DEV_9a25
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_9a2D_Install,PCI\VEN_8086&DEV_9a2D
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_9a3B_Install,PCI\VEN_8086&DEV_9a3B
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_9a27_Install,PCI\VEN_8086&DEV_9a27
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_9a2f_Install,PCI\VEN_8086&DEV_9a2f
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_9a3D_Install,PCI\VEN_8086&DEV_9a3D
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_9a29_Install,PCI\VEN_8086&DEV_9a29
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_9a31_Install,PCI\VEN_8086&DEV_9a31
+%DmaSecExtension%=DmaSecPCI\VEN_8086&DEV_9a3F_Install,PCI\VEN_8086&DEV_9a3F
+
+[DmaSecPCI\VEN_8086&DEV_9A01_Install]
+[DmaSecPCI\VEN_8086&DEV_9A01_Install.HW]
+AddReg=DmaSecPCI\VEN_8086&DEV_9A01_AddReg
+
+[DmaSecPCI\VEN_8086&DEV_9A01_AddReg]
+HKLM,SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses,Intel(R) PEG10 - 9A01,0,PCI\VEN_8086&DEV_9A01
+
+[DmaSecPCI\VEN_8086&DEV_9A0F_Install]
+[DmaSecPCI\VEN_8086&DEV_9A0F_Install.HW]
+AddReg=DmaSecPCI\VEN_8086&DEV_9A0F_AddReg
+
+[DmaSecPCI\VEN_8086&DEV_9A0F_AddReg]
+HKLM,SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses,Intel(R) PEG60 - 9A0F,0,PCI\VEN_8086&DEV_9A0F
+
+[DmaSecPCI\VEN_8086&DEV_9a23_Install]
+[DmaSecPCI\VEN_8086&DEV_9a23_Install.HW]
+AddReg=DmaSecPCI\VEN_8086&DEV_9a23_AddReg
+
+[DmaSecPCI\VEN_8086&DEV_9a23_AddReg]
+HKLM,SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses,Intel(R) TypeC PCIE - 9A23,0,PCI\VEN_8086&DEV_9a23
+
+[DmaSecPCI\VEN_8086&DEV_9a2B_Install]
+[DmaSecPCI\VEN_8086&DEV_9a2B_Install.HW]
+AddReg=DmaSecPCI\VEN_8086&DEV_9a2B_AddReg
+
+[DmaSecPCI\VEN_8086&DEV_9a2B_AddReg]
+HKLM,SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses,Intel(R) TypeC PCIE - 9A2B,0,PCI\VEN_8086&DEV_9a2B
+
+[DmaSecPCI\VEN_8086&DEV_9a37_Install]
+[DmaSecPCI\VEN_8086&DEV_9a37_Install.HW]
+AddReg=DmaSecPCI\VEN_8086&DEV_9a37_AddReg
+
+[DmaSecPCI\VEN_8086&DEV_9a37_AddReg]
+HKLM,SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses,Intel(R) TypeC PCIE - 9A37,0,PCI\VEN_8086&DEV_9a37
+
+[DmaSecPCI\VEN_8086&DEV_9a25_Install]
+[DmaSecPCI\VEN_8086&DEV_9a25_Install.HW]
+AddReg=DmaSecPCI\VEN_8086&DEV_9a25_AddReg
+
+[DmaSecPCI\VEN_8086&DEV_9a25_AddReg]
+HKLM,SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses,Intel(R) TypeC PCIE - 9A25,0,PCI\VEN_8086&DEV_9a25
+
+[DmaSecPCI\VEN_8086&DEV_9a2D_Install]
+[DmaSecPCI\VEN_8086&DEV_9a2D_Install.HW]
+AddReg=DmaSecPCI\VEN_8086&DEV_9a2D_AddReg
+
+[DmaSecPCI\VEN_8086&DEV_9a2D_AddReg]
+HKLM,SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses,Intel(R) TypeC PCIE - 9A2D,0,PCI\VEN_8086&DEV_9a2D
+
+[DmaSecPCI\VEN_8086&DEV_9a3B_Install]
+[DmaSecPCI\VEN_8086&DEV_9a3B_Install.HW]
+AddReg=DmaSecPCI\VEN_8086&DEV_9a3B_AddReg
+
+[DmaSecPCI\VEN_8086&DEV_9a3B_AddReg]
+HKLM,SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses,Intel(R) TypeC PCIE - 9A3B,0,PCI\VEN_8086&DEV_9a3B
+
+[DmaSecPCI\VEN_8086&DEV_9a27_Install]
+[DmaSecPCI\VEN_8086&DEV_9a27_Install.HW]
+AddReg=DmaSecPCI\VEN_8086&DEV_9a27_AddReg
+
+[DmaSecPCI\VEN_8086&DEV_9a27_AddReg]
+HKLM,SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses,Intel(R) TypeC PCIE - 9A27,0,PCI\VEN_8086&DEV_9a27
+
+[DmaSecPCI\VEN_8086&DEV_9a2f_Install]
+[DmaSecPCI\VEN_8086&DEV_9a2f_Install.HW]
+AddReg=DmaSecPCI\VEN_8086&DEV_9a2f_AddReg
+
+[DmaSecPCI\VEN_8086&DEV_9a2f_AddReg]
+HKLM,SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses,Intel(R) TypeC PCIE - 9A2F,0,PCI\VEN_8086&DEV_9a2f
+
+[DmaSecPCI\VEN_8086&DEV_9a3D_Install]
+[DmaSecPCI\VEN_8086&DEV_9a3D_Install.HW]
+AddReg=DmaSecPCI\VEN_8086&DEV_9a3D_AddReg
+
+[DmaSecPCI\VEN_8086&DEV_9a3D_AddReg]
+HKLM,SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses,Intel(R) TypeC PCIE - 9A3D,0,PCI\VEN_8086&DEV_9a3D
+
+[DmaSecPCI\VEN_8086&DEV_9a29_Install]
+[DmaSecPCI\VEN_8086&DEV_9a29_Install.HW]
+AddReg=DmaSecPCI\VEN_8086&DEV_9a29_AddReg
+
+[DmaSecPCI\VEN_8086&DEV_9a29_AddReg]
+HKLM,SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses,Intel(R) TypeC PCIE - 9A29,0,PCI\VEN_8086&DEV_9a29
+
+[DmaSecPCI\VEN_8086&DEV_9a31_Install]
+[DmaSecPCI\VEN_8086&DEV_9a31_Install.HW]
+AddReg=DmaSecPCI\VEN_8086&DEV_9a31_AddReg
+
+[DmaSecPCI\VEN_8086&DEV_9a31_AddReg]
+HKLM,SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses,Intel(R) TypeC PCIE - 9A31,0,PCI\VEN_8086&DEV_9a31
+
+[DmaSecPCI\VEN_8086&DEV_9a3F_Install]
+[DmaSecPCI\VEN_8086&DEV_9a3F_Install.HW]
+AddReg=DmaSecPCI\VEN_8086&DEV_9a3F_AddReg
+
+[DmaSecPCI\VEN_8086&DEV_9a3F_AddReg]
+HKLM,SYSTEM\CurrentControlSet\Control\DmaSecurity\AllowedBuses,Intel(R) TypeC PCIE - 9A3F,0,PCI\VEN_8086&DEV_9a3F
+
+[Strings]
+INTEL="INTEL"
+DmaSecExtension=DmaSecurity AllowedBus Extension
+
+
+
+
+; Copyright (c) 2003-2019 Intel Corporation
+; 
+; ********************************************************************************
+; Intel is making no claims of usability, efficacy or warranty.
+; ********************************************************************************
+; Information in this document is provided in connection with Intel products. No
+; license, express or implied, by estoppel or otherwise, to any intellectual
+; property rights is granted by this document. Intel assumes no liability
+; whatsoever, and Intel disclaims any express or implied warranty, relating to
+; sale and/or use of Intel products including liability or warranties relating to
+; fitness for a particular purpose, merchantability, or infringement of any
+; patent, copyright or other intellectual property right. Intel products are not
+; intended for use in medical, life saving, or life sustaining applications.
+; ********************************************************************************
+; Intel Corporation disclaims all warranties and liabilities for the use of this
+; document and the information contained herein, and assumes no responsibility for
+; any errors which may appear in this document, nor does Intel make a commitment
+; to update the information contained herein. Intel reserves the right to make
+; changes to this document at any time, without notice.
+; ********************************************************************************
+; ********************************************************************************
+; 
+; * Third-party brands and names are the property of their respective owners.

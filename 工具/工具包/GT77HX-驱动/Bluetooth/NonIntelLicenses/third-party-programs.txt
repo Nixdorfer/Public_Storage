@@ -1,0 +1,43 @@
+PROSet/Wireless Bluetooth Third Party Programs File
+
+This file contains the list of third party software (“third party programs”) contained in the Intel software and their required notices and/or license terms. This third party software, even if included with the distribution of the Intel software, may be governed by separate license terms, including without limitation, third party license terms, other Intel software license terms, and open source software license terms. These separate license terms govern your use of the third party programs as set forth in the “third-party-programs.txt” or other similarly-named text file.
+
+Third party programs and their corresponding required notices and/or license terms are listed below.
+
+-------------------------------------------------------------
+1.     Software Released under the Synopsys IP BLOCK LICENSE AND DEVELOPMENT AGREEMENT:
+
+    Synopsys SBC Codec
+    Copyright (c) 2014 Synopsys, Inc.
+
+    Synopsys AAC-LC3 Codec
+    Copyright (c) 2015 Synopsys, Inc.
+
+    Full text of the license: Synopsys_IP_Block_license.pdf
+
+-------------------------------------------------------------
+2.     Software Released under the Synopsys Unsupported Proprietary Work License:
+
+    Synopsys HS OTG Linux Software Driver
+
+    Full text of the license: Synopsys_HSOTG_Linux_Software_Driver.pdf
+
+-------------------------------------------------------------
+3.     Software Released under the BSD 3-clause "New" or "Revised" License:
+
+    Intel TinyCrypt Cryptographic Library
+    Copyright (c) 2017, Intel Corporation
+
+    Full text of the license: TinyCrypt_Cryptographic_Library.pdf
+
+-------------------------------------------------------------
+4.     Software Released under the Microsoft Public License:
+
+    cfx
+    Code Project - Enhanced .NET Bootstrap Setup
+        Microsoft Windows-driver-samples
+    microsoft/Windows-driver-samples
+    Windows-driver-samples
+        Copyright (c) Microsoft Corporation.
+
+    Full text of the license: Microsoft_Public_License.pdf

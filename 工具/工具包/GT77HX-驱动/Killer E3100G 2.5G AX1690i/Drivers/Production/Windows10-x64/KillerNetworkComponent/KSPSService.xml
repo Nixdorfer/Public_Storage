@@ -1,0 +1,16 @@
+<service>
+  <id>KillerProximityLockService</id>
+  <name>Killer Proximity Lock Service</name>
+  <description>This service provides provides PC auto-sleep service when Bluetooth-paired Smartphone is not in range.</description>
+  <env name="KSPSS_HOME" value="%BASE%"/>
+  <executable>KSPS.exe</executable>
+  <arguments></arguments>
+  <logmode>rotate</logmode>
+  <startmode>Automatic</startmode>
+  <depend>bthserv</depend>
+  <depend>Netman</depend>
+  <delaystart>false</delaystart>
+  <onfailure action="restart" delay="2 sec"/>
+  <onfailure action="restart" delay="2 sec"/>
+  <onfailure action="restart" delay="2 sec"/>
+</service>

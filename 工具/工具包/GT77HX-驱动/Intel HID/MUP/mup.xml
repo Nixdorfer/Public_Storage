@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MUPDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.dell.com/openmanage/cm/2/0/mupdefinition.xsd">
+  <packageinformation>
+    <installertype>mupinstaller</installertype>
+    <mupspecificationversion>3.0.0</mupspecificationversion>
+    <name>Intel(R) HID Event Filter Driver</name>
+    <packagegrouping>dch_package</packagegrouping>
+    <packagingtype>dch_inf_package</packagingtype>
+    <releasetype>DRVR</releasetype>
+    <subsystem>Input</subsystem>
+    <version>2.2.2.1</version>
+    <AppliesTo>
+      <DeviceInformation>Intel(R) HID Event Filter</DeviceInformation>
+    </AppliesTo>
+    <supportedoperatingsystems>
+      <osidentifier name="Windows10" architecture="x64" />
+    </supportedoperatingsystems>
+    <content dchSupport="true" baseOSBuildNumber="0">
+      <DeviceGroup supportedOSBuildNumber="0">
+        <Device componentID="105204">
+          <Generic>ACPI\INT33D5</Generic>
+          <Generic>ACPI\INTC1051</Generic>
+          <Generic>ACPI\INTC1054</Generic>
+          <Generic>ACPI\INTC1070</Generic>
+          <Generic>ACPI\INTC1076</Generic>
+          <Generic>ACPI\INTC1077</Generic>
+          <Generic>ACPI\INTC1078</Generic>
+          <Image type="DRVR" inftype="base" version="2.2.2.1">
+            <file>0\Drivers\x64\HidEventFilter.inf</file>
+            <supportedoperatingsystems>
+              <osidentifier name="Windows10.0" architecture="x64" buildNumber="17134" />
+            </supportedoperatingsystems>
+          </Image>
+        </Device>
+      </DeviceGroup>
+    </content>
+  </packageinformation>
+</MUPDefinition>
