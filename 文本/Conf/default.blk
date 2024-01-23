@@ -10,10 +10,19 @@ controls{
       keyboardKey:i=12
     }
 
+    ID_AIR_BRAKE{
+      keyboardKey:i=19
+    }
+
+    ID_BOMBS{
+      keyboardKey:i=57
+    }
+
     ID_CAMERA_NEUTRAL{
       keyboardKey:i=58
     }
 
+    ID_CHUTE{}
     ID_COMMANDER_AIM_MODE{
       keyboardKey:i=18
     }
@@ -22,16 +31,20 @@ controls{
       keyboardKey:i=57
     }
 
-    ID_DESIGNATE_TARGET{
-      mouseButton:i=0
+    ID_CONTROL_MODE{}
+    ID_FAST_VOICE_MESSAGE_1{
+      keyboardKey:i=82
     }
 
-    ID_FIRE_GM_SECONDARY_GUN{
-      keyboardKey:i=26
-    }
-
+    ID_FIRE_GM_SECONDARY_GUN{}
     ID_FIRE_GM_SPECIAL_GUN{
-      keyboardKey:i=57
+      keyboardKey:i=24
+    }
+
+    ID_FLAPS_DOWN{}
+    ID_FLAPS_UP{}
+    ID_FLARES{
+      keyboardKey:i=46
     }
 
     ID_FLIGHTMENU{
@@ -47,16 +60,13 @@ controls{
       mouseButton:i=2
     }
 
-    ID_LOCK_TARGETING{
-      keyboardKey:i=18
-    }
-
     ID_MINE_DETONATION{}
-    ID_PLANE_NIGHT_VISION{
-      keyboardKey:i=16
+    ID_RELOAD_GUNS{}
+    ID_RELOAD_USER_SIGHT_GM{}
+    ID_ROCKETS{
+      mouseButton:i=1
     }
 
-    ID_RELOAD_USER_SIGHT_GM{}
     ID_SCOUT{
       keyboardKey:i=16
     }
@@ -66,14 +76,30 @@ controls{
       keyboardKey:i=183
     }
 
+    ID_SELECT_GM_GUN_PRIMARY{
+      keyboardKey:i=16
+    }
+
+    ID_SELECT_GM_GUN_SECONDARY{
+      keyboardKey:i=18
+    }
+
     ID_SELECT_GM_GUN_SPECIAL{}
     ID_SENSOR_SWITCH_TANK{}
+    ID_SENSOR_SWITCH_TANK{
+      keyboardKey:i=79
+    }
+
     ID_SENSOR_TARGET_LOCK_TANK{
-      keyboardKey:i=45
+      keyboardKey:i=18
     }
 
     ID_SENSOR_TARGET_SWITCH_TANK{
       keyboardKey:i=46
+    }
+
+    ID_SENSOR_TYPE_SWITCH_TANK{
+      keyboardKey:i=80
     }
 
     ID_SHOW_HERO_MODULES{
@@ -98,23 +124,22 @@ controls{
 
     ID_START_UGV{}
     ID_TANK_NIGHT_VISION{
-      keyboardKey:i=45
+      keyboardKey:i=86
     }
 
     ID_TARGETING_HOLD_GM{}
     ID_TARGET_CAMERA{}
+    ID_TARGET_CAMERA_HELICOPTER{}
     ID_TOGGLE_AUTOTURRET_TARGETS{}
-    ID_TOGGLE_ENGINE{}
-    ID_TOGGLE_ENGINE_HELICOPTER{}
     ID_TOGGLE_GM_ENGINE{
       keyboardKey:i=25
     }
 
-    ID_TOGGLE_VIEW{
+    ID_TOGGLE_VIEW_GM{
       mouseButton:i=1
     }
 
-    ID_TOGGLE_VIEW_GM{
+    ID_TOGGLE_VIEW_HELICOPTER{
       mouseButton:i=1
     }
 
@@ -123,6 +148,10 @@ controls{
     }
 
     ID_TRANS_GEAR_DOWN{}
+    ID_TRANS_GEAR_DOWN{
+      keyboardKey:i=40
+    }
+
     ID_TRANS_GEAR_UP{}
     ID_TRANS_GEAR_UP{
       keyboardKey:i=39
@@ -141,6 +170,22 @@ controls{
       keyboardKey:i=42
     }
 
+    ailerons_rangeMax{
+      keyboardKey:i=32
+    }
+
+    ailerons_rangeMin{
+      keyboardKey:i=30
+    }
+
+    elevator_rangeMax{
+      keyboardKey:i=31
+    }
+
+    elevator_rangeMin{
+      keyboardKey:i=17
+    }
+
     gm_steering_rangeMax{
       keyboardKey:i=30
     }
@@ -156,6 +201,11 @@ controls{
     gm_throttle_rangeMin{
       keyboardKey:i=31
     }
+
+    throttle_rangeMax{}
+    throttle_rangeMin{}
+    vtol_rangeMax{}
+    vtol_rangeMin{}
   }
 
   axes{
@@ -184,7 +234,6 @@ controls{
     USEROPT_INVERTY_SPECTATOR:b=no
     USEROPT_INVERTY_SUBMARINE:b=no
     USEROPT_JOYFX:b=yes
-    USEROPT_MOUSE_SENSE:i=40
     USEROPT_MOUSE_USAGE_NO_AIM:i=1
     USEROPT_SHIP_COMBINE_PRI_SEC_TRIGGERS:b=yes
     USEROPT_SINGLE_SHOT_BY_TURRET:b=yes
@@ -204,7 +253,7 @@ settings{
   freeCameraInertia:r=1
   replayCameraWiggle:r=1
   zoomSens:r=0
-  mouseSens:r=0.8
+  mouseSens:r=0.5
   mouseAimSens:r=0.5
   gunnerViewSens:r=1
   gunnerViewZoomSens:r=1
@@ -239,8 +288,8 @@ settings{
   aimAccelerationDelayWalker:r=0.5
   aimAccelerationDelayShip:r=0.5
   aimAccelerationDelaySubmarine:r=0.5
-  mouseZMultAir:r=0.5
-  mouseZMultHelicopter:r=0.5
+  mouseZMultAir:r=1
+  mouseZMultHelicopter:r=1
   mouseZMultTank:r=0.3
   mouseZMultShip:r=0.5
   mouseZMultSubmarine:r=0.5
